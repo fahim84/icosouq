@@ -9,4 +9,10 @@ class Welcome extends CI_Controller {
         $this->data['keyword'] = 'keyword';
 		$this->load->view('index',$this->data);
 	}
+
+    public function detail()
+    {
+        $this->data['keyword'] = 'keyword';
+        $this->load->view('detail',$this->data);
+    }
 }
