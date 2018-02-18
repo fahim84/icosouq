@@ -239,6 +239,7 @@ class User_model extends CI_Model
 	{
 	    // try email and password
 		$query = $this->db->get_where('users',['email'=>$login['email'], 'password' => md5($login['password'])]);
+        //my_var_dump($this->db->last_query());
 		if($query->num_rows())
         {
             $row = $query->row();
