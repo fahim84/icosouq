@@ -11,7 +11,7 @@ class Login extends CI_Controller
 	public function index()
 	{
 		# if user is already logged in, then redirect him to welcome page
-		if(isset($_SESSION['user']['user_id']) )
+		if(isset($_SESSION['user']->user_id) )
 		{
 			redirect(base_url().'admin/welcome/','refresh');
 		}
@@ -66,6 +66,7 @@ class Login extends CI_Controller
 			}
 		}
 
+		my_var_dump(__LINE__);
 		$this->load->view('admin/login',$this->data);
 	}
 	
