@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/plugins.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/themes/theme-1.css" id="skin_color" />
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/icosouq/css/jquery-ui.css"  media="screen">
     <!-- end: CLIP-TWO CSS -->
     <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
     <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
@@ -56,8 +58,8 @@
     <script src="<?php echo base_url(); ?>vendor/selectFx/classie.js"></script>
     <script src="<?php echo base_url(); ?>vendor/selectFx/selectFx.js"></script>
     <script src="<?php echo base_url(); ?>vendor/select2/select2.min.js"></script>
-    <script src="<?php echo base_url(); ?>vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="<?php echo base_url(); ?>vendor/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+    <!--<script src="<?php /*echo base_url(); */?>vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="<?php /*echo base_url(); */?>vendor/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>-->
     <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 
     <!-- start: CLIP-TWO JAVASCRIPTS -->

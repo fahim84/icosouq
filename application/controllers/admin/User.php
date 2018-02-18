@@ -89,17 +89,12 @@ class User extends CI_Controller {
 
             $get_post['roles'] = is_array($this->input->get_post('roles')) ? $this->input->get_post('roles') : [];
             $get_post['rights'] = is_array($this->input->get_post('rights')) ? $this->input->get_post('rights') : [];
-            $get_post['departments'] = is_array($this->input->get_post('departments')) ? $this->input->get_post('departments') : [];
 
 			if($get_post['email'] != '' and $this->user_model->email_already_exists($get_post['email'], $id))
 			{
 				$_SESSION['msg_error'][] = 'Email address already taken...';
 			}
-            elseif($get_post['initial'] != '' and $this->user_model->initial_already_exists($get_post['initial'], $id))
-            {
-                $_SESSION['msg_error'][] = 'Initial already taken...';
-            }
-			else
+            else
 			{
 				$delete_old_file = $this->input->get_post('delete_old_file');
 				$uploaded_file_array = (isset($_FILES['image']) and $_FILES['image']['size'] > 0 and $_FILES['image']['error'] == 0) ? $_FILES['image'] : '';
@@ -210,7 +205,7 @@ class User extends CI_Controller {
 		$id = $this->input->get_post('id');
 		$status = $this->input->get_post('status');
 		$data['is_activated'] = $status;
-		$data['deleted'] = $status == 0 ? 1 : 0;
+		//$data['deleted'] = $status == 0 ? 1 : 0;
 		$this->user_model->update($id,$data);
 		
 		$user = $this->user_model->get_user_by_id($id);
@@ -276,62 +271,6 @@ class User extends CI_Controller {
         }
 
         echo json_encode($tags);
-    }
-
-    public function import_csv()
-    {
-        // Find and Replace a Line Break
-        // http://blog.contextures.com/archives/2013/05/28/find-and-replace-line-breaks-in-excel/
-        // Remove semi column `;` from csv data
-
-        $table = "users";
-        $this->db->query("DELETE FROM $table");
-        my_var_dump($this->db->last_query());
-        $this->db->query("ALTER TABLE $table AUTO_INCREMENT=1;");
-        my_var_dump($this->db->last_query());
-
-        $this->load->library('csvreader');
-        $result = $this->csvreader->parse_file("./uploads/$table.csv");
-        //my_var_dump($result);
-        foreach($result as $key => $csv_data)
-        {
-            //my_var_dump($csv_data);
-            //exit;
-
-            unset($csv_data['status']);
-            $this->db->insert($table,$csv_data);
-            $id = $this->db->insert_id();
-            my_var_dump($this->db->last_query());
-            //my_var_dump($id);
-        }
-    }
-
-    public function import_csv2()
-    {
-        // Find and Replace a Line Break
-        // http://blog.contextures.com/archives/2013/05/28/find-and-replace-line-breaks-in-excel/
-        // Remove semi column `;` from csv data
-
-        $table = "users_departments";
-        $this->db->query("DELETE FROM $table");
-        my_var_dump($this->db->last_query());
-        $this->db->query("ALTER TABLE $table AUTO_INCREMENT=1;");
-        my_var_dump($this->db->last_query());
-
-        $this->load->library('csvreader');
-        $result = $this->csvreader->parse_file("./uploads/$table.csv");
-        //my_var_dump($result);
-        foreach($result as $key => $csv_data)
-        {
-            //my_var_dump($csv_data);
-            //exit;
-
-            unset($csv_data['status']);
-            $this->db->insert($table,$csv_data);
-            $id = $this->db->insert_id();
-            my_var_dump($this->db->last_query());
-            //my_var_dump($id);
-        }
     }
 }
 

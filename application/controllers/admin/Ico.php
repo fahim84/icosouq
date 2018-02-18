@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Organization extends CI_Controller {
+class Ico extends CI_Controller {
 	
 	var $data;
 	public function __construct()
@@ -17,7 +17,7 @@ class Organization extends CI_Controller {
 	
 	public function index()
 	{
-		$order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'organization';
+		$order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'ico';
 		$direction = $this->input->get_post('direction') ? $this->input->get_post('direction') : 'ASC';
 		
 		$keyword = $this->input->get_post('keyword');
@@ -38,8 +38,8 @@ class Organization extends CI_Controller {
 		$query_params['order_by'] = $order_by;
 		$query_params['direction'] = $direction;
 		
-		$total_rows = $this->organization_model->get($query_params,true);
-		$rows = $this->organization_model->get($query_params);
+		$total_rows = $this->ico_model->get($query_params,true);
+		$rows = $this->ico_model->get($query_params);
 		
 		# array for pagination query string
 		$qstr['order_by'] = $order_by;
@@ -47,7 +47,7 @@ class Organization extends CI_Controller {
 		if($keyword) $qstr['keyword'] = $keyword;
 
 		$page_query_string = '?'.http_build_query($qstr);
-		$config['base_url'] = base_url('admin/organization/index/'.$page_query_string);
+		$config['base_url'] = base_url('admin/ico/index/'.$page_query_string);
 		$config['total_rows'] = $total_rows;
 		$config['per_page'] = $limit;
 
@@ -61,8 +61,8 @@ class Organization extends CI_Controller {
 		$this->data['total_rows'] = $total_rows;
 		$this->data['rows'] = $rows;
 		
-		$this->data['selected_page'] = 'organization';
-		$this->load->view('admin/organization', $this->data);
+		$this->data['selected_page'] = 'ico';
+		$this->load->view('admin/ico', $this->data);
 	}
 	
 	public function update()
@@ -70,7 +70,7 @@ class Organization extends CI_Controller {
 		$id = $this->input->get_post('id');
 
 		// Set the validation rules
-		$this->form_validation->set_rules('organization', 'Organization', 'required|trim');
+		$this->form_validation->set_rules('ico', 'ICO', 'required|trim');
 
 		// If the validation worked
 		if ($this->form_validation->run())
@@ -86,7 +86,7 @@ class Organization extends CI_Controller {
             }
 
             # File uploading configuration
-            $upload_path = './uploads/organizations/';
+            $upload_path = './uploads/icos/';
             $config['upload_path'] = $upload_path;
             $config['allowed_types'] = 'gif|jpg|png|jpeg';
             $config['encrypt_name'] = true;
@@ -101,7 +101,7 @@ class Organization extends CI_Controller {
                 if(delete_file($upload_path.$oldfile))
                 {
                     $_SESSION['msg_success'][] = " $oldfile file deleted. ";
-                    $this->organization_model->update($id,['image'=>'']);
+                    $this->ico_model->update($id,['image'=>'']);
                 }
             }
 
@@ -133,108 +133,69 @@ class Organization extends CI_Controller {
                 }
             }
 
-			if($get_post['organization'] != '' and $this->organization_model->organization_already_exists($get_post['organization'], $id))
+			if($get_post['ico'] != '' and $this->ico_model->ico_already_exists($get_post['ico'], $id))
 			{
-				$_SESSION['msg_error'][] = 'Organization already exist...';
+				$_SESSION['msg_error'][] = 'ICO already exist...';
 			}
 			else
 			{
-                $get_post['groups'] = is_array($this->input->get_post('groups')) ? $this->input->get_post('groups') : [];
-
 				unset($get_post['id']);
                 unset($get_post['oldfile']);
                 unset($get_post['delete_old_file']);
 
+                if(isset($get_post['start_date']) and $get_post['start_date'])
+                {
+                    $get_post['start_date'] = date('Y-m-d',strtotime($get_post['start_date']));
+                }
+                if(isset($get_post['end_date']) and $get_post['end_date'])
+                {
+                    $get_post['end_date'] = date('Y-m-d',strtotime($get_post['end_date']));
+                }
+
 				if($id > 0) // update
                 {
-                    if($this->organization_model->update($id,$get_post))
+                    if($this->ico_model->update($id,$get_post))
                     {
                         $_SESSION['msg_success'][] = 'Data Updated...';
 
-                        redirect('admin/organization/');
+                        redirect('admin/ico/');
                     }
                 }
                 else // insert
                 {
-                    if($this->organization_model->insert($get_post))
+                    if($this->ico_model->insert($get_post))
                     {
                         $_SESSION['msg_success'][] = 'Record added successfully...';
-                        redirect('admin/organization/');
+                        redirect('admin/ico/');
                     }
                 }
 			}
 		}
 
 		if($id > 0)
-		$this->data['update_data'] = $this->organization_model->get_organization_by_id($id);
+		$this->data['update_data'] = $this->ico_model->get_ico_by_id($id);
 		
-		$this->data['selected_page'] = 'organization';
-		$this->load->view('admin/organization_update', $this->data);
+		$this->data['selected_page'] = 'ico';
+		$this->load->view('admin/ico_update', $this->data);
 	}
 	
 	public function delete()
 	{
 		$delete_id = $this->uri->segment(4) ? $this->uri->segment(4) : $this->input->get_post('delete_id');
 		
-		$this->organization_model->delete($delete_id);
+		$this->ico_model->delete($delete_id);
 		$_SESSION['msg_error'][] = 'Record deleted successfully!';
-		redirect('admin/organization/');
+		redirect('admin/ico/');
 	}
 
-    public function import_csv()
+    public function change_status()
     {
-        // Find and Replace a Line Break
-        // http://blog.contextures.com/archives/2013/05/28/find-and-replace-line-breaks-in-excel/
-        // Remove semi column `;` from csv data
+        $id = $this->input->get_post('id');
+        $status = $this->input->get_post('status');
 
-        $table = "organizations";
-        $this->db->query("DELETE FROM $table");
+        $this->ico_model->update($id,['status'=>$status]);
+
         my_var_dump($this->db->last_query());
-        $this->db->query("ALTER TABLE $table AUTO_INCREMENT=1;");
-        my_var_dump($this->db->last_query());
-
-        $this->load->library('csvreader');
-        $result = $this->csvreader->parse_file("./uploads/$table.csv");
-        //my_var_dump($result);
-        foreach($result as $key => $csv_data)
-        {
-            //my_var_dump($csv_data);
-            //exit;
-
-            unset($csv_data['status']);
-            $this->db->insert($table,$csv_data);
-            $id = $this->db->insert_id();
-            my_var_dump($this->db->last_query());
-            //my_var_dump($id);
-        }
-    }
-
-    public function import_csv2()
-    {
-        // Find and Replace a Line Break
-        // http://blog.contextures.com/archives/2013/05/28/find-and-replace-line-breaks-in-excel/
-        // Remove semi column `;` from csv data
-
-        $table = "organizations_groups";
-        $this->db->query("DELETE FROM $table");
-        my_var_dump($this->db->last_query());
-        $this->db->query("ALTER TABLE $table AUTO_INCREMENT=1;");
-        my_var_dump($this->db->last_query());
-
-        $this->load->library('csvreader');
-        $result = $this->csvreader->parse_file("./uploads/$table.csv");
-        //my_var_dump($result);
-        foreach($result as $key => $csv_data)
-        {
-            //my_var_dump($csv_data);
-            //exit;
-
-            unset($csv_data['status']);
-            $this->db->insert($table,$csv_data);
-            $id = $this->db->insert_id();
-            my_var_dump($this->db->last_query());
-            //my_var_dump($id);
-        }
     }
 }
 

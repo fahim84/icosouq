@@ -8,27 +8,6 @@ class User_model extends CI_Model
 	
 	public function get($params = [], $count_result = false)
 	{
-        $where_in_ids = [];
-        if(isset($params['dept_id']))
-        {
-            $where_in_ids[] = 0;
-            $user_ids_by_dept_id = $this->get_user_ids_by_dept_id($params['dept_id']);
-            if(count($user_ids_by_dept_id))
-            {
-                $where_in_ids = array_merge($where_in_ids,$user_ids_by_dept_id);
-            }
-        }
-        if(isset($params['group_id']))
-        {
-            $where_in_ids[] = 0;
-            $users_ids_by_group_id = $this->get_users_ids_by_group_id($params['group_id']);
-            if(count($users_ids_by_group_id))
-            {
-                $where_in_ids = array_merge($where_in_ids,$users_ids_by_group_id);
-            }
-        }
-        if(count($where_in_ids)) { $this->db->where_in('user_id',$where_in_ids); }
-
 		if(isset($params['is_activated'])) { $this->db->where('is_activated', $params['is_activated']); }
 		if(isset($params['select'])) { $this->db->select($params['select']); }
 		if(isset($params['where_in'])) { $this->db->where_in('user_id',$params['where_in']); }
@@ -37,7 +16,6 @@ class User_model extends CI_Model
 		if(isset($params['keyword']) and $params['keyword']!='')
 		{
 			$this->db->like('fullname', $params['keyword']);
-			$this->db->or_like('initial', $params['keyword']);
 		}
 		
 		# If true, count results and return it
@@ -62,13 +40,6 @@ class User_model extends CI_Model
 		$data['date_created'] = date('Y-m-d H:i:s');
 		$data['date_updated'] = date('Y-m-d H:i:s');
 
-        $departments = [];
-        if(isset($data['departments']))
-        {
-            $departments = $data['departments'];
-            unset($data['departments']);
-        }
-
         $roles = [];
         if(isset($data['roles']))
         {
@@ -87,13 +58,6 @@ class User_model extends CI_Model
 		{
             //my_var_dump($this->db->last_query());
 			$user_id =  $this->db->insert_id();
-
-            foreach($departments as $dept_id)
-            {
-                $insert_query = $this->db->insert_string('users_departments', ['user_id' => $user_id,'dept_id' => $dept_id]);
-                $insert_query = str_replace('INSERT INTO','INSERT IGNORE INTO',$insert_query);
-                $this->db->query($insert_query);
-            }
 
             foreach($roles as $role_id)
             {
@@ -118,21 +82,6 @@ class User_model extends CI_Model
 	public function update($id,$data)
 	{
 		$data['date_updated'] = date('Y-m-d H:i:s');
-
-        $departments = [];
-        if(isset($data['departments']))
-        {
-            $this->db->delete('users_departments', ['user_id' => $id]);
-
-            $departments = $data['departments'];
-            unset($data['departments']);
-        }
-        foreach($departments as $dept_id)
-        {
-            $insert_query = $this->db->insert_string('users_departments', ['user_id' => $id,'dept_id' => $dept_id]);
-            $insert_query = str_replace('INSERT INTO','INSERT IGNORE INTO',$insert_query);
-            $this->db->query($insert_query);
-        }
 
         $roles = [];
         if(isset($data['roles']))
@@ -236,7 +185,6 @@ class User_model extends CI_Model
             $row = $query->row();
             $row->roles = self::get_user_roles($id);
             $row->rights = self::get_user_rights($id);
-            $row->departments = self::get_user_departments($id);
             $row->image_url = $row->image ? base_url().'uploads/users/'.$row->image : '';
             return $row;
         }
@@ -261,7 +209,7 @@ class User_model extends CI_Model
 
 	public function get_profile($id)
 	{
-		$this->db->select('user_id,fullname,firstname,lastname,initial,email,image');
+		$this->db->select('user_id,fullname,firstname,lastname,email,image');
 		$query = $this->db->get_where('users',['user_id'=>$id]);
 		return $query->num_rows() ? $query->row() : false;
 	}
@@ -297,43 +245,6 @@ class User_model extends CI_Model
             $row->roles = self::get_user_roles($row->user_id);
             $row->rights = self::get_user_rights($row->user_id);
             $row->image_url = $row->image ? base_url().'uploads/users/'.$row->image : '';
-            $row->departments = self::get_user_departments($row->user_id);
-            return $row;
-        }
-
-        // try initial and password
-        $query = $this->db->get_where('users',['initial'=>$login['email'], 'password' => md5($login['password'])]);
-        if($query->num_rows())
-        {
-            $row = $query->row();
-            $row->roles = self::get_user_roles($row->user_id);
-            $row->rights = self::get_user_rights($row->user_id);
-            $row->image_url = $row->image ? base_url().'uploads/users/'.$row->image : '';
-            $row->departments = self::get_user_departments($row->user_id);
-            return $row;
-        }
-
-        // try email and pin
-        $query = $this->db->get_where('users',['email'=>$login['email'], 'pin' => $login['password']]);
-        if($query->num_rows())
-        {
-            $row = $query->row();
-            $row->roles = self::get_user_roles($row->user_id);
-            $row->rights = self::get_user_rights($row->user_id);
-            $row->image_url = $row->image ? base_url().'uploads/users/'.$row->image : '';
-            $row->departments = self::get_user_departments($row->user_id);
-            return $row;
-        }
-
-        // try initial and pin
-        $query = $this->db->get_where('users',['initial'=>$login['email'], 'pin' => $login['password']]);
-        if($query->num_rows())
-        {
-            $row = $query->row();
-            $row->roles = self::get_user_roles($row->user_id);
-            $row->rights = self::get_user_rights($row->user_id);
-            $row->image_url = $row->image ? base_url().'uploads/users/'.$row->image : '';
-            $row->departments = self::get_user_departments($row->user_id);
             return $row;
         }
 
@@ -400,18 +311,6 @@ class User_model extends CI_Model
 
     }
 
-    public function get_user_departments($id)
-    {
-        # Fetch departments of this user
-        $query = $this->db->get_where('view_users_departments',['user_id'=>$id]);
-        $departments = [];
-        foreach($query->result() as $row)
-        {
-            $departments[$row->dept_id] = $row->department;
-        }
-        return $departments;
-    }
-
     public function insert_device($user_id,$device_id,$type,$version_number)
     {
         $sql = "INSERT IGNORE INTO users_devices SET user_id=$user_id,device_id='$device_id',type='$type',version='$version_number'";
@@ -428,34 +327,6 @@ class User_model extends CI_Model
                 $this->general_model->sendPushNotificationIOS($row->device_id,$payload);
             }
         }
-    }
-
-    public function get_user_ids_by_dept_id($dept_id)
-    {
-        $ids = [];
-        $this->db->select('user_id');
-        $this->db->where('dept_id',$dept_id);
-        $query = $this->db->get('users_departments');
-        foreach ($query->result() as $row)
-        {
-            $ids[] = $row->user_id;
-        }
-
-        return $ids;
-    }
-
-    public function get_users_ids_by_group_id($group_id)
-    {
-        $ids = [];
-        $this->db->select('user_id');
-        $this->db->where('group_id',$group_id);
-        $query = $this->db->get('stakeholders_point_of_contacts');
-        foreach ($query->result() as $row)
-        {
-            $ids[] = $row->user_id;
-        }
-
-        return $ids;
     }
 }
 

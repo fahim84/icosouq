@@ -65,14 +65,6 @@
                                     <div class="row">&nbsp;</div>
 
                                     <div class="form-group">
-                                        <label>initial</label>
-                                        <input name="initial" type="text" required="required" class="form-control" id="initial" placeholder="Initial" value="<?php echo @$update_data->initial; ?>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>PIN</label>
-                                        <input name="pin" type="password" class="form-control" id="pin" placeholder="PIN" value="<?php echo @$update_data->pin; ?>">
-                                    </div>
-                                    <div class="form-group">
                                         <label>Email</label>
                                         <input name="email" type="email" class="form-control" id="email" placeholder="Email" style="text-transform:none;" value="<?php echo @$update_data->email; ?>">
                                     </div>
@@ -80,16 +72,6 @@
                                     <div class="form-group">
                                         <label>Password</label>
                                         <input name="password" type="password" class="form-control" id="password" placeholder="<?php echo isset($update_data->user_id) ? 'Leave Blank, if don\'t want to change' : 'Password'; ?>" >
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Emp Code</label>
-                                        <input name="emp_code" type="text" class="form-control" id="emp_code" placeholder="Emp Code" value="<?php echo @$update_data->emp_code; ?>">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Designation</label>
-                                        <input name="designation" type="text" class="form-control" id="designation" placeholder="Designation" value="<?php echo @$update_data->designation; ?>">
                                     </div>
 
 
@@ -140,25 +122,6 @@
                                                 {
                                                     ?>
                                                     <option value="<?php echo $row->right_id; ?>" <?php echo @array_key_exists($row->right_id,$user_rights) ? 'selected="selected"' : ''; ?> ><?php echo $row->right; ?></option>
-                                                    <?php
-                                                }
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Departments</label>
-
-                                        <select name="departments[]" multiple="MULTIPLE" class="form-control" id="departments">
-                                            <?php
-                                            if(isset($update_data->user_id))
-                                            {
-                                                $user_departments = $this->user_model->get_user_departments($update_data->user_id);
-                                                foreach($user_departments as $key => $dept)
-                                                {
-                                                    ?>
-                                                    <option value="<?php echo $key; ?>" selected="selected" ><?php echo $dept; ?></option>
                                                     <?php
                                                 }
                                             }
@@ -228,15 +191,6 @@ $(document).ready(function(){
         displayDropdownOnFocus: true,
         placeholder: 'Start typing for adding rights',
         //maxElements: 1,
-        newElements: false
-    });
-
-    $('#departments').tokenize({
-        datas: "<?php echo base_url(); ?>admin/dept/search/",
-        searchParam: 'keyword',
-        displayDropdownOnFocus: true,
-        placeholder: 'Start typing for adding departments',
-        maxElements: 1,
         newElements: false
     });
 

@@ -1,5 +1,5 @@
 <?php
-class Dept_model extends CI_Model
+class Ico_model extends CI_Model
 {
 	function __construct()
 	{
@@ -9,19 +9,18 @@ class Dept_model extends CI_Model
 	public function get($params = [], $count_result = false)
 	{
 		if(isset($params['select'])) { $this->db->select($params['select']); }
-        if(isset($params['dept_id'])) { $this->db->where('dept_id',$params['dept_id']); }
-		if(isset($params['where_in'])) { $this->db->where_in('dept_id',$params['where_in']); }
-		if(isset($params['where_not_in'])) { $this->db->where_not_in('dept_id',$params['where_not_in']); }
+		if(isset($params['where_in'])) { $this->db->where_in('ico_id',$params['where_in']); }
+		if(isset($params['where_not_in'])) { $this->db->where_not_in('ico_id',$params['where_not_in']); }
 
 		if(isset($params['keyword']) and $params['keyword']!='')
 		{
-			$this->db->like('department', $params['keyword']);
+			$this->db->like('ico', $params['keyword']);
 		}
 		
 		# If true, count results and return it
 		if($count_result)
 		{
-			$this->db->from('view_departments');
+			$this->db->from('icos');
 			$count = $this->db->count_all_results();
 			return $count;
 		}
@@ -29,7 +28,7 @@ class Dept_model extends CI_Model
 		if(isset($params['limit'])) { $this->db->limit($params['limit'], $params['offset']); }
 		if(isset($params['order_by'])){ $this->db->order_by($params['order_by'],$params['direction']); }
 		
-		$query = $this->db->get('view_departments');
+		$query = $this->db->get('icos');
 		//my_var_dump($this->db->last_query());
 		return $query;
 		
@@ -37,52 +36,56 @@ class Dept_model extends CI_Model
 	
 	public function insert($data)
 	{
-		if($this->db->insert('departments', $data))
+        $data['date_created'] = date('Y-m-d H:i:s');
+        $data['date_updated'] = date('Y-m-d H:i:s');
+
+		if($this->db->insert('icos', $data))
 		{
             //my_var_dump($this->db->last_query());
 			$id =  $this->db->insert_id();
 
             return $id;
 		}
-        //my_var_dump($this->db->last_query());
 		return false;
 	}
 
 	public function update($id,$data)
 	{
-		$this->db->where('dept_id', $id);
-		return $this->db->update('departments',$data);
+        $data['date_updated'] = date('Y-m-d H:i:s');
+
+		$this->db->where('ico_id', $id);
+		return $this->db->update('icos',$data);
 		//my_var_dump($this->db->last_query());
 	}
 	
 	public function delete($id)
 	{
-        $entity = self::get_department_by_id($id);
+        $entity = self::get_ico_by_id($id);
         if($entity->image != '')
         {
-            $upload_path = './uploads/departments/';
+            $upload_path = './uploads/icos/';
             delete_file($upload_path.$entity->image);
             $_SESSION['msg_error'][] = $entity->image.' file deleted!';
         }
-		return $this->db->delete('departments', ['dept_id' => $id]);
+		return $this->db->delete('icos', ['ico_id' => $id]);
 	}
 
-	public function get_department_by_id($id)
+	public function get_ico_by_id($id)
 	{
-		$query = $this->db->get_where('departments',['dept_id'=>$id]);
+		$query = $this->db->get_where('icos',['ico_id'=>$id]);
         if($query->num_rows())
         {
             $row = $query->row();
-            $row->image_url = $row->image ? base_url().'uploads/departments/'.$row->image : '';
+            $row->image_url = $row->image ? base_url().'uploads/icos/'.$row->image : '';
             return $row;
         }
 		return false;
 	}
 
-	public function department_already_exists($department, $id=false)
+	public function ico_already_exists($ico, $id=false)
 	{
-		if($id > 0) $this->db->where('dept_id !=',$id);
-		$query = $this->db->get_where('departments',['department'=>$department]);
+		if($id > 0) $this->db->where('ico_id !=',$id);
+		$query = $this->db->get_where('icos',['ico'=>$ico]);
 		return $query->num_rows() ? $query->row() : false;
 	}
 }
