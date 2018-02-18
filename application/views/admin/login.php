@@ -78,7 +78,7 @@
                         Sign in to your account
                     </legend>
                     <p>
-                        Please enter your name and password to log in.
+                        Please enter your email and password to log in.
                     </p>
                     <div class="form-group">
 								<span class="input-icon">
