@@ -81,7 +81,8 @@
                 <?php foreach($rows->result() as $row)
                 {
                     $image_url = $row->image == '' ? base_url().'uploads/icos/placeholder.png' : base_url().'uploads/icos/'.$row->image;
-                    $image = base_url()."thumb.php?src=".$image_url."&w=100&h=100";
+                    $image = base_url()."thumb.php?src=".$image_url."&w=150&h=150";
+
 
                     ?>
                     <tr>
@@ -93,8 +94,8 @@
                         <td>
                             <h4><?php echo $row->token_code; ?></h4>
                             <p>
-                                <?php echo date('d-m-Y',strtotime($row->start_date)); ?>
-                                | <?php echo date('d-m-Y',strtotime($row->end_date)); ?>
+                                <?php echo date('d-m-Y h:i a',strtotime($row->start_date)); ?>
+                                | <?php echo date('d-m-Y h:i a',strtotime($row->end_date)); ?>
                             </p>
                         </td>
                         <td>

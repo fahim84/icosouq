@@ -1,5 +1,8 @@
 <?php $this->load->view('admin/header',$this->data); ?>
 
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery-ui-timepicker-addon.css">
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-ui-timepicker-addon.js"></script>
+
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/Tokenize-2.5.2/jquery.tokenize.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/Tokenize-2.5.2/jquery.tokenize.css" />
 
@@ -46,22 +49,32 @@
 
                 <div class="form-group">
                     <label>ICO Code</label>
-                    <input name="token_code" type="text" class="form-control" id="token_code" placeholder="Code" value="<?php echo @$update_data->token_code; ?>">
+                    <input name="token_code" type="text" required class="form-control" id="token_code" placeholder="Code" value="<?php echo @$update_data->token_code; ?>">
                 </div>
 
                 <div class="form-group">
                     <label>Description</label>
-                    <textarea name="description" rows="3" class="form-control" id="description" placeholder="Description"><?php echo @$update_data->description; ?></textarea>
+                    <textarea name="description" rows="3" required class="form-control" id="description" placeholder="Description"><?php echo @$update_data->description; ?></textarea>
                 </div>
 
                 <div class="form-group">
                     <label>Start Date</label>
-                    <input name="start_date" type="text" class="form-control" id="start_date" placeholder="DD-MM-YYYY" value="<?php echo @$update_data->start_date ? date('d-m-Y',strtotime($update_data->start_date)) : ''; ?>" style="cursor:pointer;" readonly>
+                    <input name="start_date" type="text" required class="form-control" id="start_date" placeholder="DD-MM-YYYY" value="<?php echo @$update_data->start_date ? date('d-m-Y',strtotime($update_data->start_date)) : ''; ?>" style="cursor:pointer;" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Start Time</label>
+                    <input name="start_time" type="text" required class="form-control" id="start_time" value="<?php echo @$update_data->start_date ? date('h:i a',strtotime($update_data->start_date)) : ''; ?>" style="cursor:pointer;" readonly>
                 </div>
 
                 <div class="form-group">
                     <label>End Date</label>
-                    <input name="end_date" type="text" class="form-control" id="end_date" placeholder="DD-MM-YYYY" value="<?php echo @$update_data->end_date ? date('d-m-Y',strtotime($update_data->end_date)) : ''; ?>" style="cursor:pointer;" readonly>
+                    <input name="end_date" type="text" required class="form-control" id="end_date" placeholder="DD-MM-YYYY" value="<?php echo @$update_data->end_date ? date('d-m-Y',strtotime($update_data->end_date)) : ''; ?>" style="cursor:pointer;" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>End Time</label>
+                    <input name="end_time" type="text" required class="form-control" id="end_time" value="<?php echo @$update_data->end_date ? date('h:i a',strtotime($update_data->end_date)) : ''; ?>" style="cursor:pointer;" readonly>
                 </div>
 
                 <div class="form-group">
@@ -135,6 +148,9 @@ $(document).ready(function(){
             $("#start_date").datepicker("option","maxDate", selected)
         }
     });
+
+    $('#start_time').timepicker({ 'timeFormat': 'hh:mm tt','stepMinute': 5,controlType: 'select',oneLine: true });
+    $('#end_time').timepicker({ 'timeFormat': 'hh:mm tt','stepMinute': 5,controlType: 'select',oneLine: true });
 
 });
 </script>

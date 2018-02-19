@@ -145,11 +145,13 @@ class Ico extends CI_Controller {
 
                 if(isset($get_post['start_date']) and $get_post['start_date'])
                 {
-                    $get_post['start_date'] = date('Y-m-d',strtotime($get_post['start_date']));
+                    $get_post['start_date'] = date('Y-m-d H:i:s',strtotime($get_post['start_date'].' '.$get_post['start_time']));
+                    unset($get_post['start_time']);
                 }
                 if(isset($get_post['end_date']) and $get_post['end_date'])
                 {
-                    $get_post['end_date'] = date('Y-m-d',strtotime($get_post['end_date']));
+                    $get_post['end_date'] = date('Y-m-d H:i:s',strtotime($get_post['end_date'].' '.$get_post['end_time']));
+                    unset($get_post['end_time']);
                 }
 
 				if($id > 0) // update
