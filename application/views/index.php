@@ -119,7 +119,7 @@
 
                 ?>
             <tr>
-                <td style='cursor:pointer;' onclick="window.location = 'ico/syncfab';">
+                <td style='cursor:pointer;' onclick="window.location = '<?php echo base_url(); ?>welcome/detail?ico_id=<?php echo $row->ico_id; ?>';">
                     <div class="row" style='position:relative;'>
 
                         <div class='db logo-div col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2'>
