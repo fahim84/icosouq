@@ -124,7 +124,7 @@
 
                         <div class='db logo-div col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2'>
                             <div style='margin:5px 15px;'>
-                                <a href='ico/syncfab' style='text-decoration: none;'>
+                                <a title="<?php echo $row->ico; ?>" href='ico/syncfab' style='text-decoration: none;'>
                                     <img src='<?php echo $image_url; ?>' class='project-logo' alt='<?php echo $row->ico; ?>'>
                                     <p style='text-align:center;'>
                                         <span style='font-size:9px;color:#00c170;text-transform:uppercase;font-weight:600;padding:2px;border: 1px solid #00c06d;background-color: #c4ffe8;'><?php echo $row->token_code; ?></span>
