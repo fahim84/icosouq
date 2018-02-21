@@ -36,3 +36,60 @@
 
 
 <body>
+<div class="container">
+
+    <div class="row" style='position:fixed;top:0px;background-color:#fefefe;z-index:100000;width:100%;max-width:1170px;border-bottom:1px gray solid;'>
+
+        <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/icosouq/images/logo3.png' style='width:120px;float:left;' alt='ICO Watch List' title='ICO Watch List'></a>
+
+        <div class='main-menu'>
+            <div class='menu-icon'><img src='<?php echo base_url(); ?>assets/icosouq/images/menu.png'></div>
+            <div class="menu-box">
+                <a href='<?php echo base_url(); ?>?listing=live'><p class='menu-link'>Live ICO List</p></a>
+                <a href='<?php echo base_url(); ?>?listing=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
+            </div>
+
+            <div class="share-box">
+                <div class="addthis_inline_share_toolbox"></div>
+            </div>
+        </div>
+
+
+        <div class='menu-link-header'>
+            <a href='#'>العربية</a>
+        </div>
+        <div class='menu-link-header'>
+            <a href='#'>NEWS</a>
+        </div>
+        <div class='menu-link-header'>
+            <a href='<?php echo base_url(); ?>'>ICO LIST</a>
+        </div>
+
+    </div>
+
+
+    <div class="row" style='margin-top:80px;padding:10px;'>
+        <p>
+        <h1 class='h1-title'>Welcome to the ICO</h1>
+        ICO Souq is the Middle East’s leading destination for crypto insights with analysis and ratings on Initial Coin Offerings. Our portfolio is updated daily and available in English or Arabic.
+        Get in touch with us for a concierge investment service or to promote your ICO.
+        </p>
+    </div>
+
+    <div class="row">
+
+        <div class='table-tabs'>
+            <a href='<?php echo base_url(); ?>?listing=live'>
+                <div class='tab <?php echo $listing=='live' ? 'selected-tab' : ''; ?>'>
+                    LIVE ICOs
+                </div>
+            </a>
+
+            <a href='<?php echo base_url(); ?>?listing=upcoming'>
+                <div class='tab <?php echo $listing=='upcoming' ? 'selected-tab' : ''; ?>'>
+                    UPCOMING ICOs
+                </div>
+            </a>
+        </div>
+
+    </div>

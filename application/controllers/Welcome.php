@@ -7,6 +7,7 @@ class Welcome extends CI_Controller {
 
     public function index()
     {
+        $listing = $this->input->get_post('listing') ? $this->input->get_post('listing') : 'live';
         $order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'ico';
         $direction = $this->input->get_post('direction') ? $this->input->get_post('direction') : 'ASC';
 
@@ -27,6 +28,7 @@ class Welcome extends CI_Controller {
         $query_params['offset'] = $offset;
         $query_params['order_by'] = $order_by;
         $query_params['direction'] = $direction;
+        $query_params['listing'] = $listing;
 
         $total_rows = $this->ico_model->get($query_params,true);
         $rows = $this->ico_model->get($query_params);
@@ -34,6 +36,7 @@ class Welcome extends CI_Controller {
         # array for pagination query string
         $qstr['order_by'] = $order_by;
         $qstr['direction'] = $direction;
+        $qstr['listing'] = $listing;
         if($keyword) $qstr['keyword'] = $keyword;
 
         $page_query_string = '?'.http_build_query($qstr);
@@ -45,14 +48,13 @@ class Welcome extends CI_Controller {
         $this->data['pagination_links'] = $this->pagination->create_links();
         // Paination code end
 
-        $this->data['keyword'] = $keyword;
+        $this->data['listing'] = $listing;
         $this->data['order_by'] = $order_by;
         $this->data['direction'] = $direction;
         $this->data['total_rows'] = $total_rows;
         $this->data['rows'] = $rows;
 
-        $this->data['selected_page'] = 'ico';
-        $this->load->view('index', $this->data);
+        $this->load->view($listing, $this->data);
     }
 
     public function detail()

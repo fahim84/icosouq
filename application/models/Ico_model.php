@@ -12,6 +12,16 @@ class Ico_model extends CI_Model
 		if(isset($params['where_in'])) { $this->db->where_in('ico_id',$params['where_in']); }
 		if(isset($params['where_not_in'])) { $this->db->where_not_in('ico_id',$params['where_not_in']); }
 
+        if(isset($params['listing']) and $params['listing']=='live')
+        {
+            $this->db->where('start_date <=', date('Y-m-d H:i:s'));
+            $this->db->where('end_date >=', date('Y-m-d H:i:s'));
+        }
+        if(isset($params['listing']) and $params['listing']=='upcoming')
+        {
+            $this->db->where('start_date >=', date('Y-m-d H:i:s'));
+        }
+
 		if(isset($params['keyword']) and $params['keyword']!='')
 		{
 			$this->db->like('ico', $params['keyword']);
