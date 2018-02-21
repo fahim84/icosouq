@@ -967,13 +967,13 @@
             <p class='footer-menu-link'><a href='https://www.facebook.com/icowatchlist/' target='_blank'><span class='footer-menu-link'>Facebook</a></p>
             <p class='footer-menu-link'><a href='https://t.me/joinchat/FrpyWkHXf62SVjzPrYwUJw'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>
         </div>
-        <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
+        <!--<div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
             <h4 class='footer-title'>Developers</h4>
             <p class='footer-menu-link'><a href='tools/sticker'>Stickers</a></p>
             <p class='footer-menu-link'><a href='tools/widget'><span class='footer-menu-link'>ICO List Widget</a></p>
             <p class='footer-menu-link'><a href='tools/stats-widget'><span class='footer-menu-link'>ICO Stats Widgets</a></p>
             <p class='footer-menu-link'><a href='tools/api'><span class='footer-menu-link'>API</a></p>
-        </div>
+        </div>-->
         <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
             <h4 class='footer-title'>Legal</h4>
             <p class='footer-menu-link'><a href='disclaimer'><span class='footer-menu-link'>Disclaimer</a></p>
