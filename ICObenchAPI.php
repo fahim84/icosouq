@@ -65,10 +65,10 @@ class ICObenchAPI {
 $api = new ICObenchAPI();
 $api->getICOs("all");
 echo '<pre>';
-echo $api->result;
+print_r(json_decode($api->result));
 echo '</pre>';
 
-// PHP Example - Go to page 2 of all ICOs list
+/*// PHP Example - Go to page 2 of all ICOs list
 $api = new ICObenchAPI();
 $api->getICOs('all',['page'=>2]);
 
@@ -84,4 +84,4 @@ echo $api->result;
 $api = new ICObenchAPI();
 $api->getICO(472);
 
-echo $api->result;
+echo $api->result;*/
