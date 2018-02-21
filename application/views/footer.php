@@ -1,3 +1,10 @@
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7907131595166194",
+        enable_page_level_ads: true
+    });
+</script>
 
 <div class='row footer-div footer-center'>
     <a href='https://twitter.com/icowatchlist' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/twitter.jpg' style='margin:10px;' border='0'></a>
