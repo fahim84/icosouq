@@ -45,8 +45,8 @@
         <div class='main-menu'>
             <div class='menu-icon'><img src='<?php echo base_url(); ?>assets/icosouq/images/menu.png'></div>
             <div class="menu-box">
-                <a href='<?php echo base_url(); ?>?listing=live'><p class='menu-link'>Live ICO List</p></a>
-                <a href='<?php echo base_url(); ?>?listing=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
+                <a href='<?php echo base_url(); ?>?status=ongoing'><p class='menu-link'>Live ICO List</p></a>
+                <a href='<?php echo base_url(); ?>?status=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
             </div>
 
             <div class="share-box">
@@ -79,14 +79,14 @@
     <div class="row">
 
         <div class='table-tabs'>
-            <a href='<?php echo base_url(); ?>?listing=live'>
-                <div class='tab <?php echo $listing=='live' ? 'selected-tab' : ''; ?>'>
+            <a href='<?php echo base_url(); ?>?status=ongoing'>
+                <div class='tab <?php echo $status=='ongoing' ? 'selected-tab' : ''; ?>'>
                     LIVE ICOs
                 </div>
             </a>
 
-            <a href='<?php echo base_url(); ?>?listing=upcoming'>
-                <div class='tab <?php echo $listing=='upcoming' ? 'selected-tab' : ''; ?>'>
+            <a href='<?php echo base_url(); ?>?status=upcoming'>
+                <div class='tab <?php echo $status=='upcoming' ? 'selected-tab' : ''; ?>'>
                     UPCOMING ICOs
                 </div>
             </a>

@@ -61,14 +61,14 @@ class ICObenchAPI {
     }
 }
 
-// PHP Example - Show all ICOs list
+/*// PHP Example - Show all ICOs list
 $api = new ICObenchAPI();
 $api->getICOs("all");
 echo '<pre>';
 print_r(json_decode($api->result));
 echo '</pre>';
 
-/*// PHP Example - Go to page 2 of all ICOs list
+// PHP Example - Go to page 2 of all ICOs list
 $api = new ICObenchAPI();
 $api->getICOs('all',['page'=>2]);
 

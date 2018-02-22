@@ -76,6 +76,8 @@ else
     $config['last_tagl_close'] = "</li>";
     //$config['prev_link'] = '<i class="ti-angle-left"></i>';
     //$config['next_link'] = '<i class="ti-angle-right"></i>';
+    $config['use_page_numbers'] = TRUE;
+    $config['query_string_segment'] = 'page';
     $config['page_query_string'] = TRUE;
     $config['uri_segment'] = 3;
     $config['num_links'] = 2;
