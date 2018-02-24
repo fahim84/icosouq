@@ -26,7 +26,7 @@
                 $end_date = $row->dates->icoEnd == '0000-00-00 00:00:00' ? $row->dates->preIcoEnd : $row->dates->icoEnd;
 
                 $date = date("j F Y",strtotime($start_date));
-                $time = date("H:i",strtotime($end_date));
+                $time = date("H:i",strtotime($start_date));
 
                 ?>
             <tr>

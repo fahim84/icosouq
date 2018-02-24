@@ -101,7 +101,14 @@ class Welcome extends CI_Controller {
 
     public function detail()
     {
-        $this->data['keyword'] = 'keyword';
+        $id = $this->input->get_post('id');
+        $api = new ICObenchAPI();
+        $api->getICO($id);
+
+        $api_response = json_decode($api->result);
+
+        $this->data['id'] = $id;
+        $this->data['api_response'] = $api_response;
         $this->load->view('detail',$this->data);
     }
 
@@ -109,7 +116,7 @@ class Welcome extends CI_Controller {
     {
         // PHP Example - Show all ICOs list
         $api = new ICObenchAPI();
-        $api->getICOs("all",["status"=>"upcoming",'page'=>0]);
+        $api->getICO(1629);
         echo '<pre>';
         my_var_dump(json_decode($api->result));
         echo '</pre>';
