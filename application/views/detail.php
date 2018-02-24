@@ -131,7 +131,7 @@
                                 $time = date("H:i",strtotime($start_date));
 
                                 ?>
-                                <div class="number">Date: <b><?php echo $date; ?></b> Time: <b><?php echo $time; ?></b></div>
+                                <div class="number">Date: <b><?php echo $date; ?></b><br> Time: <b><?php echo $time; ?></b></div>
                             <?php
                             }
                             else
@@ -166,6 +166,7 @@
                     </div>
                     <?php }} ?>
 
+                    <?php if($api_response->country){ ?>
                     <div class="data_row">
                         <div class="col_2">
                             Country
@@ -173,7 +174,9 @@
                         <div class="col_2">
                             <b><a href="<?php echo base_url(); ?>icos?filterCountry=<?php echo $api_response->country; ?>" title="ICOs from <?php echo $api_response->country; ?>"><?php echo $api_response->country; ?></a></b>
                         </div>
-                    </div><div class="data_row">
+                    </div>
+                    <?php } ?>
+                    <div class="data_row">
                         <div class="col_2">
                             <?php echo $api_response->registration; ?>
                         </div>

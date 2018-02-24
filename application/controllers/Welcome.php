@@ -116,7 +116,7 @@ class Welcome extends CI_Controller {
     {
         // PHP Example - Show all ICOs list
         $api = new ICObenchAPI();
-        $api->getICO(1364);
+        $api->getICO(2101);
         echo '<pre>';
         my_var_dump(json_decode($api->result));
         echo '</pre>';
