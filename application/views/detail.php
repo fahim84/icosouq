@@ -327,7 +327,7 @@
                             Restricted areas
                         </div>
                         <div class="col_2">
-                            <b><?php echo $api_response->restrictions[0]->country; ?></b>
+                            <b><?php echo implode(', ',$api_response->restrictions); ?></b>
                         </div>
                     </div>
                     <?php } ?>
