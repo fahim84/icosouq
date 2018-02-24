@@ -320,14 +320,17 @@
                             <?php echo $api_response->registration; ?>
                         </div>
                         <div class="col_2"><b><?php echo $api_response->registration; ?></b></div>
-                    </div><div class="data_row">
+                    </div>
+                    <?php if(count($api_response->restrictions)){ ?>
+                    <div class="data_row">
                         <div class="col_2">
                             Restricted areas
                         </div>
                         <div class="col_2">
-                            <b>USA</b>
+                            <b><?php echo $api_response->restrictions[0]->country; ?></b>
                         </div>
                     </div>
+                    <?php } ?>
                     <div class="divider"></div>
                     <a onclick="ga('send', 'event', 'ICOprofile', 'More on ICO', 'Friendz');" rel="nofollow" href="<?php echo $api_response->links->www; ?>?utm_source=icobench" target="_blank" class="button_big">More on ICO</a>
                 </div>
