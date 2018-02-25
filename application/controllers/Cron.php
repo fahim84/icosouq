@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+require_once(APPPATH . 'libraries/ICObenchAPI.php');
+
 class Cron extends CI_Controller {
 	
 	public function __construct()
@@ -8,4 +10,131 @@ class Cron extends CI_Controller {
 	}
 	
 
+	public function icobench()
+    {
+        $status = $this->input->get_post('status') ? $this->input->get_post('status') : 'ongoing';
+
+        $query_params['status'] = $status;
+        $query_params['orderDesc'] = "rating";
+        # Pagination Code
+        $page	=	$this->input->get_post('page')!==NULL ? $this->input->get_post('page') : 1;
+        $query_params['page'] = $page-1; // less 1 because api page start from zero
+
+        if ($this->uri->segment(4)) { $limit = $this->uri->segment(4); }else{ $limit = 12; }
+
+        $api = new ICObenchAPI();
+        $api->getICOs("all",$query_params);
+
+        $api_response = json_decode($api->result);
+
+        $total_rows = $api_response->icos;
+        $rows = $api_response->results;
+
+        foreach ($rows as $row)
+        {
+            $sql_data['id'] = $row->id;
+            $sql_data['name'] = $row->name;
+            $sql_data['url'] = $row->url;
+            $sql_data['logo'] = $row->logo;
+            $sql_data['desc'] = $row->desc;
+            $sql_data['rating'] = $row->rating;
+            $sql_data['premium'] = $row->premium;
+            $sql_data['raised'] = $row->raised;
+            $sql_data['preIcoStart'] = $row->dates->preIcoStart;
+            $sql_data['preIcoEnd'] = $row->dates->preIcoEnd;
+            $sql_data['icoStart'] = $row->dates->icoStart == '0000-00-00 00:00:00' ? $row->dates->preIcoStart : $row->dates->icoStart;
+            $sql_data['icoEnd'] = $row->dates->icoEnd == '0000-00-00 00:00:00' ? $row->dates->preIcoEnd : $row->dates->icoEnd;
+            $sql_data['status'] = 1;
+
+            my_var_dump($sql_data);
+            $insert_query = $this->db->insert_string('icos', $sql_data);
+            $insert_query = str_replace('INSERT INTO','INSERT IGNORE INTO',$insert_query);
+            $this->db->query($insert_query);
+            if($id = $this->db->insert_id())
+            {
+                $api = new ICObenchAPI();
+                $api->getICO($row->id);
+                $detail = $api->result;
+
+                $this->db->where('id',$id);
+                $this->db->update('icos',['detail'=>$detail]);
+            }
+        }
+        # array for pagination query string
+        $qstr['status'] = $status;
+
+        $page_query_string = '?'.http_build_query($qstr);
+        $config['base_url'] = base_url('welcome/index/'.$page_query_string);
+        $config['total_rows'] = $total_rows;
+        $config['per_page'] = $limit;
+
+        $this->pagination->initialize($config);
+        $this->data['pagination_links'] = $this->pagination->create_links();
+        // Paination code end
+
+        //echo $this->data['pagination_links'];
+
+        if($status == 'ongoing' and count($rows) < 12)
+        {
+            $page = 0;
+            $status = 'upcoming';
+            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
+            ?>
+            <script>
+                window.location.href = "<?php echo $url; ?>";
+            </script>
+            <?php
+        }
+        if($status == 'upcoming' and count($rows) < 12)
+        {
+            // finish cron job
+            my_var_dump('cron job finished on page '.$page);
+            exit;
+        }
+
+        if($page < 5 and $status == 'ongoing')
+        {
+            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
+            //redirect($url,'refresh');
+            ?>
+            <script>
+                window.location.href = "<?php echo $url; ?>";
+            </script>
+            <?php
+        }
+        elseif($page == 5 and $status == 'ongoing')
+        {
+            $page = 0;
+            $status = 'upcoming';
+            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
+            //redirect($url,'refresh');
+            ?>
+            <script>
+                window.location.href = "<?php echo $url; ?>";
+            </script>
+            <?php
+        }
+        if($page < 5 and $status == 'upcoming')
+        {
+            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
+            //redirect($url,'refresh');
+            ?>
+            <script>
+                window.location.href = "<?php echo $url; ?>";
+            </script>
+            <?php
+        }
+        else
+        {
+            my_var_dump('cron job finished on page '.$page);
+        }
+    }
 }

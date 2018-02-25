@@ -54,7 +54,7 @@
             <input type="hidden" name="order_by" id="order_by" value="<?php echo $order_by; ?>" >
             <input type="hidden" name="direction" id="direction" value="<?php echo $direction; ?>" >
         </form>
-        <a href="<?php echo base_url(); ?>admin/ico/update" class="btn btn-wide btn-warning pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Add</a>
+        <!--<a href="<?php /*echo base_url(); */?>admin/ico/update" class="btn btn-wide btn-warning pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Add</a>-->
 
         <script>
             $('#order_by, #direction').change(function(e) {
@@ -69,10 +69,9 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Image</th>
+                    <th width="100">Image</th>
                     <th width="400">Name / Description</th>
-                    <th>Code / Date</th>
-                    <th>Status</th>
+                    <th>Date / Time</th>
                     <th>Options</th>
                 </tr>
                 </thead>
@@ -80,33 +79,36 @@
 
                 <?php foreach($rows->result() as $row)
                 {
-                    $image_url = $row->image == '' ? base_url().'uploads/icos/placeholder.png' : base_url().'uploads/icos/'.$row->image;
-                    $image = base_url()."thumb.php?src=".$image_url."&w=150&h=150";
-
-
                     ?>
                     <tr>
-                        <td><img src="<?php echo $image; ?>" class="img-rounded" alt="image"/></td>
                         <td>
-                            <h3><?php echo $row->ico; ?></h3>
-                            <p><?php echo $row->description; ?></p>
+                            <img src="<?php echo $row->logo; ?>" class="img-rounded" alt="image"/>
+                            <div align="center">ICO Rate: <?php echo $row->rating; ?></div>
                         </td>
                         <td>
-                            <h4><?php echo $row->token_code; ?></h4>
-                            <p>
-                                <?php echo date('d-m-Y h:i a',strtotime($row->start_date)); ?>
-                                | <?php echo date('d-m-Y h:i a',strtotime($row->end_date)); ?>
-                            </p>
+                            <h3><?php echo $row->name; ?></h3>
+                            <p><?php echo $row->desc; ?></p>
+
+                            <!--<div>preIcoStart: <?php /*echo $row->preIcoStart; */?></div>
+                            <div>preIcoEnd: <?php /*echo $row->preIcoEnd; */?></div>-->
+                            <h4><?php echo $row->icoStart; ?></h4>
+                            <h4><?php echo $row->icoEnd; ?></h4>
                         </td>
                         <td>
-                            <?php //echo $row->status == '1' ? 'Active':'Inactive'; ?>
+                            <h4>Hype Rate: <?php echo $row->hype_rate; ?></h4>
+                            <h4>Risk Rate: <?php echo $row->risk_rate; ?></h4>
+                            <h4>ROI Rate: <?php echo $row->roi_rate; ?></h4>
+                            <h4>SOUC Rate: <?php echo $row->ico_souq_rate; ?></h4>
+
+
+                        </td>
+
+                        <td>
                             <div class="checkbox">
-                                <input id="<?php echo $row->ico_id; ?>" value="<?php echo $row->ico_id; ?>" type="checkbox" class="js-switch" <?php echo $row->status ? 'checked' : ''; ?> />
+                                <input id="<?php echo $row->id; ?>" value="<?php echo $row->id; ?>" type="checkbox" class="js-switch" <?php echo $row->status ? 'checked' : ''; ?> />
                             </div>
-                        </td>
-                        <td>
-                            <a href="<?php echo base_url(); ?>admin/ico/update/?id=<?php echo $row->ico_id; ?>" class="btn btn-transparent btn-xs"><i class="fa fa-pencil"></i> Edit</a>
-                            <a href="#_" id="<?php echo $row->ico_id; ?>" class="btn btn-transparent btn-xs tooltips delete_button" data-toggle="modal" data-target="#DeleteModal" ><i class="fa fa-times fa fa-white"></i> Delete</a>
+                            <a href="<?php echo base_url(); ?>admin/ico/update/?id=<?php echo $row->id; ?>" class="btn btn-transparent btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                            <a href="#_" id="<?php echo $row->id; ?>" class="btn btn-transparent btn-xs tooltips delete_button" data-toggle="modal" data-target="#DeleteModal" ><i class="fa fa-times fa fa-white"></i> Delete</a>
                         </td>
                     </tr>
                 <?php } ?>

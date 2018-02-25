@@ -17,8 +17,8 @@ class Ico extends CI_Controller {
 	
 	public function index()
 	{
-		$order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'ico';
-		$direction = $this->input->get_post('direction') ? $this->input->get_post('direction') : 'ASC';
+		$order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'rating';
+		$direction = $this->input->get_post('direction') ? $this->input->get_post('direction') : 'DESC';
 		
 		$keyword = $this->input->get_post('keyword');
 
@@ -29,7 +29,7 @@ class Ico extends CI_Controller {
 			$offset = 0;
 		}
 
-		if ($this->uri->segment(4)) { $limit = $this->uri->segment(4); }else{ $limit = 10; }
+		if ($this->uri->segment(4)) { $limit = $this->uri->segment(4); }else{ $limit = 50; }
 		
 		if($keyword != '') $query_params['keyword'] = $keyword;
 
@@ -70,7 +70,7 @@ class Ico extends CI_Controller {
 		$id = $this->input->get_post('id');
 
 		// Set the validation rules
-		$this->form_validation->set_rules('ico', 'ICO', 'required|trim');
+		$this->form_validation->set_rules('id', 'ID', 'required|trim');
 
 		// If the validation worked
 		if ($this->form_validation->run())

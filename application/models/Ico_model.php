@@ -9,22 +9,21 @@ class Ico_model extends CI_Model
 	public function get($params = [], $count_result = false)
 	{
 		if(isset($params['select'])) { $this->db->select($params['select']); }
-		if(isset($params['where_in'])) { $this->db->where_in('ico_id',$params['where_in']); }
-		if(isset($params['where_not_in'])) { $this->db->where_not_in('ico_id',$params['where_not_in']); }
+		if(isset($params['status'])) { $this->db->where('status',$params['status']); }
 
         if(isset($params['listing']) and $params['listing']=='live')
         {
-            $this->db->where('start_date <=', date('Y-m-d H:i:s'));
-            $this->db->where('end_date >=', date('Y-m-d H:i:s'));
+            $this->db->where('icoStart <=', date('Y-m-d H:i:s'));
+            $this->db->where('icoEnd >=', date('Y-m-d H:i:s'));
         }
         if(isset($params['listing']) and $params['listing']=='upcoming')
         {
-            $this->db->where('start_date >=', date('Y-m-d H:i:s'));
+            $this->db->where('icoStart >=', date('Y-m-d H:i:s'));
         }
 
 		if(isset($params['keyword']) and $params['keyword']!='')
 		{
-			$this->db->like('ico', $params['keyword']);
+			$this->db->like('name', $params['keyword']);
 		}
 		
 		# If true, count results and return it
@@ -46,9 +45,6 @@ class Ico_model extends CI_Model
 	
 	public function insert($data)
 	{
-        $data['date_created'] = date('Y-m-d H:i:s');
-        $data['date_updated'] = date('Y-m-d H:i:s');
-
 		if($this->db->insert('icos', $data))
 		{
             //my_var_dump($this->db->last_query());
@@ -61,41 +57,31 @@ class Ico_model extends CI_Model
 
 	public function update($id,$data)
 	{
-        $data['date_updated'] = date('Y-m-d H:i:s');
-
-		$this->db->where('ico_id', $id);
+		$this->db->where('id', $id);
 		return $this->db->update('icos',$data);
 		//my_var_dump($this->db->last_query());
 	}
 	
 	public function delete($id)
 	{
-        $entity = self::get_ico_by_id($id);
-        if($entity->image != '')
-        {
-            $upload_path = './uploads/icos/';
-            delete_file($upload_path.$entity->image);
-            $_SESSION['msg_error'][] = $entity->image.' file deleted!';
-        }
-		return $this->db->delete('icos', ['ico_id' => $id]);
+		return $this->db->delete('icos', ['id' => $id]);
 	}
 
 	public function get_ico_by_id($id)
 	{
-		$query = $this->db->get_where('icos',['ico_id'=>$id]);
+		$query = $this->db->get_where('icos',['id'=>$id]);
         if($query->num_rows())
         {
             $row = $query->row();
-            $row->image_url = $row->image ? base_url().'uploads/icos/'.$row->image : '';
             return $row;
         }
 		return false;
 	}
 
-	public function ico_already_exists($ico, $id=false)
+	public function ico_already_exists($name, $id=false)
 	{
-		if($id > 0) $this->db->where('ico_id !=',$id);
-		$query = $this->db->get_where('icos',['ico'=>$ico]);
+		if($id > 0) $this->db->where('id !=',$id);
+		$query = $this->db->get_where('icos',['name'=>$name]);
 		return $query->num_rows() ? $query->row() : false;
 	}
 }

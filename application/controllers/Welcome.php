@@ -64,7 +64,7 @@ class Welcome extends CI_Controller {
         $status = $this->input->get_post('status') ? $this->input->get_post('status') : 'ongoing';
 
         $query_params['status'] = $status;
-
+        $query_params['orderDesc'] = "rating";
         # Pagination Code
         $page	=	$this->input->get_post('page')!==NULL ? $this->input->get_post('page') : 1;
         $query_params['page'] = $page-1; // less 1 because api page start from zero
