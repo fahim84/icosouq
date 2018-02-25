@@ -71,7 +71,7 @@
 
 
     <div class="row" style='margin-top:80px;padding:10px;'>
-        <div id="google_translate_element"></div><script type="text/javascript">
+        <div id="google_translate_element" align="right"></div><script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
             }
