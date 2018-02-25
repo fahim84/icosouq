@@ -42,13 +42,13 @@
 
     <div class="row" style='position:fixed;top:0px;background-color:#fefefe;z-index:100000;width:100%;max-width:1170px;border-bottom:1px gray solid;'>
 
-        <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/icosouq/images/logo3.png' style='width:120px;float:left;' alt='ICO Watch List' title='ICO Watch List'></a>
+        <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
 
         <div class='main-menu'>
             <div class='menu-icon'><img src='<?php echo base_url(); ?>assets/icosouq/images/menu.png'></div>
             <div class="menu-box">
-                <a href='<?php echo base_url(); ?>?status=ongoing'><p class='menu-link'>Live ICO List</p></a>
-                <a href='<?php echo base_url(); ?>?status=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
+                <a href='<?php echo base_url(); ?>?listing=ongoing'><p class='menu-link'>Live ICO List</p></a>
+                <a href='<?php echo base_url(); ?>?listing=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
             </div>
 
             <div class="share-box">
@@ -87,14 +87,14 @@
     <div class="row">
 
         <div class='table-tabs'>
-            <a href='<?php echo base_url(); ?>?status=ongoing'>
-                <div class='tab <?php echo $status=='ongoing' ? 'selected-tab' : ''; ?>'>
+            <a href='<?php echo base_url(); ?>?listing=ongoing'>
+                <div class='tab <?php echo $listing=='ongoing' ? 'selected-tab' : ''; ?>'>
                     LIVE ICOs
                 </div>
             </a>
 
-            <a href='<?php echo base_url(); ?>?status=upcoming'>
-                <div class='tab <?php echo $status=='upcoming' ? 'selected-tab' : ''; ?>'>
+            <a href='<?php echo base_url(); ?>?listing=upcoming'>
+                <div class='tab <?php echo $listing=='upcoming' ? 'selected-tab' : ''; ?>'>
                     UPCOMING ICOs
                 </div>
             </a>

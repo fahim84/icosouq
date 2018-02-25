@@ -14,16 +14,12 @@
 <body>
 <header>
     <div class="frame">
-        <a href="<?php echo base_url(); ?>" class="logo"><?php echo SYSTEM_NAME; ?></a>
+        <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
         <div id="hamburger"></div>
         <nav id="top_menu">
-            <a href="<?php echo base_url(); ?>icos" title="Browse ICOs" class="link">ICOs</a>
-            <a href="<?php echo base_url(); ?>benchy" target="_blank" title="Benchy the ICO bot" class="link">Benchy</a>
-            <a href="<?php echo base_url(); ?>people" title="People of Blockchain" class="link">People</a>
-            <a href="<?php echo base_url(); ?>publish" title="Publish your ICO" class="link">Publish ICO</a>
-            <div class="link">
-                <a href="<?php echo base_url(); ?>register" title="Register">Register</a> / <a href="<?php echo base_url(); ?>login" title="Login">Login</a>
-            </div>
+            <a href="<?php echo base_url(); ?>" title="Browse ICOs" class="link">ICO LIST</a>
+            <a href="<?php echo base_url(); ?>" target="_blank" title="Benchy the ICO bot" class="link">NEWS</a>
+            <a href="<?php echo base_url(); ?>"  class="link">العربية</a>
         </nav>
     </div></header><script>
     $(function(){
@@ -90,27 +86,26 @@
                 <div itemscope="" itemtype="http://schema.org/Organization">
                     <div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" class="rating">
                         <div itemprop="ratingValue" content="<?php echo $api_response->ratingProfile; ?>">
-                            <div class="rate color5"><?php echo $api_response->rating; ?></div>
-                            <a target="_blank" onclick="ga('send', 'event', 'ICOprofile', 'What is rating?', 'Friendz');" href="<?php echo base_url(); ?>ratings" title="What is this?" class="help"></a>
-                            <span style="display:none;" itemprop="ratingCount" content="<?php echo count($api_response->ratings); ?>"><?php echo count($api_response->ratings); ?></span>
-                            <small><?php echo count($api_response->ratings); ?> expert ratings</small>
+                            <div class="rate color5"><?php echo $ico->ico_souq_rate; ?></div>
+                            <span style="display:none;" itemprop="ratingCount" content="<?php echo count($api_response->ratings); ?>"><?php echo $ico->ico_souq_rate; ?></span>
+                            <small>Our ratings</small>
                         </div>
                         <div class="distribution">
                             <div class="col_4">
-                                <?php echo $api_response->ratingProfile; ?>
-                                <label>ICO Profile</label>
+                                <?php echo $ico->hype_rate; ?>
+                                <label>Hype rate</label>
                             </div>
                             <div class="col_4">
-                                <?php echo $api_response->ratingTeam; ?>
-                                <label>Team</label>
+                                <?php echo $ico->risk_rate; ?>
+                                <label>Risk rate</label>
                             </div>
                             <div class="col_4">
-                                <?php echo $api_response->ratingVision; ?>
-                                <label>Vision</label>
+                                <?php echo $ico->roi_rate; ?>
+                                <label>ROI rate</label>
                             </div>
                             <div class="col_4">
-                                <?php echo $api_response->ratingProduct; ?>
-                                <label>Product</label>
+                                <?php echo $ico->ico_souq_rate; ?>
+                                <label>ICO SOUQ rate</label>
                             </div>
                         </div>
                         <a class="view_rating" href="<?php echo $api_response->url; ?>/ratings#ratings" title="View rating distribution">View rating distribution</a>
@@ -315,18 +310,6 @@
                     }
                 </script>	</div>
 
-        </div></div>
-    <div class="footer_bottom"><div class="frame">
-            <div class="col_1_3">
-                <a href="<?php echo base_url(); ?>" class="logo" title="<?php echo SYSTEM_NAME; ?>"><?php echo SYSTEM_NAME; ?></a>
-            </div>
-            <div class="col_2_3">
-                <b><?php echo SYSTEM_NAME; ?></b> is an ICO rating platform supported by investors and financial experts.<br>
-                © 2017 - 2018 All rights reserved
-            </div>
-            <div class="col_3_3">
-                <a href="<?php echo base_url(); ?>terms" title="Terms">Terms</a> | <a href="<?php echo base_url(); ?>privacy" title="Privacy policy">Privacy policy</a> | <a href="<?php echo base_url(); ?>ratings" title="Rating methodology">Rating methodology</a>
-            </div>
         </div></div>
 </footer>
 

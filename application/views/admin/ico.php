@@ -54,7 +54,7 @@
             <input type="hidden" name="order_by" id="order_by" value="<?php echo $order_by; ?>" >
             <input type="hidden" name="direction" id="direction" value="<?php echo $direction; ?>" >
         </form>
-        <!--<a href="<?php /*echo base_url(); */?>admin/ico/update" class="btn btn-wide btn-warning pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Add</a>-->
+        <a href="<?php echo base_url(); ?>cron/icobench/" target="_blank" class="btn btn-wide btn-warning pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Sync Data from ICO Bench</a>
 
         <script>
             $('#order_by, #direction').change(function(e) {

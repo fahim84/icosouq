@@ -61,29 +61,43 @@ class Welcome extends CI_Controller {
 
     public function index()
     {
-        $status = $this->input->get_post('status') ? $this->input->get_post('status') : 'ongoing';
+        $listing = $this->input->get_post('listing') ? $this->input->get_post('listing') : 'ongoing';
 
-        $query_params['status'] = $status;
-        $query_params['orderDesc'] = "rating";
+        $order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'rating';
+        $direction = $this->input->get_post('direction') ? $this->input->get_post('direction') : 'DESC';
+
+        $keyword = $this->input->get_post('keyword');
+
         # Pagination Code
-        $page	=	$this->input->get_post('page')!==NULL ? $this->input->get_post('page') : 1;
-        $query_params['page'] = $page-1; // less 1 because api page start from zero
+        $offset	=	$this->input->get_post('per_page');
+        if($offset < 1)
+        {
+            $offset = 0;
+        }
 
-        if ($this->uri->segment(4)) { $limit = $this->uri->segment(4); }else{ $limit = 12; }
+        if ($this->uri->segment(3)) { $limit = $this->uri->segment(3); }else{ $limit = 50; }
 
-        $api = new ICObenchAPI();
-        $api->getICOs("all",$query_params);
+        if($keyword != '') $query_params['keyword'] = $keyword;
 
-        $api_response = json_decode($api->result);
+        $query_params['limit'] = $limit;
+        $query_params['offset'] = $offset;
+        $query_params['order_by'] = $order_by;
+        $query_params['direction'] = $direction;
+        $query_params['status'] = 1;
+        $query_params['listing'] = $listing;
 
-        $total_rows = $api_response->icos;
-        $rows = $api_response->results;
+        $total_rows = $this->ico_model->get($query_params,true);
+        $rows = $this->ico_model->get($query_params);
 
         # array for pagination query string
-        $qstr['status'] = $status;
+        $qstr['order_by'] = $order_by;
+        $qstr['direction'] = $direction;
+        $qstr['status'] = 1;
+        $qstr['listing'] = $listing;
+        if($keyword) $qstr['keyword'] = $keyword;
 
         $page_query_string = '?'.http_build_query($qstr);
-        $config['base_url'] = base_url('welcome/index/'.$page_query_string);
+        $config['base_url'] = base_url('admin/ico/index/'.$page_query_string);
         $config['total_rows'] = $total_rows;
         $config['per_page'] = $limit;
 
@@ -91,23 +105,29 @@ class Welcome extends CI_Controller {
         $this->data['pagination_links'] = $this->pagination->create_links();
         // Paination code end
 
-
-        $this->data['status'] = $status;
+        $this->data['keyword'] = $keyword;
+        $this->data['order_by'] = $order_by;
+        $this->data['direction'] = $direction;
         $this->data['total_rows'] = $total_rows;
         $this->data['rows'] = $rows;
+        $this->data['listing'] = $listing;
 
-        $this->load->view('icobench_'.$status, $this->data);
+        $this->data['selected_page'] = 'ico';
+
+        $this->load->view('icobench_'.$listing, $this->data);
     }
 
     public function detail()
     {
         $id = $this->input->get_post('id');
-        $api = new ICObenchAPI();
+        /*$api = new ICObenchAPI();
         $api->getICO($id);
-
-        $api_response = json_decode($api->result);
+        $api_response = json_decode($api->result);*/
+        $ico = $this->ico_model->get_ico_by_id($id);
+        $api_response = json_decode($ico->detail);
 
         $this->data['id'] = $id;
+        $this->data['ico'] = $ico;
         $this->data['api_response'] = $api_response;
         $this->load->view('detail',$this->data);
     }

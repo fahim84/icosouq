@@ -11,7 +11,7 @@ class Ico_model extends CI_Model
 		if(isset($params['select'])) { $this->db->select($params['select']); }
 		if(isset($params['status'])) { $this->db->where('status',$params['status']); }
 
-        if(isset($params['listing']) and $params['listing']=='live')
+        if(isset($params['listing']) and $params['listing']=='ongoing')
         {
             $this->db->where('icoStart <=', date('Y-m-d H:i:s'));
             $this->db->where('icoEnd >=', date('Y-m-d H:i:s'));
