@@ -38,7 +38,7 @@
                         <div class='db logo-div col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2'>
                             <div style='margin:5px 15px;'>
                                 <a title="<?php echo $row->name; ?>" href='<?php echo base_url(); ?>welcome/detail?id=<?php echo $row->id; ?>' style='text-decoration: none;'>
-                                    <img src='<?php echo $row->logo; ?>' class='project-logo' alt='<?php echo $row->name; ?>'>
+                                    <img src='<?php echo $row->logo; ?>' width="150" alt='<?php echo $row->name; ?>'>
                                     <p style='text-align:center;'>
                                         <span style='font-size:9px;color:#00c170;text-transform:uppercase;font-weight:600;padding:2px;border: 1px solid #00c06d;background-color: #c4ffe8;'><?php echo $row->name; ?></span>
                                     </p>
