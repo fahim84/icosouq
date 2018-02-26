@@ -58,7 +58,12 @@
 
 
         <div class='menu-link-header'>
-            <a href='#'>العربية</a>
+            <div id="google_translate_element" align="right"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         </div>
         <div class='menu-link-header'>
             <a href='#'>NEWS</a>
@@ -71,11 +76,6 @@
 
 
     <div class="row" style='margin-top:80px;padding:10px;'>
-        <div id="google_translate_element"></div><script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-            }
-        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         <p>
         <h1 class='h1-title'>Welcome to the ICO</h1>
