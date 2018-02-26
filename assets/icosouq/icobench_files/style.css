@@ -30,13 +30,13 @@ body{
 .header_stick{position:fixed;top:0;left:0;right:0;font-size:14px;color:#fff;font-weight:bold;text-align:center;padding:15px;line-height:1;background:#e9379c;z-index:200;box-shadow:0px 3px 10px rgba(0,0,0,0.2);}
 
 header{background:#00ce78;display:flex;}
-header .logo{float:left;width:140px;height:42px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;margin:15px 0 15px 0;text-indent:-99999px;display:block;}
+header .logo{float:left;width:140px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;margin:15px 0 15px 0;text-indent:-99999px;display:block;}
 header nav{float:right;color:#fff;font-weight:400;text-decoration:none;display:flex;margin:17px 0 0 0;}
 header nav.display{display:block;}
 header nav a:link, header nav a:visited, header nav a:active{color:#fff;font-weight:400;text-decoration:none;}
 header nav a:hover, header nav a:visited:hover{color:#8e97d4;font-weight:400;text-decoration:none;}
 header nav .link{float:right;display:table;padding:10px 15px;font-size:14px;font-weight:400;}
-header #hamburger{width:30px;height:30px;float:right;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:5px -85px;margin:20px 0 0 0;cursor:pointer;display:none;}
+header #hamburger{width:30px;height:30px;float:right;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:5px -85px;margin:20px 0 0 0;cursor:pointer;display:none;}
 
 footer{overflow:hidden;text-align:left;}
 footer .navigation{width:100%;overflow:hidden;background:#ededed;padding:50px 0;}
@@ -49,7 +49,7 @@ footer .navigation .col_5 ul li a:link, footer .navigation .col_5 ul li a:visite
 footer .navigation .col_5 ul li a:hover, footer .navigation .col_5 ul li a:visited:hover{color:#333333;}
 
 footer .navigation .col_5 .row{position:relative;}
-footer .navigation .col_5 .row .icon_newsletter{width:32px;height:25px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-170px -130px;position:absolute;left:0;top:-3px;}
+footer .navigation .col_5 .row .icon_newsletter{width:32px;height:25px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-170px -130px;position:absolute;left:0;top:-3px;}
 footer .navigation .col_5 .row h4{padding-left:42px;}
 footer .navigation .col_5 p{color:#fff;line-height:1.3;margin:13px 0;padding:0;font-size:14px;}
 footer .navigation .col_5 .input{width:100%;}
@@ -61,7 +61,7 @@ footer .navigation .col_5 .input input:-moz-placeholder{color:#c0c7f5;font-size:
 footer .navigation .col_5 .button_submit{background:#3fb9ec;color:#fff;padding:12px 15px;font-size:14px;border:0;border-radius:4px;width:auto;display:table;margin:10px 0 0 auto;font-family:'Open Sans',sans-serif;font-weight:bold;cursor:pointer;}
 footer .navigation .col_5 .button_submit:hover{background:#5ec8f4;}
 
-footer .navigation .col_5 .row .icon_medium{width:25px;height:21px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-217px -133px;position:absolute;left:0;top:0;}
+footer .navigation .col_5 .row .icon_medium{width:25px;height:21px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-217px -133px;position:absolute;left:0;top:0;}
 footer .navigation .col_5 .news_list{display:block;margin-top:15px;}
 footer .navigation .col_5 .news_list .row{display:block;border-bottom:1px solid #6978c5;padding-bottom:15px;margin-bottom:15px;}
 footer .navigation .col_5 .news_list .row:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0;}
@@ -71,7 +71,7 @@ footer .navigation .col_5 .news_list .row .title:hover{color:#fff;}
 
 footer .footer_bottom{width:100%;overflow:hidden;background:#4954ac;padding:15px 0;}
 footer .footer_bottom .col_1_3{width:160px;float:left;border-right:1px solid #5a67b9;}
-footer .footer_bottom .col_1_3 .logo{width:140px;height:42px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;margin:5px 0;text-indent:-99999px;display:block;}
+footer .footer_bottom .col_1_3 .logo{width:140px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;margin:5px 0;text-indent:-99999px;display:block;}
 footer .footer_bottom .col_2_3{width:calc(100% - 517px);float:left;padding:7px 0 7px 20px;color:#fff;font-size:14px;line-height:1.5;}
 footer .footer_bottom .col_3_3{width:356px;float:right;color:#5a67b9;padding:7px 0;}
 footer .footer_bottom .col_3_3 a:link, footer .footer_bottom .col_3_3 a:visited, footer .footer_bottom .col_3_3 a:active{color:#fff;font-size:14px;padding:0 10px;text-decoration:none;}
@@ -155,8 +155,8 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #trending .col_4:last-child{margin-right:0;}
 #page #trending .col_4 .image{height:140px;width:100%;background-repeat:no-repeat;background-position:center center;display:block;text-decoration:none;position:relative;background-size:cover;border-radius:3px 3px 0 0;}
 #page #trending .col_4 .image .tags{position:absolute;top:8px;right:8px;}
-#page #trending .col_4 .image .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin-left:8px;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-323px -38px;text-indent: -9999px;display:table;float:right;width:22px;height:22px;}
-#page #trending .col_4 .image .cf{position:absolute;top:8px;left:8px;z-index:99;width:23px;height:35px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -125px;}
+#page #trending .col_4 .image .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin-left:8px;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-323px -38px;text-indent: -9999px;display:table;float:right;width:22px;height:22px;}
+#page #trending .col_4 .image .cf{position:absolute;top:8px;left:8px;z-index:99;width:23px;height:35px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -125px;}
 #page #trending .col_4 .image .rate{font-weight:700;font-size:12px;background:#222;color:#fff;border-radius:2px;padding:5px 6px;margin-left:8px;height:22px;display:table;float:right;}
 #page #trending .col_4 .image .color0{background:#ea5420;}
 #page #trending .col_4 .image .color1{background:#ea5420;}
@@ -177,7 +177,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #trending .col_4 .content .bottom{overflow:hidden;}
 #page #trending .col_4 .content .bottom .percent{width:40%;float:left;font-weight:700;font-size:13px;text-align:left;}
 #page #trending .col_4 .content .bottom .time{width:100%;float:none;font-weight:700;font-size:13px;text-align:left;padding-bottom:3px;}
-#page #trending .col_4 .content .bottom .time .icon{display:inline-block;margin:0 5px -4px 0;width:16px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-160px 0;}
+#page #trending .col_4 .content .bottom .time .icon{display:inline-block;margin:0 5px -4px 0;width:16px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-160px 0;}
 #page #trending .slick-list{overflow:hidden;}
 #page #trending ul.slick-dots{margin:50px auto 0 auto;list-style:none;padding:0;display:table;}
 #page #trending ul.slick-dots li{border:2px solid #e1e1e1;background:#fff;border-radius:10px;width:14px;height:14px;display:inline-table;margin:0 8px;cursor:pointer;}
@@ -199,9 +199,9 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #browse .row .ico_list .col_3:nth-child(3n+1){clear:left;}
 #page #browse .row .ico_list .col_3 a.image{text-decoration:none;}
 #page #browse .row .ico_list .col_3 a.image{box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);background:#fff;border-radius:4px;height:140px;width:100%;background-repeat:no-repeat;background-position:center center;background-size:cover;display:block;position:relative;}
-#page #browse .row .ico_list .col_3 a.image .cf{position:absolute;top:8px;left:8px;z-index:99;width:23px;height:35px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -125px;}
+#page #browse .row .ico_list .col_3 a.image .cf{position:absolute;top:8px;left:8px;z-index:99;width:23px;height:35px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -125px;}
 #page #browse .row .ico_list .col_3 a.image .tags{position:absolute;top:8px;right:8px;z-index:100}
-#page #browse .row .ico_list .col_3 a.image .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin-left:8px;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-323px -38px;text-indent: -9999px;display:table;float:right;width:22px;height:22px;}
+#page #browse .row .ico_list .col_3 a.image .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin-left:8px;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-323px -38px;text-indent: -9999px;display:table;float:right;width:22px;height:22px;}
 #page #browse .row .ico_list .col_3 a.image .rate{font-weight:700;font-size:12px;background:#222;color:#fff;border-radius:2px;padding:5px 6px;margin-left:8px;height:22px;display:table;float:right;}
 #page #browse .row .ico_list .col_3 a.image .color0{background:#ea5420;}
 #page #browse .row .ico_list .col_3 a.image .color1{background:#ea5420;}
@@ -339,10 +339,10 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_header .ico_information .row .image img{width:85px;height:85px;}
 #page #profile_header .ico_information .row .name{float:left;width:calc(100% - 120px);margin-left:20px;position:relative;}
 #page #profile_header .ico_information .row .name.cfPadding{padding-right:60px;}
-#page #profile_header .ico_information .row .name .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:19px 10px 0 0;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:600px 600px;background-position:-486px -58px;text-indent: -9999px;display:table;float:left;width:30px;height:30px;}
+#page #profile_header .ico_information .row .name .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:19px 10px 0 0;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:600px 600px;background-position:-486px -58px;text-indent: -9999px;display:table;float:left;width:30px;height:30px;}
 #page #profile_header .ico_information .row .name h1{font-size:36px;line-height:1;color:#222;font-family:'Montserrat',sans-serif;font-weight:600;margin:15px 0 2px 0;padding:0;float:left;width:calc(100% - 55px);}
 #page #profile_header .ico_information .row .name h2{font-size:28px;line-height:1;color:#222;font-family:'Montserrat',sans-serif;font-weight:200;margin:0;padding:0;clear:both;}
-#page #profile_header .ico_information .row .name .cf{position:absolute;top:18px;right:0;width:47px;height:70px;background:url("../images/sprite.svg") no-repeat;background-size:800px 800px;background-position:0 -250px;}
+#page #profile_header .ico_information .row .name .cf{position:absolute;top:18px;right:0;width:47px;height:70px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:800px 800px;background-position:0 -250px;}
 #page #profile_header .ico_information p{font-size:14px;line-height:1.5;color:#313131;margin:0 0 15px 0;text-align:left;}
 #page #profile_header .ico_information .categories{margin:0 0 30px 0;text-align:left;}
 #page #profile_header .ico_information .categories a:link, #page #profile_header .ico_information .categories a:active, #page #profile_header .ico_information .categories a:visited{border:1px solid #e1e1e1;background:#fff;padding:8px 15px;border-radius:30px;display:inline-block;margin:0 10px 10px 0;text-decoration:none;font-size:12px;line-height:1.1;color:#313131;}
@@ -350,14 +350,14 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_header .ico_information .video{width:100%;overflow:hidden;position:relative;cursor:pointer;}
 #page #profile_header .ico_information .video img{width:100%;border-radius:3px;}
 #page #profile_header .ico_information .video .likes{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.8);padding:8px 8px 8px 26px;border-radius:3px;font-size:10px;color:#fff;font-weight:bold;}
-#page #profile_header .ico_information .video .likes .icon{background:url("../images/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:7px;left:8px;}
-#page #profile_header .ico_information .video .play_image{border-radius:90px;background:url("../images/sprite.svg") no-repeat;background-position:-607px -170px;background-color:rgba(0,0,0,0.5);background-size:800px 800px;width:85px;height:85px;position:absolute;top:50%;left:50%;margin-left:-42.5px;margin-top:-42.5px;}
+#page #profile_header .ico_information .video .likes .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:7px;left:8px;}
+#page #profile_header .ico_information .video .play_image{border-radius:90px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-607px -170px;background-color:rgba(0,0,0,0.5);background-size:800px 800px;width:85px;height:85px;position:absolute;top:50%;left:50%;margin-left:-42.5px;margin-top:-42.5px;}
 #page #profile_header .ico_information .video:hover .play_image{background-color:rgba(0,0,0,0.8);}
 
 #page #profile_header .fixed_data{float:right;width:350px;height:auto;margin-top:40px;}
 #page #profile_header .fixed_data .button.edit_profile{background:#6c84ce;border-radius:5px;font-size:16px;color:#fff;font-weight:bold;text-align:center;padding:15px 25px;display:block;text-decoration:none;margin:0 0 20px 0;}
 #page #profile_header .fixed_data .button.edit_profile:hover{opacity:0.6;}
-#page #profile_header .fixed_data .button.edit_profile .icon{width:26px;height:23px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-263px -132px;display:inline-block;margin-bottom:-8px;margin-right:10px;}
+#page #profile_header .fixed_data .button.edit_profile .icon{width:26px;height:23px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-263px -132px;display:inline-block;margin-bottom:-8px;margin-right:10px;}
 
 #page #profile_header .fixed_data .expert_rate{background:#5a67b9 url("../images/background.svg") no-repeat right bottom;background-size:cover;padding:25px;margin-bottom:30px;border-radius:4px;border:1px solid rgba(0,0,0,0.1);box-shadow:0 5px 10px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);}
 #page #profile_header .fixed_data .expert_rate form{background:transparent;width:100%;border:0;border-radius:0;margin:0;padding:0;}
@@ -384,7 +384,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_header .fixed_data .rating .rate.color4{color:#a3bf43;}
 #page #profile_header .fixed_data .rating .rate.color5{color:#68b541;}
 #page #profile_header .fixed_data .rating small{text-align:center;font-size:14px;color:#a4a4a4;display:block;margin:6px 0 0 0;font-weight:400;}
-#page #profile_header .fixed_data .rating .help{width:15px;height:15px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-49px -95px;display:inline-block;margin-bottom:20px;}
+#page #profile_header .fixed_data .rating .help{width:15px;height:15px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-49px -95px;display:inline-block;margin-bottom:20px;}
 #page #profile_header .fixed_data .rating .help:hover{opacity:0.5;}
 #page #profile_header .fixed_data .rating .divider{border-top:1px solid #dbdbdb;margin:20px 0;}
 #page #profile_header .fixed_data .rating .distribution{overflow:hidden;border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;padding:20px 0;margin:20px 0 10px 0;}
@@ -428,7 +428,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_header .fixed_data .financial_data .data_row .col_2{width:50%;float:left;text-align:left;font-size:14px;}
 #page #profile_header .fixed_data .financial_data .data_row .col_2 a:link, #page #profile_header .fixed_data .financial_data .data_row .col_2 a:visited, #page #profile_header .fixed_data .financial_data .data_row .col_2 a:active{text-decoration:none;color:#524e4e;}
 #page #profile_header .fixed_data .financial_data .data_row .col_2 a:hover, #page #profile_header .fixed_data .financial_data .data_row .col_2 a:visited:hover{color:#5864b0;}
-#page #profile_header .fixed_data .financial_data .data_row .col_2 .icon_link{width:10px;height:10px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-375px -175px;display:inline-block;margin:0 0 0 5px;}
+#page #profile_header .fixed_data .financial_data .data_row .col_2 .icon_link{width:10px;height:10px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-375px -175px;display:inline-block;margin:0 0 0 5px;}
 #page #profile_header .fixed_data .financial_data .data_row.bonus .col_2{width:100%;float:none;text-align:left;font-size:14px;}
 #page #profile_header .fixed_data .financial_data .data_row.bonus .col_2 label{font-size:10px;color:#a4a4a4;text-transform:uppercase;display:block;margin:0 0 5px 0;font-weight:400;}
 #page #profile_header .fixed_data .financial_data .data_row.bonus .col_2{font-weight:400;}
@@ -441,17 +441,17 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_header .fixed_data .financial_data .button_big:hover{background:#5864b0;}
 
 #page #profile_header .fixed_data .socials{text-align:center;}
-#page #profile_header .fixed_data .socials .twitter{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .facebook{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .vk{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .slack{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .reddit{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .www{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .bitcointalk{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .github{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .medium{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .telegram{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#page #profile_header .fixed_data .socials .discord{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px -63px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .twitter{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .facebook{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .vk{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .slack{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .reddit{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .www{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .bitcointalk{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .github{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .medium{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .telegram{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#page #profile_header .fixed_data .socials .discord{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px -63px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
 
 #page #profile_header .fixed_data .button_report{background:#bfbfbf;color:#fff;padding:10px 20px;display:table;margin:20px auto;border-radius:50px;text-decoration:none;font-weight:bold;font-size:14px;}
 #page #profile_header .fixed_data .button_report:hover{background:#f63b3b;}
@@ -468,7 +468,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_header .fixed_data .socials .discord:hover{opacity:0.5;}
 
 #page #profile_content .bookmark{background:#6c84ce;border-radius:5px;margin:0 0 30px 0;padding:15px 25px;text-align:center;color:#fff;font-size:16px;font-weight:600;cursor:pointer;text-decoration:none;display:block;}
-#page #profile_content .bookmark .icon{width:34px;height:24px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-152px -71px;display:inline-block;margin-bottom:-6px;margin-right:10px;}
+#page #profile_content .bookmark .icon{width:34px;height:24px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-152px -71px;display:inline-block;margin-bottom:-6px;margin-right:10px;}
 #page #profile_content .bookmark:hover{opacity:0.6;}
 
 #page #profile_content{padding:40px 0;text-align:left;}
@@ -491,9 +491,9 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_content .content_right .legal_review .author .data .name{font-weight:600;font-size:20px;color:#2e2d2d;margin:0 0 5px 0;}
 #page #profile_content .content_right .legal_review .author .data .title{font-weight:400;font-size:12px;color:#929292;margin:0 0 10px 0;line-height:1.15;}
 #page #profile_content .content_right .legal_review .author .data .socials{display:block;width:90px;margin:0 0 0 0;text-align:left;}
-#page #profile_content .content_right .legal_review .author .data .socials .linkedin{width:20px;height:20px;border-radius:20px;display:inline-block;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:320px 320px;background-position:-155px -14px;text-decoration:none;text-indent:-99999px;margin:0 5px 0 0;}
-#page #profile_content .content_right .legal_review .author .data .socials .twitter{width:20px;height:20px;border-radius:20px;display:inline-block;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:320px 320px;background-position:-138px -14px;text-decoration:none;text-indent:-99999px;margin:0 5px 0 0;}
-#page #profile_content .content_right .legal_review .author .data .socials .www{width:20px;height:20px;border-radius:20px;display:inline-block;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:320px 320px;background-position:-188px -14px;text-decoration:none;text-indent:-99999px;margin:0 5px 0 0;}
+#page #profile_content .content_right .legal_review .author .data .socials .linkedin{width:20px;height:20px;border-radius:20px;display:inline-block;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:320px 320px;background-position:-155px -14px;text-decoration:none;text-indent:-99999px;margin:0 5px 0 0;}
+#page #profile_content .content_right .legal_review .author .data .socials .twitter{width:20px;height:20px;border-radius:20px;display:inline-block;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:320px 320px;background-position:-138px -14px;text-decoration:none;text-indent:-99999px;margin:0 5px 0 0;}
+#page #profile_content .content_right .legal_review .author .data .socials .www{width:20px;height:20px;border-radius:20px;display:inline-block;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:320px 320px;background-position:-188px -14px;text-decoration:none;text-indent:-99999px;margin:0 5px 0 0;}
 #page #profile_content .content_right .legal_review .author .data .socials .twitter:hover{opacity:0.5;}
 #page #profile_content .content_right .legal_review .author .data .socials .linkedin:hover{opacity:0.5;}
 #page #profile_content .content_right .legal_review .author .data .socials .www:hover{opacity:0.5;}
@@ -517,7 +517,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 
 #page #profile_content .content_right .kyc_information{position:relative;border:1px solid #dbdbdb;border-radius:4px;padding:20px;}
 #page #profile_content .content_right .kyc_information .kyc_result{overflow:hidden;}
-#page #profile_content .content_right .kyc_information .kyc_result .icon{width:50px;height:50px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;float:left;margin-right:20px;}
+#page #profile_content .content_right .kyc_information .kyc_result .icon{width:50px;height:50px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;float:left;margin-right:20px;}
 #page #profile_content .content_right .kyc_information .kyc_result .icon.passed{background-position:-300px -250px;}
 #page #profile_content .content_right .kyc_information .kyc_result .icon.failed{background-position:-300px -200px;}
 #page #profile_content .content_right .kyc_information .kyc_result .icon.unavailable{background-position:-350px -200px;}
@@ -560,17 +560,17 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_content .tab_content#team .row .col_3:nth-child(3n){margin-right:0;}
 #page #profile_content .tab_content#team .row .col_3 .image{width:134px;height:134px;position:relative;background:#fff;border-radius:120px;margin:0 auto 5px auto;display:block;}
 #page #profile_content .tab_content#team .row .col_3.iss .image{border:1px solid #7dcc5e;}
-#page #profile_content .tab_content#team .row .col_3 .image .icon_iss{background:#7dcc5e url("../images/sprite.svg") no-repeat;background-position:-226px -65px;background-size:400px 400px;width:30px;height:30px;border-radius:25px;position:absolute;top:4px;right:4px;border:3px solid #fff;}
+#page #profile_content .tab_content#team .row .col_3 .image .icon_iss{background:#7dcc5e url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-226px -65px;background-size:400px 400px;width:30px;height:30px;border-radius:25px;position:absolute;top:4px;right:4px;border:3px solid #fff;}
 #page #profile_content .tab_content#team .row .col_3 .image_background{margin:6px;width:120px;height:120px;overflow:hidden;border-radius:120px;background-size:cover;}
 #page #profile_content .tab_content#team .row .col_3 .image img{width:100%;height:auto;}
 #page #profile_content .tab_content#team .row .col_3 h3{text-transform:none;font-size:18px;line-height:1;color:#313131;font-weight:bold;padding:0;margin:10px 0 5px 0;}
 #page #profile_content .tab_content#team .row .col_3 h4{font-size:13px;line-height:1.15;color:#979797;font-weight:400;padding:0;margin:0 0 0 0;}
 #page #profile_content .tab_content#team .row .col_3 p{font-size:13px;margin:20px 0 0 0;text-align:center;}
 #page #profile_content .tab_content#team .row .col_3 .socials{display:table;position:absolute;bottom:20px;left:0;right:0;text-align:center;margin:0 auto;z-index:99;width:100%;}
-#page #profile_content .tab_content#team .row .col_3 .socials .twitter{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-173px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
-#page #profile_content .tab_content#team .row .col_3 .socials .linkedin{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-194px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
-#page #profile_content .tab_content#team .row .col_3 .socials .facebook{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-215px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
-#page #profile_content .tab_content#team .row .col_3 .socials .www{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-235px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
+#page #profile_content .tab_content#team .row .col_3 .socials .twitter{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-173px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
+#page #profile_content .tab_content#team .row .col_3 .socials .linkedin{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-194px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
+#page #profile_content .tab_content#team .row .col_3 .socials .facebook{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-215px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
+#page #profile_content .tab_content#team .row .col_3 .socials .www{width:25px;height:25px;border-radius:25px;display:inline-block;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-235px -18px;text-decoration:none;text-indent:-99999px;margin:0 2px;}
 #page #profile_content .tab_content#team .row .col_3 .socials .twitter:hover{opacity:0.5;}
 #page #profile_content .tab_content#team .row .col_3 .socials .linkedin:hover{opacity:0.5;}
 #page #profile_content .tab_content#team .row .col_3 .socials .facebook:hover{opacity:0.5;}
@@ -581,9 +581,9 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_content .tab_content#milestones .box .row:last-child{background:transparent;}
 #page #profile_content .tab_content#milestones .box .row .number{border:2px solid #5864b0;background:#fff;width:auto;display:table;height:28px;text-align:center;color:#5864b0;font-weight:bold;font-size:16px;margin:0 auto;border-radius:3px;padding:4px 7px 0 7px;font-family:arial,sans-serif;}
 #page #profile_content .tab_content#milestones .box .row .bubble{float:right;width:calc(50% - 30px);border:1px solid #dbdbdb;background:#fff;border-radius:3px;padding:20px;margin-top:-28px;position:relative;}
-#page #profile_content .tab_content#milestones .box .row .bubble .arrow{position:absolute;top:6px;left:-6px;width:6px;height:12px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-162px -43px;}
+#page #profile_content .tab_content#milestones .box .row .bubble .arrow{position:absolute;top:6px;left:-6px;width:6px;height:12px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-162px -43px;}
 #page #profile_content .tab_content#milestones .box .row:nth-child(2n) .bubble{float:left;}
-#page #profile_content .tab_content#milestones .box .row:nth-child(2n) .bubble .arrow{position:absolute;top:10px;right:-6px;left:auto;width:6px;height:12px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-176px -43px;}
+#page #profile_content .tab_content#milestones .box .row:nth-child(2n) .bubble .arrow{position:absolute;top:10px;right:-6px;left:auto;width:6px;height:12px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-176px -43px;}
 #page #profile_content .tab_content#milestones .box .row .bubble .condition{font-weight:700;color:#313131;font-size:18px;margin:0 0 10px 0;padding:0;}
 #page #profile_content .tab_content#milestones .box .row .bubble p{font-size:14px;margin:0;padding:0;text-align:left;}
 
@@ -607,10 +607,10 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_content .tab_content#ratings .ratings_list .row .clear{clear:both;}
 #page #profile_content .tab_content#ratings .ratings_list .row .review{margin:5px 0 10px 70px;overflow:hidden;}
 #page #profile_content .tab_content#ratings .ratings_list .row .review .line{width:170px;border-bottom:1px solid #dbdbdb;height:0;position:relative;}
-#page #profile_content .tab_content#ratings .ratings_list .row .review .line .arrow{background:url("../images/sprite.svg") no-repeat;background-position:-198px -96px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;left:25px;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);}
+#page #profile_content .tab_content#ratings .ratings_list .row .review .line .arrow{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-198px -96px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;left:25px;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);}
 #page #profile_content .tab_content#ratings .ratings_list .row .review p{margin:15px 0 20px 0;font-size:13px;line-height:1.3;}
 #page #profile_content .tab_content#ratings .ratings_list .row .review .agree{float:left;display:table;padding:9px 15px 9px 30px;border:1px solid #dbdbdb;border-radius:50px;font-size:12px;color:#a1a1a1;position:relative;cursor:pointer;margin-right:10px;}
-#page #profile_content .tab_content#ratings .ratings_list .row .review .agree .icon{background:url("../images/sprite.svg") no-repeat;background-position:-257px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:9px;left:12px;}
+#page #profile_content .tab_content#ratings .ratings_list .row .review .agree .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-257px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:9px;left:12px;}
 #page #profile_content .tab_content#ratings .ratings_list .row .review .agree:hover{border:1px solid #4954ac;background:#4954ac;color:#fff;}
 #page #profile_content .tab_content#ratings .ratings_list .row .review .agree:hover .icon{background-position:-277px -70px;}
 #page #profile_content .tab_content#ratings .ratings_list .row .review .agree.selected{border:1px solid #4954ac;background:#4954ac;color:#fff;}
@@ -621,7 +621,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_content .tab_content#ratings .ratings_list .row .owners_reply{clear:both;margin-top:10px;}
 #page #profile_content .tab_content#ratings .ratings_list .row .owners_reply .button_reply{float:right;display:table;padding:9px 15px 9px 30px;border-radius:50px;font-size:12px;position:relative;cursor:pointer;margin-right:10px;border:1px solid #4954ac;background:#4954ac;color:#fff;}
 #page #profile_content .tab_content#ratings .ratings_list .row .owners_reply .button_reply.button_up{margin-top:-42px;}
-#page #profile_content .tab_content#ratings .ratings_list .row .owners_reply .button_reply .icon{background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;width:15px;height:15px;position:absolute;top:9px;left:11px;background-position:-308px -68px;}
+#page #profile_content .tab_content#ratings .ratings_list .row .owners_reply .button_reply .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;width:15px;height:15px;position:absolute;top:9px;left:11px;background-position:-308px -68px;}
 #page #profile_content .tab_content#ratings .ratings_list .row .owners_reply .button_reply:hover{opacity:0.7;}
 
 #page #profile_content .tab_content#ratings .ratings_list .row .owners_reply .reply{clear:both;margin:20px 0 0 67px;border-top:1px solid #dbdbdb;padding-top:20px;}
@@ -694,9 +694,9 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page .similar .col_4{width:calc(25% - 22.5px);margin-right:30px;float:left;border:1px solid #dbdbdb;border-radius:4px;}
 #page .similar .col_4:last-child{margin-right:0;}
 #page .similar .col_4 .image{height:140px;width:100%;background-repeat:no-repeat;background-position:center center;display:block;text-decoration:none;position:relative;background-size:cover;border-radius:3px 3px 0 0;}
-#page .similar .col_4 .image .cf{position:absolute;top:8px;left:8px;z-index:99;width:23px;height:35px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -125px;}
+#page .similar .col_4 .image .cf{position:absolute;top:8px;left:8px;z-index:99;width:23px;height:35px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -125px;}
 #page .similar .col_4 .image .tags{position:absolute;top:8px;right:8px;z-index:100}
-#page .similar .col_4 .image .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin-left:8px;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-323px -38px;text-indent: -9999px;display:table;float:right;width:22px;height:22px;}
+#page .similar .col_4 .image .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin-left:8px;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-323px -38px;text-indent: -9999px;display:table;float:right;width:22px;height:22px;}
 #page .similar .col_4 .image .rate{font-weight:700;font-size:12px;background:#222;color:#fff;border-radius:2px;padding:5px 6px;margin-left:8px;height:22px;display:table;float:right;}
 #page .similar .col_4 .image .color0{background:#ea5420;}
 #page .similar .col_4 .image .color1{background:#ea5420;}
@@ -715,11 +715,11 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page .similar .col_4 .content .bottom{overflow:hidden;}
 #page .similar .col_4 .content .bottom .percent{width:40%;float:left;font-weight:700;font-size:13px;text-align:left;}
 #page .similar .col_4 .content .bottom .time{width:100%;float:none;font-weight:700;font-size:13px;text-align:left;padding-bottom:0;margin-top:10px;min-height:18px;}
-#page .similar .col_4 .content .bottom .time .icon{display:inline-block;margin:0 5px -4px 0;width:16px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-160px 0;}
+#page .similar .col_4 .content .bottom .time .icon{display:inline-block;margin:0 5px -4px 0;width:16px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-160px 0;}
 
 .popupbackground{position:fixed;left:0;right:0;top:0;bottom:0;z-index:105;background:rgba(0,0,0,0.4);display:none;}
 .popup{position:fixed;z-index:106;background:#fff;width:600px;left:50%;margin-left:-300px;top:200px;border-radius:5px;padding:40px;text-align:center;box-shadow:0 0 20px rgba(0, 0, 0, 0.3);display:none;}
-.popup .close{width:30px;height:30px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-211px -34px;position:absolute;top:10px;right:10px;cursor:pointer;}
+.popup .close{width:30px;height:30px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-211px -34px;position:absolute;top:10px;right:10px;cursor:pointer;}
 .popup .title{line-height:1.15;font-size:20px;font-family:'Montserrat',sans-serif;font-weight:600;color:#222;margin:0;padding:0;}
 .popup p{line-height:1.15;font-size:16px;font-family:'Open Sans',sans-serif;font-weight:400;color:#222;margin:20px 0 0 0;padding:0;}
 .popup .social_buttons{margin:15px auto 0 auto;}
@@ -733,7 +733,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 @keyframes load7 { 0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em; } 40% { box-shadow: 0 2.5em 0 0; }}
 
 #page .claim_popup{position:fixed;bottom:20px;right:20px;background:#4954ac;border-radius:5px;padding:25px;box-shadow:5px 5px 30px rgba(0,0,0,0.1);z-index:105;color:#fff;display:block;max-width:250px;}
-#page .claim_popup .close{background:transparent;border:0;width:30px;height:30px;position:absolute;right:10px;top:10px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-118px -85px;cursor:pointer;}
+#page .claim_popup .close{background:transparent;border:0;width:30px;height:30px;position:absolute;right:10px;top:10px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-118px -85px;cursor:pointer;}
 #page .claim_popup .logos{overflow:hidden;padding:0 30px;margin-bottom:20px;}
 #page .claim_popup .logos .ico_logo{border:5px solid #5a68c0;float:left;width:80px;height:80px;border-radius:80px;overflow:hidden;}
 #page .claim_popup .logos .ico_logo img{width:100%;}
@@ -786,7 +786,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 	#page #profile_content #milestones.tab_content .box .row{background:rgba(0, 0, 0, 0) url("../images/line.gif") repeat-y;background-position:12px 0;}
 	#page #profile_content #milestones.tab_content .box .row .number{margin:0;}
 	#page #profile_content #milestones.tab_content .box .row .bubble:nth-child(n){float:left;margin-left:45px;margin-bottom:20px;width:calc(100% - 60px);padding:15px;}
-	#page #profile_content #milestones.tab_content .box .row .bubble:nth-child(n) .arrow{position:absolute;top:6px;left:-6px;width:6px;height:12px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-162px -43px;}
+	#page #profile_content #milestones.tab_content .box .row .bubble:nth-child(n) .arrow{position:absolute;top:6px;left:-6px;width:6px;height:12px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-162px -43px;}
 	#page #profile_content #milestones.tab_content .box .row .bubble .condition{font-size:16px;}
 
 	#page #profile_content #team.tab_content .button_apply{top:8px;}
@@ -839,7 +839,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #category .not_found{background:#f4f4f4;border-radius:5px;padding:25px 25px;text-align:center;font-weight:bold;color:#bbb;box-shadow:inset 2px 2px 4px rgba(0,0,0,0.05), 1px 1px 0 rgba(255,255,255,1);font-size:14px;border:0;}
 #page #category .search{position:absolute;top:-10px;right:0;border:1px solid #e1e1e1;background:#fff;border-radius:50px;padding:0;margin:0;width:auto;overflow:hidden;}
 #page #category .search input{border:0;padding:3px 0 3px 15px;font-family:'Open Sans',sans-serif;font-size:13px;width:150px;float:left;margin-top:3px;}
-#page #category .search .button_search{width:30px;height:30px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-298px -35px;cursor:pointer;margin-right:5px;float:right;}
+#page #category .search .button_search{width:30px;height:30px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-298px -35px;cursor:pointer;margin-right:5px;float:right;}
 #page #category .sorting_filter{display:none;}
 #page #category .filter{border:1px solid #dbdbdb;background:#fff;border-radius:3px;width:100%;box-shadow:3px 3px 0 rgba(0,0,0,0.02);height:55px;}
 #page #category .filter .button{float:left;cursor:pointer;position:relative;margin-right:10px;}
@@ -848,7 +848,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #category .filter .button .button_top{font-size:13px;color:#666;position:relative;padding:20px 25px 20px 20px;border-left:1px solid rgba(255,255,255,0);border-right:1px solid rgba(255,255,255,0);}
 #page #category .filter .button .button_top::selection{background:transparent;color:inherit;}
 #page #category .filter .button .button_top::-moz-selection{background:transparent;color:inherit;}
-#page #category .filter .button .button_top .icon{background:transparent;border:0;width:20px;height:10px;position:absolute;right:0;top:23px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-92px -97px;cursor:pointer;}
+#page #category .filter .button .button_top .icon{background:transparent;border:0;width:20px;height:10px;position:absolute;right:0;top:23px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-92px -97px;cursor:pointer;}
 #page #category .filter .button:hover .button_top{background:#f9f9f9;}
 #page #category .filter .button .button_dropdown{display:none;position:absolute;left:0;top:45px;z-index:100;font-size:14px;color:#95969b;text-align:left;background:#fff;border:1px solid #dbdbdb;box-shadow:3px 3px 0 rgba(0,0,0,0.02);min-width:150px;}
 #page #category .filter .button .button_dropdown#category_list{width:650px;}
@@ -888,7 +888,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #category .filter .button.selected .button_dropdown .option{}
 #page #category .filter .clear{clear:both;}
 #page #category .filter_results{overflow:hidden;width:100%;margin:20px 0 0 0;}
-#page #category .filter_results button.delete{background:transparent;border:0;width:30px;height:30px;position:absolute;right:0;top:0;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-118px -85px;cursor:pointer;}
+#page #category .filter_results button.delete{background:transparent;border:0;width:30px;height:30px;position:absolute;right:0;top:0;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-118px -85px;cursor:pointer;}
 #page #category .filter_results .fil_category, #page #category .filter_results .fil_status, #page #category .filter_results .fil_platform, #page #category .filter_results .fil_accepting, #page #category .filter_results .fil_trading, #page #category .filter_results .fil_country, #page #category .filter_results .fil_search, #page #category .filter_results .fil_type, #page #category .filter_results .fil_restrictions{border-radius:3px;padding:9px 34px 11px 12px;font-weight:bold;color:#fff;font-size:13px;display:table;float:left;margin:0 10px 10px 0;position:relative;}
 #page #category .filter_results .fil_category{background:#6f78c6;}
 #page #category .filter_results .fil_status{background:#6fc6a8;}
@@ -908,15 +908,15 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #category .row:last-child{margin-bottom:0;}
 #page #category .row #filter_bubbles{overflow:hidden;}
 #page #category .row .bubble{cursor:pointer;border-radius:3px;padding:9px 35px 10px 10px;font-weight:bold;color:#fff;font-size:13px;display:table;float:left;margin:0 10px 10px 0;position:relative;background:#8b93ca;}
-#page #category .row .bubble .delete{background:transparent;border:0;width:30px;height:30px;position:absolute;right:0;top:0;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-118px -85px;cursor:pointer;}
+#page #category .row .bubble .delete{background:transparent;border:0;width:30px;height:30px;position:absolute;right:0;top:0;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-118px -85px;cursor:pointer;}
 #page #category .row .filter_box{text-align:left;width:280px;float:left;margin-right:40px;border:1px solid #dbdbdb;background:#fff;border-radius:3px;padding:20px;box-shadow:3px 3px 0 rgba(0,0,0,0.02);position:relative;}
-#page #category .row .filter_box .close{width:30px;height:30px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-211px -34px;position:absolute;top:0;right:0;cursor:pointer;}
+#page #category .row .filter_box .close{width:30px;height:30px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-211px -34px;position:absolute;top:0;right:0;cursor:pointer;}
 #page #category .row .filter_box .search{margin:0;padding:0;border:0;width:100%;box-shadow:none;}
 #page #category .row .filter_box .sorting_filter{display:none;}
 #page #category .row .filter_box .row{margin-bottom:20px;}
 #page #category .row .filter_box .row label{font-size:14px;margin:0 0 8px 0;display:block;font-weight:bold;}
 #page #category .row .filter_box .row .border{border:1px solid #dbdbdb;border-radius:3px;padding:2px;display:block;position:relative;}
-#page #category .row .filter_box .row .border .search_icon{width:30px;height:30px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-298px -35px;cursor:pointer;position:absolute;top:1px;right:2px;}
+#page #category .row .filter_box .row .border .search_icon{width:30px;height:30px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-298px -35px;cursor:pointer;position:absolute;top:1px;right:2px;}
 #page #category .row .filter_box .row .border .search_icon:hover{opacity:0.6;}
 #page #category .row .filter_box .row .border input{width:100%;border:0;padding:5px;font-family:'Open Sans',sans-serif;}
 #page #category .row .filter_box .row .border select{width:100%;border:0;padding:5px;font-family:'Open Sans',sans-serif;}
@@ -939,7 +939,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #category .row .ico_list table tr{width:100%;}
 #page #category .row .ico_list table tr th{border-bottom:1px solid #e1e1e1;padding:0 10px 10px 10px;font-size:12px;font-family:'Montserrat',sans-serif;color:#524e4e;text-transform:uppercase;letter-spacing:1px;}
 #page #category .row .ico_list.full_width table tr th{padding-top:10px;}
-#page #category .row .ico_list table tr th .sort{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;margin-bottom:-4px;cursor:pointer;}
+#page #category .row .ico_list table tr th .sort{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;margin-bottom:-4px;cursor:pointer;}
 #page #category .row .ico_list table tr th .none{background-position:-238px -39px;}
 #page #category .row .ico_list table tr th .asc{background-position:-257px -39px;}
 #page #category .row .ico_list table tr th .desc{background-position:-280px -39px;}
@@ -959,7 +959,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #category .row .ico_list table tr td .content{float:left;width:calc(100% - 66px);margin-left:10px;}
 #page #category .row .ico_list table tr td .content.people_content{margin-top:6px;}
 #page #category .row .ico_list table tr td .content.people_content.unclaimed{margin-top:15px;}
-#page #category .row .ico_list table tr td .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:-1px 5px 0 0;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:300px 300px;background-position:-243px -29px;text-indent: -9999px;display:table;float:left;width:15px;height:15px;}
+#page #category .row .ico_list table tr td .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:-1px 5px 0 0;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:300px 300px;background-position:-243px -29px;text-indent: -9999px;display:table;float:left;width:15px;height:15px;}
 #page #category .row .ico_list table tr td .image_box .image{text-decoration:none;height:50px;width:50px;border-radius:2px;background-repeat:no-repeat;background-position:center center;display:block;position:relative;background-size:50px 50px;image-rendering: -webkit-optimize-contrast;}
 #page #category .row .ico_list table tr td .image_box_people .image{text-decoration:none;height:50px;width:50px;border-radius:50px;background-repeat:no-repeat;background-position:center center;display:block;position:relative;background-size:50px 50px;image-rendering: -webkit-optimize-contrast;}
 #page #category .row .ico_list table tr td a.name:link, #page #category .row .ico_list table tr td a.name:visited, #page #category .row .ico_list table tr td a.name:active{font-weight:700;text-align:left;margin:5px 0 0 0;padding:0;font-size:14px;text-decoration:none;color:#3b3b3b;display:table;}
@@ -1039,7 +1039,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 	#page #category .row .ico_list table tr .ico_roi{width:35%;}
 
 	#page #category .mobile_filter{display:block;position:absolute;top:-5px;border-radius:3px;right:0;background:#fff;border:1px solid #dbdbdb;box-shadow:3px 3px 0 rgba(0,0,0,0.02);width:30px;height:30px;cursor:pointer;}
-	#page #category .mobile_filter .icon{width:30px;height:30px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-299px -36px;cursor:pointer;}
+	#page #category .mobile_filter .icon{width:30px;height:30px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-299px -36px;cursor:pointer;}
 	#page #category .mobile_filter:hover .icon{opacity:0.6;}
 	#page #category .showMobile{display:block;}
 	#page #category .row .filter_box{display:none;z-index:200;position:fixed;top:0;right:0;bottom:0;overflow-y:scroll;background:#fff;border:0;box-shadow:-300px 0 0 rgba(50,50,50,0.5),-600px 0 0 rgba(50,50,50,0.5),-900px 0 0 rgba(50,50,50,0.5), -5px 0 20px rgba(0,0,0,0.2);width:300px;margin:0;border-radius:0;}
@@ -1102,7 +1102,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page form .row .border option{border:0;font-size:14px;width:100%;padding:5px;}
 #page form .row .border textarea{border:0;font-size:14px;font-family:'Open Sans',sans-serif;width:100%;height:200px;resize:vertical;padding:10px;}
 #page form .row .border textarea::placeholder{font-size:14px;font-family:'Open Sans',sans-serif;font-style:normal;color:#999;}
-#page form .row .border #show{position:absolute;top:10px;right:10px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-337px -41px;width:25px;height:20px;display:block;text-indent:-9999px;cursor:pointer;}
+#page form .row .border #show{position:absolute;top:10px;right:10px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-337px -41px;width:25px;height:20px;display:block;text-indent:-9999px;cursor:pointer;}
 #page form .row .border .checkbox_group{overflow:hidden;padding:10px;}
 #page form .row .border .checkbox_group .checkbox{overflow:hidden;width:50%;float:left;text-align:left;margin-bottom:10px;}
 #page form .row .border .checkbox_group .checkbox:nth-child(2n+1){clear:left;}
@@ -1132,11 +1132,11 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #login .below_form .right{float:right;}
 #page #login form .socials{border-top:1px solid #dbdbdb;padding-top:20px;margin-top:20px;}
 #page #login form .socials .button_facebook{background:#4267b2;border-radius:3px;margin:20px auto 0 auto;padding:15px 30px;color:#fff;font-weight:bold;display:block;text-align:center;text-decoration:none;position:relative;font-size:14px;}
-#page #login form .socials .button_facebook .icon{position:absolute;top:15px;left:20px;width:10px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-224px -24px;}
+#page #login form .socials .button_facebook .icon{position:absolute;top:15px;left:20px;width:10px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-224px -24px;}
 #page #login form .socials .button_linkedin{background:#0077b5;border-radius:3px;margin:20px auto 0 auto;padding:15px 30px;color:#fff;font-weight:bold;display:block;text-align:center;text-decoration:none;position:relative;font-size:14px;}
-#page #login form .socials .button_linkedin .icon{position:absolute;top:15px;left:20px;width:14px;height:17px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-200px -23px;}
+#page #login form .socials .button_linkedin .icon{position:absolute;top:15px;left:20px;width:14px;height:17px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-200px -23px;}
 #page #login form .socials .button_vk{background:#4a76a8;border-radius:3px;margin:20px auto 0 auto;padding:15px 30px;color:#fff;font-weight:bold;display:block;text-align:center;text-decoration:none;position:relative;font-size:14px;}
-#page #login form .socials .button_vk .icon{position:absolute;top:16px;left:18px;width:20px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-156px -24px;}
+#page #login form .socials .button_vk .icon{position:absolute;top:16px;left:18px;width:20px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-156px -24px;}
 #page #login form .socials .button_facebook:hover, #page #login form .socials .button_linkedin:hover, #page #login form .socials .button_vk:hover{opacity:0.6;}
 
 #page #register{background:#f8f8f8;}
@@ -1144,15 +1144,15 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #register .register_form .left{float:left;width:calc(50% - 1px);border-right:1px solid #dbdbdb;padding:30px 30px 62px 30px;text-align:left;position:relative;}
 #page #register .register_form .left form{border:0;box-shadow:none;margin:0;padding:0;width:100%;}
 #page #register .register_form .left .checkbox{border:1px solid #dbdbdb;background-color:#fff;border-radius:2px;display:table;width:20px;height:20px;float:left;cursor:pointer;}
-#page #register .register_form .left .checkbox.check{background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-237px -93px;}
+#page #register .register_form .left .checkbox.check{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-237px -93px;}
 #page #register .register_form .left .text{font-size:14px;color:#616060;float:left;margin:3px 0 20px 10px;width:calc(100% - 30px);}
 #page #register .register_form .right{float:right;width:50%;padding:30px;font-size:14px;text-align:left;border-radius:0 5px 5px 0;}
 #page #register .register_form .right .button_facebook{background:#4267b2;border-radius:3px;margin:20px auto 0 auto;padding:15px 30px;color:#fff;font-weight:bold;display:block;text-align:center;text-decoration:none;position:relative;}
-#page #register .register_form .right .button_facebook .icon{position:absolute;top:15px;left:20px;width:10px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-224px -24px;}
+#page #register .register_form .right .button_facebook .icon{position:absolute;top:15px;left:20px;width:10px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-224px -24px;}
 #page #register .register_form .right .button_linkedin{background:#0077b5;border-radius:3px;margin:20px auto 0 auto;padding:15px 30px;color:#fff;font-weight:bold;display:block;text-align:center;text-decoration:none;position:relative;}
-#page #register .register_form .right .button_linkedin .icon{position:absolute;top:15px;left:20px;width:14px;height:17px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-200px -23px;}
+#page #register .register_form .right .button_linkedin .icon{position:absolute;top:15px;left:20px;width:14px;height:17px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-200px -23px;}
 #page #register .register_form .right .button_vk{background:#4a76a8;border-radius:3px;margin:20px auto 0 auto;padding:15px 30px;color:#fff;font-weight:bold;display:block;text-align:center;text-decoration:none;position:relative;}
-#page #register .register_form .right .button_vk .icon{position:absolute;top:16px;left:18px;width:20px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-156px -24px;}
+#page #register .register_form .right .button_vk .icon{position:absolute;top:16px;left:18px;width:20px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-156px -24px;}
 #page #register .register_form .right .button_facebook:hover, #page #register .register_form .right .button_linkedin:hover, #page #register .register_form .right .button_vk:hover{opacity:0.6;}
 #page #register .register_form .below_form{color:#969696;border-top:1px solid #dbdbdb;background:#fbfbfb;padding:15px 30px;font-size:12px;position:absolute;line-height:1.3;bottom:0;left:0;right:0;border-radius:0 0 5px 5px;}
 #page #register .register_form .below_form a:link, #page #register .register_form .below_form a:visited, #page #register .register_form .below_form a:active{color:#969696;text-decoration:underline;}
@@ -1236,8 +1236,8 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #join_expert .row{margin-bottom:15px;position:relative;border-bottom:1px solid #f8f8f8;padding-bottom:5px;}
 #page #join_expert .row:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0;}
 #page #join_expert .row label{font-size:14px;letter-spacing:0;text-transform:none;}
-#page #join_expert .row .tick{position:absolute;width:18px;height:14px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-256px -96px;top:1px;right:0;}
-#page #join_expert .row .cross{position:absolute;width:18px;height:14px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-274px -96px;top:1px;right:0;}
+#page #join_expert .row .tick{position:absolute;width:18px;height:14px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-256px -96px;top:1px;right:0;}
+#page #join_expert .row .cross{position:absolute;width:18px;height:14px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-274px -96px;top:1px;right:0;}
 #page #join_expert .row .update_link{color:#ff3333;font-size:13px;font-weight:bold;position:absolute;right:22px;top:-1px;}
 #page #join_expert .row .update_link:hover{opacity:0.5;}
 #page #join_expert form .disabled{border:0;padding:10px 20px;border-radius:3px;color:#fff;font-weight:700;font-family:'Open Sans',sans-serif;font-size:14px;background:#ddd;cursor:default;}
@@ -1270,10 +1270,10 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #experts .row .rate_stats .graphs .color4{height:3px;border-radius:5px;margin-bottom:3px;background:#a3bf43;min-width:2px;}
 #page #experts .row .rate_stats .graphs .color5{height:3px;border-radius:5px;margin-bottom:3px;background:#68b541;min-width:2px;}
 #page #experts .row .socials{display:block;float:left;width:90px;margin:20px 0 0 20px;text-align:left;}
-#page #experts .row .socials .twitter{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-173px -18px;text-decoration:none;margin:0 5px 0 0;}
-#page #experts .row .socials .linkedin{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-194px -18px;text-decoration:none;margin:0 5px 0 0;}
-#page #experts .row .socials .facebook{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-215px -18px;text-decoration:none;margin:0 5px 0 0;}
-#page #experts .row .socials .www{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-235px -18px;text-decoration:none;;margin:0 5px 0 0;}
+#page #experts .row .socials .twitter{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-173px -18px;text-decoration:none;margin:0 5px 0 0;}
+#page #experts .row .socials .linkedin{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-194px -18px;text-decoration:none;margin:0 5px 0 0;}
+#page #experts .row .socials .facebook{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-215px -18px;text-decoration:none;margin:0 5px 0 0;}
+#page #experts .row .socials .www{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-235px -18px;text-decoration:none;;margin:0 5px 0 0;}
 #page #experts .row .socials .twitter:hover{opacity:0.5;}
 #page #experts .row .socials .linkedin:hover{opacity:0.5;}
 #page #experts .row .socials .facebook:hover{opacity:0.5;}
@@ -1307,10 +1307,10 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #media .col_4 .big_light{width:180px;height:82px;padding:20px;background:#ffffff;margin:0 auto 20px auto;border-radius:2px;}
 #page #media .col_4 .big_dark{width:180px;height:82px;padding:20px;background:#4954ac;margin:0 auto 20px auto;border-radius:2px;}
 
-#page #media .col_4 .small_light .logo{width:42px;height:42px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -42px;}
-#page #media .col_4 .small_dark .logo{width:42px;height:42px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;}
-#page #media .col_4 .big_light .logo{width:140px;height:42px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -42px;}
-#page #media .col_4 .big_dark .logo{width:140px;height:42px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;}
+#page #media .col_4 .small_light .logo{width:42px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -42px;}
+#page #media .col_4 .small_dark .logo{width:42px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;}
+#page #media .col_4 .big_light .logo{width:140px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 -42px;}
+#page #media .col_4 .big_dark .logo{width:140px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;}
 
 #page #media .col_4 a:link, #page #media .col_4 a:visited, #page #media .col_4 a:active{color:#4954ac;font-size:14px;display:block;text-align:center;margin:0 auto 10px auto;}
 
@@ -1355,7 +1355,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #premium h1{text-align:center;display:table;margin:0 auto 50px auto;color:#eab63d;font-family:'Montserrat', sans-serif;font-size:36px;font-weight:600;}
 #page #premium p{text-align:center;display:table;margin:0 auto 80px auto;color:#5b5a5a;font-family:'Open Sans', sans-serif;font-size:24px;font-weight:400;width:auto;max-width:870px;}
 #page #premium p b{color:#363636;}
-#page #premium .star{font-weight:700;font-size:12px;color:#fff;border-radius:3px;padding:3px 6px;margin:0 10px -2px 0;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:600px 600px;background-position:-486px -58px;text-indent: -9999px;display:inline-block;width:30px;height:30px;}
+#page #premium .star{font-weight:700;font-size:12px;color:#fff;border-radius:3px;padding:3px 6px;margin:0 10px -2px 0;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:600px 600px;background-position:-486px -58px;text-indent: -9999px;display:inline-block;width:30px;height:30px;}
 #page #premium .premium_image{width:600px;height:300px;background:url("../images/premium_image.png") no-repeat;background-size:600px 300px;background-position:0 0;margin:80px auto;}
 #page #premium .row{overflow:hidden;}
 #page #premium .row .col_3{width:calc(33.33% - 20px);float:left;margin-right:30px;}
@@ -1536,7 +1536,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #services_contact form .row .border option{border:0;font-size:14px;width:100%;padding:5px;}
 #page #services_contact form .row .border textarea{border:0;font-size:14px;font-family:'Open Sans',sans-serif;width:100%;height:200px;resize:vertical;padding:10px;}
 #page #services_contact form .row .border textarea::placeholder{font-size:14px;font-family:'Open Sans',sans-serif;font-style:normal;color:#999;}
-#page #services_contact form .row .border #show{position:absolute;top:10px;right:10px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-337px -41px;width:25px;height:20px;display:block;text-indent:-9999px;cursor:pointer;}
+#page #services_contact form .row .border #show{position:absolute;top:10px;right:10px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-337px -41px;width:25px;height:20px;display:block;text-indent:-9999px;cursor:pointer;}
 #page #services_contact form .row .border .checkbox_group{overflow:hidden;padding:10px;}
 #page #services_contact form .row .border .checkbox_group .checkbox{overflow:hidden;width:50%;float:left;text-align:left;margin-bottom:10px;}
 #page #services_contact form .row .border .checkbox_group .checkbox:nth-child(2n+1){clear:left;}
@@ -1579,7 +1579,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #analyzer .search button{background:#3fb9ec;color:#fff;font-weight:bold;font-size:18px;padding:15px 35px;border-radius:50px;border:0;position:absolute;right:-1px;bottom:0;top:0;cursor:pointer;}
 #page #analyzer .search button:hover{background:#5fc6f1;}
 #page #analyzer .search #dropdown{position:absolute;left:0;top:72px;right:0;background:#fff;box-shadow:0 0 15px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0,0,0,0.2);border-radius:15px;width:100%;display:none;z-index:101;}
-#page #analyzer .search #dropdown .arrow{background:url("../images/sprite.svg") no-repeat;background-position:-198px -73px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;left:40px;}
+#page #analyzer .search #dropdown .arrow{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-198px -73px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;left:40px;}
 #page #analyzer .search #dropdown .option{width:100%;overflow:hidden;margin:0;color:#222;text-decoration:none;padding:15px;display:block;}
 #page #analyzer .search #dropdown .option:nth-child(2){border-top-left-radius:15px;border-top-right-radius:15px;}
 #page #analyzer .search #dropdown .option:last-child{border-bottom-left-radius:15px;border-bottom-right-radius:15px;}
@@ -1595,7 +1595,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 
 
 .ui-menu{background:#fff;border:1px solid #dbdbdb;border-radius:15px;box-shadow:3px 3px 0 rgba(0, 0, 0, 0.02);width:600px;padding:0;margin:0;}
-.ui-menu:before{background:url("../images/sprite.svg") no-repeat;background-position:-198px -96px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;left:40px;}
+.ui-menu:before{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-198px -96px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;left:40px;}
 .ui-menu .ui-menu-item{width:100%;overflow:hidden;margin:0;padding:10px;display:block;}
 .ui-menu .ui-menu-item:first-child{border-radius:15px 15px 0 0;}
 .ui-menu .ui-menu-item:last-child{margin:0 0 0 0;border-radius:0 0 15px 15px;}
@@ -1616,7 +1616,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #analyzer_profile .line{border-top:1px solid #dbdbdb;width:100px;margin:0 auto 40px auto;}
 #page #analyzer_profile .analyze_result{max-width:840px;margin:0 auto 40px auto;border:1px solid #dbdbdb;box-shadow:3px 3px 0 rgba(0, 0, 0, 0.02);}
 #page #analyzer_profile .analyze_result .top{border-bottom:1px solid #dbdbdb;padding:30px;overflow:hidden;}
-#page #analyzer_profile .analyze_result .top .icon{width:120px;height:92px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;float:left;}
+#page #analyzer_profile .analyze_result .top .icon{width:120px;height:92px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;float:left;}
 #page #analyzer_profile .analyze_result .top .icon.team{background-position:-2px -172px;}
 #page #analyzer_profile .analyze_result .top .icon.ico{background-position:-133px -172px;}
 #page #analyzer_profile .analyze_result .top .icon.product{background-position:-2px -281px;height:80px;}
@@ -1633,7 +1633,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #analyzer_profile .analyze_result .bottom .text .row label.result .failed{color:#e44054;}
 #page #analyzer_profile .analyze_result .bottom .text .row label.result .passed{color:#20b555;}
 #page #analyzer_profile .analyze_result .bottom .text .row label.result .pending{font-weight:normal;color:#c5c5c5;}
-#page #analyzer_profile .analyze_result .bottom .text .row label.result .tick{background:url("../images/sprite.svg") no-repeat;background-position:-258px -96px;background-size:400px 400px;width:18px;height:12px;margin:4px auto 0 auto;display:inline-block;}
+#page #analyzer_profile .analyze_result .bottom .text .row label.result .tick{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-258px -96px;background-size:400px 400px;width:18px;height:12px;margin:4px auto 0 auto;display:inline-block;}
 #page #analyzer_profile .analyze_result .bottom .text .row label.result .tick.gray{-webkit-filter: grayscale(100%);opacity:0.3;}
 #page #analyzer_profile .analyze_result .bottom .graph{display:table-cell;width:50%;padding-left:40px;vertical-align:middle;text-align:center;}
 #page #analyzer_profile .analyze_result .bottom .graph .chart-text{font:8px "Open Sans", sans-serif;font-weight:bold;fill: #4954ac;-moz-transform:translateY(0.35em);-ms-transform:translateY(0.35em);-webkit-transform:translateY(0.35em);transform:translateY(0.35em);}
@@ -1652,7 +1652,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #analyzer_first .features{width:100%;margin-top:90px;}
 #page #analyzer_first .features .col_3{width:calc(33.33% - 30px);float:left;margin-right:45px;position:relative;}
 #page #analyzer_first .features .col_3:last-child{margin-right:0;}
-#page #analyzer_first .features .col_3 .icon{position:absolute;left:0;top:0;width:36px;height:28px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;color:#3d3d3d;font-family:'Montserrat', sans-serif;font-size:40px;font-weight:600;text-align:right;}
+#page #analyzer_first .features .col_3 .icon{position:absolute;left:0;top:0;width:36px;height:28px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;color:#3d3d3d;font-family:'Montserrat', sans-serif;font-size:40px;font-weight:600;text-align:right;}
 #page #analyzer_first .features .col_3 .icon.decisions{background-position:0 -368px;}
 #page #analyzer_first .features .col_3 .icon.trust{background-position:-33px -368px;width:30px;margin-left:3px;}
 #page #analyzer_first .features .col_3 .icon.ranking{background-position:-64px -368px;}
@@ -1859,7 +1859,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 /* USER PROFILE */
 header.logedin .frame{position:relative;}
 header #profile{float:right;margin-top:10px;}
-header #profile .arrow{float:right;background:url("../images/sprite.svg") no-repeat;background-position:-158px -95px;background-size:400px 400px;width:15px;height:15px;cursor:pointer;margin:20px 0 0 10px;}
+header #profile .arrow{float:right;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-158px -95px;background-size:400px 400px;width:15px;height:15px;cursor:pointer;margin:20px 0 0 10px;}
 header #profile .image{width:50px;height:50px;border-radius:50px;float:right;position:relative;}
 header #profile .image img{width:50px;height:50px;border-radius:50px;}
 header #profile .image .notifications{background:#f6497a;text-align:center;font-weight:bold;color:#fff;font-size:12px;position:absolute;top:-5px;right:-5px;padding:5px 9px 7px 10px;border-radius:20px;box-shadow:2px 2px 0 rgba(0,0,0,0.2);}
@@ -1867,7 +1867,7 @@ header #profile .data{float:right;text-align:right;margin:10px 10px 0 0;}
 header #profile .data .name{color:#fff;font-weight:bold;font-size:14px;margin-bottom:5px;}
 header #profile .data .title{color:#fff;font-weight:normal;font-size:12px;}
 header #profile_dropdown{display:none;position:absolute;right:0;top:76px;background:#fff;border-radius:5px;box-shadow:3px 3px 0 rgba(0,0,0,0.02);border:1px solid #dbdbdb;min-width:180px;z-index:101;}
-header #profile_dropdown .arrow{background:url("../images/sprite.svg") no-repeat;background-position:-198px -96px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;right:10px;}
+header #profile_dropdown .arrow{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-198px -96px;background-size:400px 400px;width:18px;height:18px;position:absolute;top:-10px;right:10px;}
 header #profile_dropdown .link{display:block;border-bottom:1px solid #e8e8e8;padding:15px 20px;text-align:left;text-decoration:none;color:#524e4e;font-size:14px;}
 header #profile_dropdown .link:last-child{border-bottom:0;}
 header #profile_dropdown .link:hover{color:#aaa;}
@@ -1896,7 +1896,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #settings .row .col_2_2 .row label{font-size:14px;margin:0 0 5px 0;display:block;color:#979797;width:100%;}
 #settings .row .col_2_2 .row .input{border:1px solid #e1e1e1;background:#fff;padding:5px;border-radius:2px;display:block;margin-bottom:20px;width:100%;position:relative;}
 #settings .row .col_2_2 .row .input.disabled{padding:0;}
-#settings .row .col_2_2 .row .input #show1, #settings .row .col_2_2 .row .input #show2{position:absolute;top:10px;right:10px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-337px -41px;width:25px;height:20px;display:block;text-indent:-9999px;cursor:pointer;}
+#settings .row .col_2_2 .row .input #show1, #settings .row .col_2_2 .row .input #show2{position:absolute;top:10px;right:10px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-337px -41px;width:25px;height:20px;display:block;text-indent:-9999px;cursor:pointer;}
 #settings .row .col_2_2 .row .input input{border:0;font-family:'Open Sans',sans-serif;font-size:14px;width:100%;padding:5px;line-height:1.5;}
 #settings .row .col_2_2 .row .input.disabled input{padding:10px;}
 #settings .row .col_2_2 .row .input input:disabled{background:#f8f8f8;color:#999;}
@@ -1911,8 +1911,8 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #settings .row .col_2_2 .row.url .input .url_path{background:#f8f8f8;border-right:1px solid #dbdbdb;position:absolute;top:0;bottom:0;left:0;padding:14px 15px 0 15px;border-radius:3px 0 0 3px;font-size:14px;color:#999;}
 #settings .row .col_2_2 .row.url .input .button{background:#4954ac;color:#fff;font-weight:bold;position:absolute;top:3px;bottom:3px;right:3px;padding:11px 21px 10px;border-radius:3px;font-size:14px;}
 #settings .row .col_2_2 .row.url .input .result{display:none;}
-#settings .row .col_2_2 .row.url .input .result.available{width:14px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-260px -94px;position:absolute;right:100px;top:13px;text-indent:-9999px;}
-#settings .row .col_2_2 .row.url .input .result.unavailable{width:14px;height:16px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-277px -94px;position:absolute;right:100px;top:13px;text-indent:-9999px;}
+#settings .row .col_2_2 .row.url .input .result.available{width:14px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-260px -94px;position:absolute;right:100px;top:13px;text-indent:-9999px;}
+#settings .row .col_2_2 .row.url .input .result.unavailable{width:14px;height:16px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-277px -94px;position:absolute;right:100px;top:13px;text-indent:-9999px;}
 #settings .row .col_2_2 .row .checkbox_group{overflow:hidden;}
 #settings .row .col_2_2 .row .checkbox_group input{display:inline-table;width:auto;float:left;margin-bottom:20px;}
 #settings .row .col_2_2 .row .checkbox_group label{font-size:14px;margin:2px 0 5px 6px;color:#524e4e;width:auto;display:inline-table;float:left;}
@@ -1939,7 +1939,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #my-ratings .ratings_box .rating_list .tile .ico_data{width:100%;display:block;overflow:hidden;}
 #my-ratings .ratings_box .rating_list .tile .ico_data .image_box{float:left;width:56px;height:56px;padding:2px;border:1px solid #e1e1e1;background:#fff;border-radius:5px;overflow:hidden;}
 #my-ratings .ratings_box .rating_list .tile .ico_data .content{float:left;width:calc(100% - 66px);margin-left:10px;margin-top:0;}
-#my-ratings .ratings_box .rating_list .tile .ico_data .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:-1px 5px 0 0;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:300px 300px;background-position:-243px -29px;text-indent: -9999px;display:table;float:left;width:15px;height:15px;}
+#my-ratings .ratings_box .rating_list .tile .ico_data .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:-1px 5px 0 0;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:300px 300px;background-position:-243px -29px;text-indent: -9999px;display:table;float:left;width:15px;height:15px;}
 #my-ratings .ratings_box .rating_list .tile .ico_data a.image{text-decoration:none;height:50px;width:50px;border-radius:2px;background-repeat:no-repeat;background-position:center center;display:block;position:relative;background-size:50px 50px;}
 #my-ratings .ratings_box .rating_list .tile .ico_data a.name:link, #my-ratings .ratings_box .rating_list .tile .ico_data a.name:visited, #my-ratings .ratings_box .rating_list .tile .ico_data a.name:active{font-weight:700;text-align:left;margin:5px 0 0 0;padding:0;font-size:14px;text-decoration:none;color:#3b3b3b;display:table;}
 #my-ratings .ratings_box .rating_list .tile .ico_data p{font-size:13px;line-height:1.15;padding:0;margin:3px 0 0 0;text-align:left;}
@@ -1973,7 +1973,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #latest-icos .ico_list table tr td .button:hover{opacity:0.8;}
 #latest-icos .ico_list table tr td .image_box{float:left;width:56px;height:56px;padding:2px;border:1px solid #e1e1e1;background:#fff;border-radius:5px;overflow:hidden;}
 #latest-icos .ico_list table tr td .content{float:left;width:calc(100% - 66px);margin-left:10px;}
-#latest-icos .ico_list table tr td .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:-1px 5px 0 0;text-transform:uppercase;background:#eab63d url("../images/sprite.svg") no-repeat;background-size:300px 300px;background-position:-243px -29px;text-indent: -9999px;display:table;float:left;width:15px;height:15px;}
+#latest-icos .ico_list table tr td .premium{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;margin:-1px 5px 0 0;text-transform:uppercase;background:#eab63d url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:300px 300px;background-position:-243px -29px;text-indent: -9999px;display:table;float:left;width:15px;height:15px;}
 #latest-icos .ico_list table tr td a.image{text-decoration:none;height:50px;width:50px;border-radius:2px;background-repeat:no-repeat;background-position:center center;display:block;position:relative;background-size:50px 50px;image-rendering: -webkit-optimize-contrast;}
 #latest-icos .ico_list table tr td a.name:link, #latest-icos .ico_list table tr td a.name:visited, #latest-icos .ico_list table tr td a.name:active{font-weight:700;text-align:left;margin:5px 0 0 0;padding:0;font-size:14px;text-decoration:none;color:#3b3b3b;display:table;}
 #latest-icos .ico_list table tr td p{font-size:13px;line-height:1.0;padding:0;margin:3px 0 0 0;text-align:left;}
@@ -2020,7 +2020,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #user_profile_header .image .title{position:absolute;bottom:0;left: 50%;transform: translateX(-50%);margin:0 auto;background:#fc2a56;padding:4px 5px 5px 7px;border-radius:2px;color:#fff;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:2px;}
 #user_profile_header .profile_data{float:left;text-align:left;width:calc(100% - 420px);margin:20px 0 20px 20px;}
 #user_profile_header .profile_data h1{color:#1c1c1c;font-size:24px;font-weight:600;font-family:'Montserrat',sans-serif;text-align:left;margin:0;padding:0;line-height:1.3;float:left;}
-#user_profile_header .profile_data .kyc_badge{display:block;width:24px;height:24px;;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-348px -90px;float:left;margin:4px 0 0 5px;}
+#user_profile_header .profile_data .kyc_badge{display:block;width:24px;height:24px;;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-348px -90px;float:left;margin:4px 0 0 5px;}
 #user_profile_header .profile_data .people_ranking{border:2px solid #5a67b9;color:#5a67b9;font-size:11px;font-weight:bold;padding:4px 4px 5px 4px;float:left;line-height:1;display:block;margin:3px 6px 0 0;font-family:'Open Sans', sans-serif;text-transform:uppercase;}
 #user_profile_header .profile_data .people_ranking.rank_1{border:2px solid #bfa664;color:#bfa664;}
 #user_profile_header .profile_data .people_ranking.rank_2{border:2px solid #a3a9af;color:#a3a9af;}
@@ -2033,19 +2033,19 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #user_profile_header .profile_data h2{color:#646464;font-size:16px;font-weight:400;font-family:'Open Sans',sans-serif;text-align:left;margin:0;padding:0;line-height:1.3;}
 #user_profile_header .profile_data .links{overflow:hidden;display:block;padding-top:15px;}
 #user_profile_header .profile_data .links .location{float:left;margin-right:20px;color:#aeaeae;font-weight:bold;font-size:14px;text-shadow:1px 1px 0 #fff;}
-#user_profile_header .profile_data .links .location .icon{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-374px -39px;text-decoration:none;text-indent:-99999px;float:left;margin-right:0;margin-top:-3px;}
+#user_profile_header .profile_data .links .location .icon{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-374px -39px;text-decoration:none;text-indent:-99999px;float:left;margin-right:0;margin-top:-3px;}
 #user_profile_header .profile_data .links a{float:left;margin-right:20px;}
-#user_profile_header .profile_data .links .twitter{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .facebook{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .vk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .slack{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .reddit{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .www{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .bitcointalk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .github{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .medium{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .telegram{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#user_profile_header .profile_data .links .linkedin{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-367px -22px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .twitter{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .facebook{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .vk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .slack{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .reddit{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .www{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .bitcointalk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .github{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .medium{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .telegram{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#user_profile_header .profile_data .links .linkedin{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-367px -22px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
 
 #user_profile_header .profile_data .links .twitter:hover{opacity:0.5;}
 #user_profile_header .profile_data .links .facebook:hover{opacity:0.5;}
@@ -2109,7 +2109,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 
 #user_profile_content .right{float:right;width:300px;text-align:left}
 #user_profile_content .right h3{color:#1c1c1c;font-size:18px;font-weight:bold;font-family:'Open Sans',sans-serif;text-align:left;margin:0 0 15px 0;padding:0;line-height:1.3;}
-#user_profile_content .right h3 .help{width:15px;height:15px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-49px -95px;display:inline-block;margin-bottom:-3px;}
+#user_profile_content .right h3 .help{width:15px;height:15px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-49px -95px;display:inline-block;margin-bottom:-3px;}
 #user_profile_content .right h3 .help:hover{opacity:0.5;}
 #user_profile_content .right .graph_box{padding:0;margin-bottom:40px;position:relative;overflow:hidden;}
 #user_profile_content .right .graph_box .rate{position:absolute;top:10px;right:5px;border-radius:2px;background:#4954ac;padding:10px 10px;font-size:18px;font-weight:600;font-family:'Montserrat',sans-serif;color:#fff;}
@@ -2193,7 +2193,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 @media (max-width: 600px) {
 	header #profile .data{display:none;}
 	nav#bottom_menu .frame{margin:0;width:100%;}
-	nav#bottom_menu #bottom_hamburger{width:30px;height:30px;margin:10px;float:right;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-98px -128px;cursor:pointer;}
+	nav#bottom_menu #bottom_hamburger{width:30px;height:30px;margin:10px;float:right;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-98px -128px;cursor:pointer;}
 	nav#bottom_menu #bottom_hamburger:hover{opacity:0.7;}
 	nav#bottom_menu #bottom_hamburger_open{display:none;border-top:1px solid #dbdbdb;}
 	nav#bottom_menu #bottom_hamburger_open.display{display:table;width:100%;}
@@ -2236,19 +2236,19 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #agency_profile_header .profile_data h2{color:#646464;font-size:16px;font-weight:400;font-family:'Open Sans',sans-serif;text-align:left;margin:0;padding:0;line-height:1.3;}
 #agency_profile_header .profile_data .links{overflow:hidden;display:block;padding-top:15px;}
 #agency_profile_header .profile_data .links .location{float:left;margin-right:20px;color:#aeaeae;font-weight:bold;font-size:14px;text-shadow:1px 1px 0 #fff;}
-#agency_profile_header .profile_data .links .location .icon{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-374px -39px;text-decoration:none;text-indent:-99999px;float:left;margin-right:0;margin-top:-3px;}
+#agency_profile_header .profile_data .links .location .icon{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-374px -39px;text-decoration:none;text-indent:-99999px;float:left;margin-right:0;margin-top:-3px;}
 #agency_profile_header .profile_data .links a{float:left;margin-right:20px;}
-#agency_profile_header .profile_data .links .twitter{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .facebook{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .vk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .slack{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .reddit{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .www{margin-top:-1px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .bitcointalk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .github{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .medium{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .telegram{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#agency_profile_header .profile_data .links .linkedin{margin-top:0;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-367px -22px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .twitter{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .facebook{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .vk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .slack{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .reddit{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .www{margin-top:-1px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .bitcointalk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .github{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .medium{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .telegram{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#agency_profile_header .profile_data .links .linkedin{margin-top:0;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-367px -22px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
 
 #agency_profile_header .profile_data .links .twitter:hover{opacity:0.5;}
 #agency_profile_header .profile_data .links .facebook:hover{opacity:0.5;}
@@ -2303,7 +2303,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 
 #agency_profile_content .right{float:right;width:300px;text-align:left}
 #agency_profile_content .right h3{color:#1c1c1c;font-size:18px;font-weight:bold;font-family:'Open Sans',sans-serif;text-align:left;margin:0 0 15px 0;padding:0;line-height:1.3;}
-#agency_profile_content .right h3 .help{width:15px;height:15px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-49px -95px;display:inline-block;margin-bottom:-3px;}
+#agency_profile_content .right h3 .help{width:15px;height:15px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-49px -95px;display:inline-block;margin-bottom:-3px;}
 #agency_profile_content .right h3 .help:hover{opacity:0.5;}
 #agency_profile_content .right .graph_box{padding:0;margin-bottom:40px;position:relative;overflow:hidden;}
 #agency_profile_content .right .graph_box .rate{position:absolute;top:10px;right:5px;border-radius:2px;background:#4954ac;padding:10px 10px;font-size:18px;font-weight:600;font-family:'Montserrat',sans-serif;color:#fff;}
@@ -2374,19 +2374,19 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #exchange_profile_header .profile_data h2{color:#646464;font-size:16px;font-weight:400;font-family:'Open Sans',sans-serif;text-align:left;margin:0;padding:0;line-height:1.3;}
 #exchange_profile_header .profile_data .links{overflow:hidden;display:block;padding-top:15px;}
 #exchange_profile_header .profile_data .links .location{float:left;margin-right:20px;color:#aeaeae;font-weight:bold;font-size:14px;text-shadow:1px 1px 0 #fff;}
-#exchange_profile_header .profile_data .links .location .icon{width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-374px -39px;text-decoration:none;text-indent:-99999px;float:left;margin-right:0;margin-top:-3px;}
+#exchange_profile_header .profile_data .links .location .icon{width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-374px -39px;text-decoration:none;text-indent:-99999px;float:left;margin-right:0;margin-top:-3px;}
 #exchange_profile_header .profile_data .links a{float:left;margin-right:20px;}
-#exchange_profile_header .profile_data .links .twitter{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .facebook{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .vk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .slack{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .reddit{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .www{margin-top:-1px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .bitcointalk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .github{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .medium{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .telegram{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
-#exchange_profile_header .profile_data .links .linkedin{margin-top:0;width:18px;height:18px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-367px -22px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .twitter{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-179px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .facebook{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-197px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .vk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-302px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .slack{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-218px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .reddit{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-280px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .www{margin-top:-1px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-240px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .bitcointalk{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-259px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .github{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .medium{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-347px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .telegram{margin-top:-2px;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-366px 0;text-decoration:none;text-indent:-99999px;margin-right:10px;}
+#exchange_profile_header .profile_data .links .linkedin{margin-top:0;width:18px;height:18px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-367px -22px;text-decoration:none;text-indent:-99999px;margin-right:10px;}
 
 #exchange_profile_header .profile_data .links .twitter:hover{opacity:0.5;}
 #exchange_profile_header .profile_data .links .facebook:hover{opacity:0.5;}
@@ -2534,7 +2534,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #page #faq_header p{font-size:14px;font-weight:400;font-family:'Open Sans',sans-serif;color:#7c7c7c;text-align:left;margin:5px 0 0 0;padding:0;display:table;line-height:1.3;}
 #page #faq_header .search{position:absolute;top:6px;right:0;border:1px solid #e1e1e1;background:#fff;border-radius:50px;padding:0;margin:0;width:auto;overflow:hidden;box-shadow:3px 3px 0 rgba(0,0,0,0.02);}
 #page #faq_header .search input{border:0;padding:3px 0 3px 15px;font-family:'Open Sans',sans-serif;font-size:13px;width:150px;float:left;margin-top:3px;}
-#page #faq_header .search .icon{width:30px;height:30px;display:inline-block;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-298px -35px;cursor:pointer;margin-right:5px;float:right;}
+#page #faq_header .search .icon{width:30px;height:30px;display:inline-block;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-298px -35px;cursor:pointer;margin-right:5px;float:right;}
 #page #faq{overflow:hidden;padding:40px;}
 #page #faq .left_menu{width:300px;float:left;text-align:left;}
 #page #faq .left_menu ul{margin:0 0 40px 0;padding:0;list-style:none;}
@@ -2547,7 +2547,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #page #faq .left_menu .button:hover{opacity:0.7;}
 #page #faq .right_content{width:calc(100% - 340px);float:right;text-align:left;}
 #page #faq .right_content .row{position:relative;}
-#page #faq .right_content .row:hover .link{display:table;position:absolute;top:32px;right:0;width:20px;height:20px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-136px -136px;}
+#page #faq .right_content .row:hover .link{display:table;position:absolute;top:32px;right:0;width:20px;height:20px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-136px -136px;}
 #page #faq .right_content h2{font-size:22px;font-family:'Montserrat',sans-serif;font-weight:600;color:#4954ac;padding:0;margin:12px 0 20px 0;}
 #page #faq .right_content h3{font-size:18px;font-family:'Open Sans',sans-serif;font-weight:bold;color:#2f2f2f;line-height:1.15;margin:30px 0 10px 0;padding:30px 40px 0 0;border-top:1px solid #dbdbdb;}
 #page #faq .right_content p{font-size:14px;font-family:'Open Sans',sans-serif;font-weight:400;color:#2f2f2f;line-height:1.5;margin:0 0 20px 0;}
@@ -2569,7 +2569,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 	#page #faq .right_content{width:calc(100% - 260px);}
 }
 @media (max-width: 800px) {
-	#page #faq .right_content .row .link{display:table;position:absolute;top:32px;right:0;width:20px;height:20px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-136px -136px;}
+	#page #faq .right_content .row .link{display:table;position:absolute;top:32px;right:0;width:20px;height:20px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-136px -136px;}
 }
 @media (max-width: 740px) {
 
@@ -2591,11 +2591,11 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #icotheque_header .row .col_3 .image{display:block;z-index:99;width:300px;height:190px;margin:0 auto 20px auto;overflow:hidden;border-radius:3px;position:relative;text-align:center;box-shadow:0 0 40px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.4);cursor:pointer;}
 #icotheque_header .row .col_3 .image img{height:256px;margin:-34px auto 0 auto;}
 #icotheque_header .row .col_3 .image .likes{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.8);padding:8px 8px 8px 26px;border-radius:3px;font-size:10px;color:#fff;font-weight:bold;}
-#icotheque_header .row .col_3 .image .likes .icon{background:url("../images/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:7px;left:8px;}
-#icotheque_header .row .col_3 .image:hover .hover_image{border-radius:40px;background:url("../images/sprite.svg") no-repeat;background-position:-302px -84px;background-color:rgba(0,0,0,0.8);background-size:400px 400px;width:45px;height:45px;position:absolute;top:72px;left:50%;margin-left:-22.5px;}
+#icotheque_header .row .col_3 .image .likes .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:7px;left:8px;}
+#icotheque_header .row .col_3 .image:hover .hover_image{border-radius:40px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-302px -84px;background-color:rgba(0,0,0,0.8);background-size:400px 400px;width:45px;height:45px;position:absolute;top:72px;left:50%;margin-left:-22.5px;}
 #icotheque_header .row .col_3 .text{z-index:100;}
 #icotheque_header .row .col_3 .text .title{font-family:'Montserrat',sans-serif;color:#fff;font-weight:600;font-size:28px;text-align:center;margin:0 auto 5px auto;display:table;position:relative;padding:0 30px;}
-#icotheque_header .row .col_3 .text .title .premium_icon{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;text-transform:uppercase;background:#eeaa17 url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px -39px;text-indent: -9999px;display:inline-block;width:20px;height:20px;margin:0;position:absolute;top:4px;left:0;}
+#icotheque_header .row .col_3 .text .title .premium_icon{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;text-transform:uppercase;background:#eeaa17 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-324px -39px;text-indent: -9999px;display:inline-block;width:20px;height:20px;margin:0;position:absolute;top:4px;left:0;}
 #icotheque_header .row .col_3 .text p{font-size:14px;line-height:1.3;padding:0;width:100%;max-width:256px;margin:0 auto;text-align:center;}
 #icotheque_header .slick-list{overflow:hidden;}
 #icotheque_header ul.slick-dots{margin:60px auto 0 auto;list-style:none;padding:0;display:table;}
@@ -2610,7 +2610,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #icotheque_content .icotheque_menu .frame{position:relative;}
 #icotheque_content .icotheque_menu .category_select{float:left;border:1px solid #dbdbdb;padding:12px 40px 12px 12px;border-radius:3px;font-size:14px;font-weight:bold;color:#3f3f3f;position:relative;cursor:pointer;}
 #icotheque_content .icotheque_menu .sort_select{float:right;border:1px solid #dbdbdb;padding:12px 40px 12px 12px;border-radius:3px;font-size:14px;font-weight:bold;color:#3f3f3f;position:relative;cursor:pointer;}
-#icotheque_content .icotheque_menu .category_select .arrow, #icotheque_content .icotheque_menu .sort_select .arrow{width:14px;height:8px;position:absolute;background:url("../images/sprite.svg") no-repeat;background-position:-379px -99px;background-size:400px 400px;top:16px;right:10px;}
+#icotheque_content .icotheque_menu .category_select .arrow, #icotheque_content .icotheque_menu .sort_select .arrow{width:14px;height:8px;position:absolute;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-379px -99px;background-size:400px 400px;top:16px;right:10px;}
 #icotheque_content .icotheque_menu .category_menu{display:none;position:absolute;left:0;top:44px;background:#fff;border-radius:3px;border:1px solid #dbdbdb;text-align:left;list-style:none;margin:0;padding:0;height:270px;overflow-y:scroll;box-shadow:3px 3px 2px rgba(0,0,0,0.04);z-index:200;}
 #icotheque_content .icotheque_menu .category_menu li{padding:12px 20px 12px 15px;font-size:14px;cursor:pointer;}
 #icotheque_content .icotheque_menu .category_menu li:first-child{border-radius:3px 3px 0 0;}
@@ -2626,33 +2626,33 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #icotheque_content .list .col .image{display:block;z-index:99;width:250px;height:144px;margin:0 auto 20px auto;overflow:hidden;border-radius:3px;position:relative;text-align:center;box-shadow:2px 2px 10px rgba(0,0,0,0.1);cursor:pointer;}
 #icotheque_content .list .col .image img{height:196px;margin:-26px auto 0 auto;}
 #icotheque_content .list .col .image .likes{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.8);padding:8px 8px 8px 26px;border-radius:3px;font-size:10px;color:#fff;font-weight:bold;}
-#icotheque_content .list .col .image .likes .icon{background:url("../images/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:7px;left:8px;}
-#icotheque_content .list .col .image:hover .hover_image{border-radius:40px;background:url("../images/sprite.svg") no-repeat;background-position:-302px -84px;background-color:rgba(0,0,0,0.8);background-size:400px 400px;width:45px;height:45px;position:absolute;top:50px;left:50%;margin-left:-22.5px;}
+#icotheque_content .list .col .image .likes .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:7px;left:8px;}
+#icotheque_content .list .col .image:hover .hover_image{border-radius:40px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-302px -84px;background-color:rgba(0,0,0,0.8);background-size:400px 400px;width:45px;height:45px;position:absolute;top:50px;left:50%;margin-left:-22.5px;}
 #icotheque_content .list .col .text{z-index:100;}
 #icotheque_content .list .col .text .title{font-family:'Montserrat',sans-serif;color:#262834;font-weight:600;font-size:18px;text-align:center;margin:0 auto 5px auto;padding:0 20px;position:relative;display:table;}
-#icotheque_content .list .col .text .title .premium_icon{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;text-transform:uppercase;background:#eeaa17 url("../images/sprite.svg") no-repeat;background-size:370px 370px;background-position:-301px -38px;text-indent: -9999px;display:inline-block;width:15px;height:15px;position:absolute;top:2px;left:0;}
+#icotheque_content .list .col .text .title .premium_icon{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;text-transform:uppercase;background:#eeaa17 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:370px 370px;background-position:-301px -38px;text-indent: -9999px;display:inline-block;width:15px;height:15px;position:absolute;top:2px;left:0;}
 #icotheque_content .list .col .text p{font-size:14px;color:#262834;line-height:1.3;padding:0;width:100%;max-width:256px;margin:0 auto;text-align:center;}
 #icotheque_content .button_load{background:#4954ac;border-radius:50px;padding:15px 25px;margin:0 auto 0 auto;text-align:center;color:#fff;font-size:14px;font-weight:bold;cursor:pointer;display:table;}
 #icotheque_content .button_load:hover{opacity:0.6;}
 
 .icotheque_popup_background{display:none;background:rgba(38,40,52,0.9);position:fixed;top:0;left:0;bottom:0;right:0;z-index:300;}
 .icotheque_popup{display:none;position:absolute;top:100px;width:660px;left:50%;margin-left:-330px;color:#fff;z-index:301;text-align:center;}
-.icotheque_popup .close{width:37px;height:37px;background:url("../images/sprite.svg") no-repeat;background-position:-360px -124px;background-size:400px 400px;top:-5px;right:0;position:absolute;cursor:pointer;}
+.icotheque_popup .close{width:37px;height:37px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-360px -124px;background-size:400px 400px;top:-5px;right:0;position:absolute;cursor:pointer;}
 .icotheque_popup .close:hover{opacity:0.6;}
 .icotheque_popup .title{text-align:center;font-family:'Montserrat',sans-serif;color:#fff;font-weight:600;font-size:26px;margin:0 auto 5px auto;padding:0 20px;position:relative;display:table;}
-.icotheque_popup .title .premium_icon{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;text-transform:uppercase;background:#eeaa17 url("../images/sprite.svg") no-repeat;background-size:370px 370px;background-position:-301px -38px;text-indent: -9999px;display:inline-block;width:15px;height:15px;position:absolute;top:2px;left:0;}
+.icotheque_popup .title .premium_icon{font-weight:700;font-size:12px;color:#fff;border-radius:2px;padding:3px 6px;text-transform:uppercase;background:#eeaa17 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:370px 370px;background-position:-301px -38px;text-indent: -9999px;display:inline-block;width:15px;height:15px;position:absolute;top:2px;left:0;}
 .icotheque_popup p{font-size:18px;color:#9b9c9f;line-height:1.3;padding:0;margin:0 auto;text-align:center;}
 .icotheque_popup .video{background:#262834;margin:30px auto 0 auto;box-shadow:0 0 40px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.4);border-radius:5px;position:relative;padding:0;width:auto;}
 .icotheque_popup .row_likes{position:relative;width:auto;display:table;margin:0 auto;}
 .icotheque_popup .likes{width:auto;padding:5px 5px 5px 20px;margin:0 auto;display:table;font-size:14px;color:#fff;font-weight:400;}
-.icotheque_popup .likes .icon{background:url("../images/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:5px;left:0;}
+.icotheque_popup .likes .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-277px -70px;background-size:400px 400px;width:12px;height:12px;position:absolute;top:5px;left:0;}
 .icotheque_popup .video_url{width:100%;padding:15px;text-align:center;font-size:14px;color:#fff;margin:0 0 0 0;font-weight:bold;background:rgba(0,0,0,0.6);box-shadow:0 4px 4px rgba(0,0,0,0.1);}
 .icotheque_popup .buttons{display:table;margin:30px auto 0 auto;}
 .icotheque_popup .buttons .button_like{position:relative;background:#5a67b9;border-radius:50px;padding:15px 30px 15px 55px;font-size:16px;color:#fff;font-weight:bold;display:inline-table;margin:0 10px;text-decoration:none;cursor:pointer;}
-.icotheque_popup .buttons .button_like .icon{background:url("../images/sprite.svg") no-repeat;background-position:-333px -66px;background-size:400px 400px;width:25px;height:25px;position:absolute;top:10px;left:20px;}
+.icotheque_popup .buttons .button_like .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-333px -66px;background-size:400px 400px;width:25px;height:25px;position:absolute;top:10px;left:20px;}
 .icotheque_popup .buttons .button_like:hover{opacity:0.6;}
 .icotheque_popup .buttons .button_dislike{position:relative;background:#f560aa;border-radius:50px;padding:15px 30px 15px 55px;font-size:16px;color:#fff;font-weight:bold;display:inline-table;margin:0 10px;text-decoration:none;cursor:pointer;}
-.icotheque_popup .buttons .button_dislike .icon{background:url("../images/sprite.svg") no-repeat;background-position:-333px -66px;background-size:400px 400px;width:25px;height:25px;position:absolute;top:10px;left:20px;transform:rotateX(180deg);}
+.icotheque_popup .buttons .button_dislike .icon{background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-position:-333px -66px;background-size:400px 400px;width:25px;height:25px;position:absolute;top:10px;left:20px;transform:rotateX(180deg);}
 .icotheque_popup .buttons .button_dislike:hover{opacity:0.6;}
 .icotheque_popup .buttons .button_view{background:transparent;border:2px solid #fff;border-radius:50px;padding:15px 30px;font-size:16px;color:#fff;font-weight:bold;display:inline-table;margin:0 10px;text-decoration:none;cursor:pointer;}
 .icotheque_popup .buttons .button_view:hover{opacity:0.6;}
@@ -2692,7 +2692,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #page #ico_edit .left .select_ico .image{width:32px;height:32px;float:left;overflow:hidden;border-radius:2px;}
 #page #ico_edit .left .select_ico .image img{width:100%;}
 #page #ico_edit .left .select_ico .text{font-size:14px;color:#333333;font-weight:bold;margin:10px 30px 0 10px;float:left;clear:right;}
-#page #ico_edit .left .select_ico .arrow{position:absolute;right:15px;top:16px;display:block;width:20px;height:20px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-88px -92px;}
+#page #ico_edit .left .select_ico .arrow{position:absolute;right:15px;top:16px;display:block;width:20px;height:20px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-88px -92px;}
 #page #ico_edit .left .select_ico .select_dropdown{display:none;position:absolute;top:55px;left:-1px;right:-1px;z-index:101;background:#fff;box-shadow:0 15px 25px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.05);border:1px solid #dbdbdb;border-radius:3px;}
 #page #ico_edit .left .select_ico .select_dropdown .option{width:100%;border-bottom:1px solid #dbdbdb;overflow:hidden;padding:10px;}
 #page #ico_edit .left .select_ico .select_dropdown .option:hover{background:#fcfcfc;cursor:pointer;}
@@ -2716,7 +2716,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #page #ico_edit .left .ico_edit_menu a:last-child{border-bottom:0;border-radius:0 0 3px 3px;}
 #page #ico_edit .left .ico_edit_menu a.selected{background:#fcfcfc;cursor:default;}
 #page #ico_edit .left .ico_edit_menu a .new{background:#20b555;border-radius:30px;padding:3px 6px;color:#fff;font-size:8px;margin-left:2px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;line-height:1;}
-#page #ico_edit .left .ico_edit_menu a .arrow{position:absolute;right:15px;top:16px;display:block;width:12px;height:14px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-93px -99px;transform:rotate(-90deg);}
+#page #ico_edit .left .ico_edit_menu a .arrow{position:absolute;right:15px;top:16px;display:block;width:12px;height:14px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-93px -99px;transform:rotate(-90deg);}
 #page #ico_edit .right{width:calc(100% - 300px);float:right;}
 #page #ico_edit .right .right_el{display:none;}
 #page #ico_edit .right .right_el form{border:0;background:transparent;box-shadow:none;width:100%;display:block;margin:0;padding:0;}
@@ -2915,8 +2915,8 @@ div.mce-edit-area{border:0 !important;}
 .ui-datepicker .ui-datepicker-prev{left:0;}
 .ui-datepicker .ui-datepicker-next{right:0;}
 .ui-icon{display:inline-block;vertical-align:middle;margin-top:-.25em;position:relative;text-indent:-99999px;overflow:hidden;}
-.ui-icon-circle-triangle-w { width:18px;height:18px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-50px -135px;cursor:pointer;}
-.ui-icon-circle-triangle-e { width:18px;height:18px;background:url("../images/sprite.svg") no-repeat;background-size:400px 400px;background-position:-70px -135px;cursor:pointer;}
+.ui-icon-circle-triangle-w { width:18px;height:18px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-50px -135px;cursor:pointer;}
+.ui-icon-circle-triangle-e { width:18px;height:18px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-70px -135px;cursor:pointer;}
 .ui-datepicker .ui-datepicker-prev-hover{opacity:0.8;}
 .ui-datepicker .ui-datepicker-next-hover{opacity:0.8;}
 .ui-datepicker .ui-datepicker-prev span,.ui-datepicker .ui-datepicker-next span{display:block;position:absolute;left:50%;margin-left:-8px;top:50%;margin-top:-8px;}
