@@ -47,7 +47,7 @@
 
                         <div class='db description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-3 col-xl-2'>
                             <div style='margin:8px;'>
-                                <div class='project-time' ><?php echo $row->name; ?></div>
+                                <div class='project-time' style="font-size: 16px;" ><?php echo $row->name; ?></div>
                                 <p class='project-info'><?php echo $row->desc; ?></p>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                         <div class="db progress-div col-xs-4 col-sm-4 col-md-2 col-lg-3 col-xl-2">
 
 
-                                <p class='project-time' style='margin:7px;'><?php echo $row->ico_souq_rate; ?></p>
+                                <p class='project-time' style='margin:26px;font-size: 22px;'><?php echo $row->ico_souq_rate; ?></p>
 
                         </div>
 
