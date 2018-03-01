@@ -10,8 +10,6 @@
         <h4 class='footer-title'>ICO List</h4>
         <p class='footer-menu-link'><a href='live'>Live ICO</a></p>
         <p class='footer-menu-link'><a href='upcoming'><span class='footer-menu-link'>Upcoming ICO</a></p>
-        <p class='footer-menu-link'><a href='finished'><span class='footer-menu-link'>Finished ICO</a></p>
-        <p class='footer-menu-link'><a href='https://play.google.com/store/apps/details?id=com.icowatchlist.icowatchlist&hl=en' target='_blank'><span class='footer-menu-link'>Android App</a> <font style='color:red;font-size:7px;'>NEW</font></p>
 
     </div>
     <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
