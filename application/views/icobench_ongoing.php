@@ -7,9 +7,9 @@
                 <th>
                     <div class="row">
                         <div class='logo-div col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2'>PROJECT</div>
-                        <div class='description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-3 col-xl-2'>INFO</div>
+                        <div class='description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-4 col-xl-2'>INFO</div>
                         <div class='countdown-div hidden-xs col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xl-2'>TIME</div>
-                        <div class="progress-div progress-div-title col-xs-4 col-sm-4 col-md-2 col-lg-3 col-xl-2">RATING</div>
+                        <div class="progress-div progress-div-title col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2" align="center">RATING</div>
                         <div class='button-div col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2'>&nbsp;</div>
                     </div>
                 </th>
@@ -45,7 +45,7 @@
                         </div>
 
 
-                        <div class='db description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-3 col-xl-2'>
+                        <div class='db description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-4 col-xl-2'>
                             <div style='margin:8px;'>
                                 <div class='project-time' style="font-size: 16px;" ><?php echo $row->name; ?></div>
                                 <p class='project-info'><?php echo $row->desc; ?></p>
@@ -71,10 +71,10 @@
                             </div>
                         </div>
 
-                        <div class="db progress-div col-xs-4 col-sm-4 col-md-2 col-lg-3 col-xl-2">
+                        <div class="db progress-div col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
 
 
-                                <p class='project-time' style='margin:26px;font-size: 22px;'><?php echo $row->ico_souq_rate; ?></p>
+                                <p class='project-time' style='margin:26px;font-size: 22px;' align="center"><?php echo $row->ico_souq_rate; ?></p>
 
                         </div>
 
