@@ -4,7 +4,11 @@
     <a href='https://t.me/icosouq' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/telegram.jpg' style='margin:10px;' border='0'></a>
 </div>
 
-<div class='row footer-div' style='background-color:#ededed;'>
+<div class='row footer-div' style='background-color:#ededed;' >
+
+    <div class='col-xs-6 col-sm-4 col-md-1' style='margin-bottom:20px;'>
+
+    </div>
 
     <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
         <h4 class='footer-title'>ICO List</h4>
@@ -43,6 +47,9 @@
         <p class='footer-menu-link'><a href='terms'><span class='footer-menu-link'>Terms Of Use</a></p>
         <p class='footer-menu-link'><a href='privacy'><span class='footer-menu-link'>Privacy</a></p>
         <p class='footer-menu-link'><a href='info'><span class='footer-menu-link'>General Info</a></p>
+    </div>
+    <div class='col-xs-6 col-sm-4 col-md-1' style='margin-bottom:20px;'>
+
     </div>
 </div>
 
