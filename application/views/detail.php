@@ -13,7 +13,7 @@
     <script type="text/javascript" charset="utf-8" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/172.js"></script><script type="text/javascript" charset="utf-8" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/15.js"></script></head>
 <body>
 <header>
-    <div class="frame">
+    <div class="frame" style="border-bottom:1px gray solid;">
         <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
         <div id="hamburger"></div>
         <nav id="top_menu">
@@ -21,7 +21,12 @@
             <a href="<?php echo base_url(); ?>" target="_blank" title="Benchy the ICO bot" class="link">NEWS</a>
             <a href="<?php echo base_url(); ?>"  class="link">العربية</a>
         </nav>
-    </div></header><script>
+
+    </div>
+
+</header>
+
+<script>
     $(function(){
         $("#hamburger").click(function(){
             $("#top_menu").toggleClass("display");
@@ -67,7 +72,7 @@
                         <div itemprop="ratingValue" content="<?php echo $api_response->ratingProfile; ?>">
                             <div class="rate color5"><?php echo $ico->ico_souq_rate; ?></div>
                             <span style="display:none;" itemprop="ratingCount" content="<?php echo count($api_response->ratings); ?>"><?php echo $ico->ico_souq_rate; ?></span>
-                            <small>Our ratings</small>
+                            <small>ICO SOUC RATING</small>
                         </div>
                         <div class="distribution">
                             <div class="col_4">
@@ -82,12 +87,12 @@
                                 <?php echo $ico->roi_rate; ?>
                                 <label>ROI rate</label>
                             </div>
-                            <div class="col_4">
-                                <?php echo $ico->ico_souq_rate; ?>
+                            <!--<div class="col_4">
+                                <?php /*echo $ico->ico_souq_rate; */?>
                                 <label>ICO SOUQ rate</label>
-                            </div>
+                            </div>-->
                         </div>
-                        <a class="view_rating" href="<?php echo $api_response->url; ?>/ratings#ratings" title="View rating distribution">View rating distribution</a>
+
                     </div></div>
                 <div class="financial_data">
                     <div class="row">
@@ -355,14 +360,14 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/icosouq/icobench_files/jquery.css">
 <script src="<?php echo base_url(); ?>assets/icosouq/icobench_files/jquery_002.js"></script>
 <footer>
-    <div class="navigation"><div class="frame">
+    <div class="navigation">
+        <div class="frame" style="padding-left: 100px;">
+
             <div class="col_5">
                 <h4>ICO List</h4>
                 <ul>
                     <li><a href="<?php echo base_url(); ?>" title="Stats and Facts">Live ICO</a></li>
                     <li><a href="<?php echo base_url(); ?>" title="Media">Upcoming ICO</a></li>
-                    <li><a href="<?php echo base_url(); ?>" title="API for developers">Finished ICO</a></li>
-                    <li><a href="<?php echo base_url(); ?>" target="_blank" title="Mobile App (Android)">Android App</a></li>
                 </ul>
             </div>
             <div class="col_5">
@@ -403,7 +408,5 @@
         </div></div>
 </footer>
 
-<iframe scrolling="no" allowtransparency="true" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/widget_iframe.html" style="display: none;" frameborder="0"></iframe>
-<iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
 </body>
 </html>

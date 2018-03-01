@@ -29,11 +29,11 @@ body{
 .header_height{height:44px;}
 .header_stick{position:fixed;top:0;left:0;right:0;font-size:14px;color:#fff;font-weight:bold;text-align:center;padding:15px;line-height:1;background:#e9379c;z-index:200;box-shadow:0px 3px 10px rgba(0,0,0,0.2);}
 
-header{background:#00ce78;display:flex;}
+header{background:#ffffff;display:flex;}
 header .logo{float:left;width:140px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;margin:15px 0 15px 0;text-indent:-99999px;display:block;}
 header nav{float:right;color:#fff;font-weight:400;text-decoration:none;display:flex;margin:17px 0 0 0;}
 header nav.display{display:block;}
-header nav a:link, header nav a:visited, header nav a:active{color:#fff;font-weight:400;text-decoration:none;}
+header nav a:link, header nav a:visited, header nav a:active{color:#000000;font-size: 16px;font-weight:400;text-decoration:none;}
 header nav a:hover, header nav a:visited:hover{color:#8e97d4;font-weight:400;text-decoration:none;}
 header nav .link{float:right;display:table;padding:10px 15px;font-size:14px;font-weight:400;}
 header #hamburger{width:30px;height:30px;float:right;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:5px -85px;margin:20px 0 0 0;cursor:pointer;display:none;}
@@ -388,7 +388,7 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 #page #profile_header .fixed_data .rating .help:hover{opacity:0.5;}
 #page #profile_header .fixed_data .rating .divider{border-top:1px solid #dbdbdb;margin:20px 0;}
 #page #profile_header .fixed_data .rating .distribution{overflow:hidden;border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;padding:20px 0;margin:20px 0 10px 0;}
-#page #profile_header .fixed_data .rating .distribution .col_4{float:left;width:25%;font-size:16px;font-weight:bold;color:#222;}
+#page #profile_header .fixed_data .rating .distribution .col_4{float:left;width:33%;font-size:16px;font-weight:bold;color:#222;}
 #page #profile_header .fixed_data .rating .distribution .col_4 label{font-size:10px;color:#a4a4a4;text-transform:uppercase;display:block;margin:2px 0 0 0;font-weight:400;}
 #page #profile_header .fixed_data .rating .view_rating{color:#5a67b9;text-align:right;font-size:12px;text-decoration:underline;margin:0 auto 0 0;}
 #page #profile_header .fixed_data .rating .view_rating:hover{opacity:0.6;}
