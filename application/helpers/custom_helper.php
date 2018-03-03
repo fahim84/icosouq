@@ -476,3 +476,16 @@ function are_colors_matching($hex_color1,$hex_color2,$distance=60)
 function custom_sort($a,$b) {
     return $a->weight<$b->weight;
 }
+
+function nl2p($string)
+{
+    $paragraphs = '';
+
+    foreach (explode("\n", $string) as $line) {
+        if (trim($line)) {
+            $paragraphs .= '<p>' . $line . '</p>';
+        }
+    }
+
+    return $paragraphs;
+}

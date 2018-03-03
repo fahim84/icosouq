@@ -203,7 +203,7 @@
 
                 <div class="tab_content" id="about">
                     <h2>About <?php echo $api_response->name; ?></h2>
-                    <?php echo nl2br($api_response->about); ?>
+                    <?php echo nl2p($api_response->about); ?>
                 </div>
 
                 <div style="display:none;" class="tab_content" id="team">
