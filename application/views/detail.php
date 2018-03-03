@@ -19,7 +19,14 @@
         <nav id="top_menu">
             <a href="<?php echo base_url(); ?>" title="Browse ICOs" class="link">ICO LIST</a>
             <a href="<?php echo base_url(); ?>" target="_blank" title="Benchy the ICO bot" class="link">NEWS</a>
-            <a href="<?php echo base_url(); ?>"  class="link">العربية</a>
+            <!--<a href="<?php /*echo base_url(); */?>"  class="link">العربية</a>-->
+
+            <div class="link" id="google_translate_element" align="right"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         </nav>
 
     </div>

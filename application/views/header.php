@@ -45,7 +45,7 @@
         <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
 
         <div class='main-menu'>
-            <div class='menu-icon'><img src='<?php echo base_url(); ?>assets/icosouq/images/menu.png'></div>
+            <div class='menu-icon'><img src='<?php echo base_url(); ?>assets/icosouq/images/menu.jpg'></div>
             <div class="menu-box">
                 <a href='<?php echo base_url(); ?>?listing=ongoing'><p class='menu-link'>Live ICO List</p></a>
                 <a href='<?php echo base_url(); ?>?listing=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
@@ -58,11 +58,13 @@
 
 
         <div class='menu-link-header'>
-            <div id="google_translate_element" align="right"></div><script type="text/javascript">
+            <div id="google_translate_element" align="right"></div>
+            <script type="text/javascript">
                 function googleTranslateElementInit() {
                     new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                 }
-            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         </div>
         <div class='menu-link-header'>
