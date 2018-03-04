@@ -78,6 +78,29 @@
 
 
     <div class="row" style='margin-top:80px;padding:10px;'>
+        <?php
+        $query = $this->db->get('currencies');
+        foreach ($query->result() as $currency)
+        {
+            $currencies[$currency->name] = $currency;
+        }
+        ?>
+<table>
+    <thead>
+        <tr>
+            <th>BTC</th>
+            <th>ETH</th>
+            <th>LTC</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>$ <?php echo $currencies['BTC']->price; ?></td>
+            <td>$ <?php echo $currencies['ETH']->price; ?></td>
+            <td>$ <?php echo $currencies['LTC']->price; ?></td>
+        </tr>
+    </tbody>
+</table>
 
         <p>
         <h1 class='h1-title'>Welcome to the ICO</h1>

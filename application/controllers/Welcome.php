@@ -149,7 +149,8 @@ class Welcome extends CI_Controller {
 
         //$api_end_point = "https://api.coinbase.com/v2/currencies";
         //$api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
-        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
+        //$api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
+        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=XMR";
         //$api_end_point = "https://api.coinbase.com/v2/prices/spot?currency=USD";
         my_var_dump($api_end_point);
         $response = file_get_contents($api_end_point);
