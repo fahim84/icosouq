@@ -15,6 +15,7 @@
 <header>
     <div class="frame" style="border-bottom:1px gray solid;">
         <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
+
         <div id="hamburger"></div>
         <nav id="top_menu">
             <a href="<?php echo base_url(); ?>" title="Browse ICOs" class="link">ICO LIST</a>
