@@ -188,31 +188,7 @@ class Cron extends CI_Controller {
                 my_var_dump($response);
             }
 
-            $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=LTC";
-            my_var_dump($api_end_point);
-            $response = file_get_contents($api_end_point);
-            if($response)
-            {
-                $response = json_decode($response);
-                //my_var_dump($response);
 
-                $datetime = date('Y-m-d H:i:s');
-                $sql_data['name'] = $response->data->currency;
-                $sql_data['fullname'] = $response->data->currency;
-                $sql_data['price'] = $response->data->rates->USD;
-                $sql_data['currency'] = 'USD';
-                $sql_data['updated_at'] = $datetime;
-
-                $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
-                $this->db->query($sql);
-                my_var_dump($this->db->last_query());
-                $id = $this->db->insert_id();
-                my_var_dump($id);
-
-            }
-            else{
-                my_var_dump($response);
-            }
             my_var_dump('cron job finished on page '.$page);
         }
     }

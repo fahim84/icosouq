@@ -38,23 +38,21 @@
 <body>
 <div class="container">
 
-
-
     <div class="row" style='position:fixed;top:0px;background-color:#fefefe;z-index:100000;width:100%;max-width:1170px;border-bottom:1px gray solid;'>
 
         <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
 
-        <div class='main-menu'>
-            <div class='menu-icon'><img src='<?php echo base_url(); ?>assets/icosouq/images/menu.jpg'></div>
+        <!--<div class='main-menu'>
+            <div class='menu-icon'><img src='<?php /*echo base_url(); */?>assets/icosouq/images/menu.jpg'></div>
             <div class="menu-box">
-                <a href='<?php echo base_url(); ?>?listing=ongoing'><p class='menu-link'>Live ICO List</p></a>
-                <a href='<?php echo base_url(); ?>?listing=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
+                <a href='<?php /*echo base_url(); */?>?listing=ongoing'><p class='menu-link'>Live ICO List</p></a>
+                <a href='<?php /*echo base_url(); */?>?listing=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
             </div>
 
             <div class="share-box">
                 <div class="addthis_inline_share_toolbox"></div>
             </div>
-        </div>
+        </div>-->
 
         <div class='menu-link-header' style="float: left;">
             &nbsp;
@@ -66,6 +64,61 @@
             &nbsp;
         </div>
         <?php
+
+        //my_var_dump('Updating prices of ETH and BTC');
+
+        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
+        //my_var_dump($api_end_point);
+        $response = file_get_contents($api_end_point);
+        if($response)
+        {
+            $response = json_decode($response);
+            //my_var_dump($response);
+
+            $datetime = date('Y-m-d H:i:s');
+            $sql_data['name'] = $response->data->currency;
+            $sql_data['fullname'] = $response->data->currency;
+            $sql_data['price'] = $response->data->rates->USD;
+            $sql_data['currency'] = 'USD';
+            $sql_data['updated_at'] = $datetime;
+
+            $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
+            $this->db->query($sql);
+            //my_var_dump($this->db->last_query());
+            $id = $this->db->insert_id();
+            //my_var_dump($id);
+
+        }
+        else{
+            //my_var_dump($response);
+        }
+
+        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
+        //my_var_dump($api_end_point);
+        $response = file_get_contents($api_end_point);
+        if($response)
+        {
+            $response = json_decode($response);
+            //my_var_dump($response);
+
+            $datetime = date('Y-m-d H:i:s');
+            $sql_data['name'] = $response->data->currency;
+            $sql_data['fullname'] = $response->data->currency;
+            $sql_data['price'] = $response->data->rates->USD;
+            $sql_data['currency'] = 'USD';
+            $sql_data['updated_at'] = $datetime;
+
+            $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
+            $this->db->query($sql);
+            //my_var_dump($this->db->last_query());
+            $id = $this->db->insert_id();
+            //my_var_dump($id);
+
+        }
+        else{
+            //my_var_dump($response);
+        }
+
         $query = $this->db->get('currencies');
         foreach ($query->result() as $currency)
         {
@@ -73,19 +126,20 @@
         }
         ?>
         <div class='menu-link-header' style="float: left;">
-        <table width="400">
+            <style>
+                .currency_name{color: #0195d5;font-size: 16px;font-weight: bold}
+            </style>
+        <table width="200">
             <thead>
             <tr>
-                <th>BTC</th>
-                <th>ETH</th>
-                <th>LTC</th>
+                <th class="currency_name">BTC</th>
+                <th class="currency_name">ETH</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>$ <?php echo $currencies['BTC']->price; ?></td>
-                <td>$ <?php echo $currencies['ETH']->price; ?></td>
-                <td>$ <?php echo $currencies['LTC']->price; ?></td>
+                <td><strong>$ <?php echo $currencies['BTC']->price; ?></strong></td>
+                <td><strong>$ <?php echo $currencies['ETH']->price; ?></strong></td>
             </tr>
             </tbody>
         </table>
@@ -101,11 +155,21 @@
             <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         </div>
+
         <div class='menu-link-header'>
-            <a href='#'>NEWS</a>
+            <a href='#' style="color: orange;font-weight: bold;">PRIVATE MEMBERS</a>
         </div>
+
         <div class='menu-link-header'>
-            <a href='<?php echo base_url(); ?>'>ICO LIST</a>
+            <a href='#' class="currency_name">GUIDES</a>
+        </div>
+
+        <div class='menu-link-header'>
+            <a href='#' class="currency_name">LOCAL</a>
+        </div>
+
+        <div class='menu-link-header'>
+            <a href='#' class="currency_name">NEWS</a>
         </div>
 
     </div>
@@ -113,9 +177,8 @@
 
     <div class="row" style='margin-top:80px;padding:10px;'>
         <p>
-        <h1 class='h1-title'>Welcome to the ICO</h1>
+        <h1 class='h1-title'>Welcome to ICO Souq!</h1>
         ICO Souq is the Middle East’s leading destination for crypto insights with analysis and ratings on Initial Coin Offerings. Our portfolio is updated daily and available in English or Arabic.
-        Get in touch with us for a concierge investment service or to promote your ICO.
         </p>
     </div>
 

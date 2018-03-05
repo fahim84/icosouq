@@ -147,7 +147,7 @@
 		
 		.project-time{
 			font-size:24px;
-			color:#00c06d;
+			color:#0195d5;
 			padding:0px 3px 3px 0px;
 			margin:0px;
 			line-height: 24px;
@@ -176,7 +176,7 @@
 		}
 		
 		.selected-tab{
-			background-color: #00ce78 !important;
+			background-color: #0195d5 !important;
 			color: #ffffff !important;
 		}
 		
@@ -220,7 +220,7 @@
 			text-transform:uppercase;
 			font-weight:600;
 			padding:2px;
-			border: 1px solid #00c06d;
+			border: 1px solid #0195d5;
 			background-color: #c4ffe8;
 		}
 		
@@ -286,13 +286,12 @@
 
 		.menu-link-header{
 			float:right;
-			padding:5px;
+			padding:1px;
 			margin:23px 7px;
 		}
 		
 		.menu-link-header a{
 			font-size:16px;
-			color:#000;
 			text-decoration:none;
 		}
 		

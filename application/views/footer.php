@@ -1,6 +1,6 @@
 
 <div class='row footer-div footer-center'>
-    <a href='https://twitter.com/icowatchlist' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/twitter.jpg' style='margin:10px;' border='0'></a>
+    <a href='https://www.instagram.com/ICO.Souq/' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/instagram.jpg' style='margin:10px;' border='0'></a>
     <a href='https://t.me/icosouq' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/telegram.jpg' style='margin:10px;' border='0'></a>
 </div>
 

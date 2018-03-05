@@ -16,17 +16,49 @@
     <div class="frame" style="border-bottom:1px gray solid;">
         <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
 
+        <?php
+        $query = $this->db->get('currencies');
+        foreach ($query->result() as $currency)
+        {
+            $currencies[$currency->name] = $currency;
+        }
+        ?>
+        <div style="float: left;margin-top: 23px;margin-left: 65px;">
+            <style>
+                .currency_name{color: #0195d5;font-size: 16px;font-weight: bold}
+            </style>
+            <table width="200">
+                <thead>
+                <tr>
+                    <th class="currency_name" align="left">BTC</th>
+                    <th class="currency_name" align="left">ETH</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td align="left"><strong>$ <?php echo $currencies['BTC']->price; ?></strong></td>
+                    <td align="left"><strong>$ <?php echo $currencies['ETH']->price; ?></strong></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div id="hamburger"></div>
         <nav id="top_menu">
-            <a href="<?php echo base_url(); ?>" title="Browse ICOs" class="link">ICO LIST</a>
-            <a href="<?php echo base_url(); ?>" target="_blank" title="Benchy the ICO bot" class="link">NEWS</a>
-            <!--<a href="<?php /*echo base_url(); */?>"  class="link">العربية</a>-->
+            <a href="#" class="link">NEWS</a>
+            <a href="#" class="link">LOCAL</a>
+            <a href="#" class="link">GUIDES</a>
+            <a href="#" class="link" style="color: orange;font-weight: bold;">PRIVATE MEMBERS</a>
 
-            <div class="link" id="google_translate_element" align="right"></div><script type="text/javascript">
+
+            <div class="link" id="google_translate_element" align="right"></div>
+            <script type="text/javascript">
                 function googleTranslateElementInit() {
                     new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                 }
-            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <!--<a href="#" class="link"><img src='<?php /*echo base_url(); */?>assets/icosouq/images/menu.jpg'></a>-->
 
         </nav>
 
@@ -80,7 +112,7 @@
                         <div itemprop="ratingValue" content="<?php echo $api_response->ratingProfile; ?>">
                             <div class="rate color5"><?php echo $ico->ico_souq_rate; ?></div>
                             <span style="display:none;" itemprop="ratingCount" content="<?php echo count($api_response->ratings); ?>"><?php echo $ico->ico_souq_rate; ?></span>
-                            <small>ICO SOUC RATING</small>
+                            <small>ICO SOUQ RATING</small>
                         </div>
                         <div class="distribution">
                             <div class="col_4">
@@ -145,7 +177,7 @@
                         ?>
                     <div class="data_row">
                         <div class="col_2">
-                            <?php echo $key; ?>
+                            <?php echo ucfirst($key); ?>
                         </div>
                         <div class="col_2">
                             <b><?php echo $value; ?></b>
@@ -165,7 +197,7 @@
                     <?php } ?>
                     <div class="data_row">
                         <div class="col_2">
-                            <?php echo $api_response->registration; ?>
+                            <?php echo ucfirst($api_response->registration); ?>
                         </div>
                         <div class="col_2"><b><?php echo $api_response->registration; ?></b></div>
                     </div>

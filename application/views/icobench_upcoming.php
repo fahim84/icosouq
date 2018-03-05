@@ -6,8 +6,8 @@
         <tr>
             <th>
                 <div class="row">
-                    <div class='logo-div col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2'>PROJECT</div>
-                    <div class='description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-4 col-xl-2'>INFO</div>
+                    <div class='logo-div col-xs-4 col-sm-3 col-md-1 col-xl-2'>PROJECT</div>
+                    <div class='description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-4 col-xl-2' style="padding-left: 30px;">INFO</div>
                     <div class='countdown-div hidden-xs col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xl-2'>START</div>
                     <div class="progress-div progress-div-title col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2" align="center">RATING</div>
                     <div class='button-div col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2'>&nbsp;</div>
@@ -34,7 +34,7 @@
                 <td>
                     <div class="row" style='position:relative;'>
 
-                        <div class='db logo-div col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2'>
+                        <div class='db logo-div col-xs-3 col-sm-3 col-md-1 col-xl-2'>
                             <div style='margin:5px 15px;'>
                                 <a title="<?php echo $row->name; ?>" href='<?php echo base_url(); ?>welcome/detail?id=<?php echo $row->id; ?>' style='text-decoration: none;'>
                                     <img src='<?php echo $row->logo; ?>'  alt='<?php echo $row->name; ?>'>
@@ -45,7 +45,7 @@
 
 
                         <div class='db description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-4 col-xl-2'>
-                            <div style='margin:8px;'>
+                            <div style="margin:8px;padding-left: 20px;">
                                 <div class='project-time' style="font-size: 16px;" ><?php echo $row->name; ?></div>
                                 <p class='project-info'><?php echo $row->desc; ?></p>
                             </div>

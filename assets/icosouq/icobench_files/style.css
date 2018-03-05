@@ -33,9 +33,9 @@ header{background:#ffffff;display:flex;}
 header .logo{float:left;width:140px;height:42px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:0 0;margin:15px 0 15px 0;text-indent:-99999px;display:block;}
 header nav{float:right;color:#fff;font-weight:400;text-decoration:none;display:flex;margin:17px 0 0 0;}
 header nav.display{display:block;}
-header nav a:link, header nav a:visited, header nav a:active{color:#000000;font-size: 16px;font-weight:400;text-decoration:none;}
+header nav a:link, header nav a:visited, header nav a:active{color:#0195d5;font-size: 16px;font-weight:bold;text-decoration:none;}
 header nav a:hover, header nav a:visited:hover{color:#8e97d4;font-weight:400;text-decoration:none;}
-header nav .link{float:right;display:table;padding:10px 15px;font-size:14px;font-weight:400;}
+header nav .link{float:right;display:table;padding:10px 8px;font-size:14px;font-weight:400;}
 header #hamburger{width:30px;height:30px;float:right;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:5px -85px;margin:20px 0 0 0;cursor:pointer;display:none;}
 
 footer{overflow:hidden;text-align:left;}
