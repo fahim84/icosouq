@@ -144,9 +144,6 @@ class Welcome extends CI_Controller {
 
     public function bth_price()
     {
-        $api_key = "t8QNh1ri0eKUSFCF";
-        $api_secret = "x38c7me4pKpjScYOuPW3NHp0KClfFUOk";
-
         //$api_end_point = "https://api.coinbase.com/v2/currencies";
         //$api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
         //$api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
