@@ -45,11 +45,14 @@ class Cron extends CI_Controller {
             $sql_data['icoStart'] = $row->dates->icoStart == '0000-00-00 00:00:00' ? $row->dates->preIcoStart : $row->dates->icoStart;
             $sql_data['icoEnd'] = $row->dates->icoEnd == '0000-00-00 00:00:00' ? $row->dates->preIcoEnd : $row->dates->icoEnd;
             $sql_data['status'] = 1;
+            $sql_data['ico_type'] = $status;
 
             my_var_dump($sql_data);
             $insert_query = $this->db->insert_string('icos', $sql_data);
             $insert_query = str_replace('INSERT INTO','INSERT IGNORE INTO',$insert_query);
             $this->db->query($insert_query);
+            unset($sql_data);
+
             if($id = $this->db->insert_id())
             {
                 $api = new ICObenchAPI();

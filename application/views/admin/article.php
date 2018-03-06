@@ -1,5 +1,6 @@
 <?php $this->load->view('admin/header',$this->data); ?>
 
+
     <div class="main-content" >
     <div class="wrap-content container" id="container">
 
@@ -31,10 +32,10 @@
 
         <form name="search_form" id="search_form" class="form-inline" role="form">
             <div class="col-md-3 row">
-                <h3 class="pull-left">ICO's &nbsp;</h3>
+                <h3 class="pull-left">Articles &nbsp;</h3>
                 <h4><div class="label label-warning" align="center"><?php echo $total_rows; ?></div></h4>
             </div>
-            <div class="row col-md-4">
+            <div class="row col-md-6">
                 <div class="input-group">
                     <input class="form-control" autocomplete="off" type="text" id="keyword" name="keyword" value="<?php echo $keyword; ?>" placeholder="Search"   />
                     <span class="input-group-btn">
@@ -42,20 +43,13 @@
     </span>
                 </div>
             </div>
-            <div class="col-md-2">
-                <select class="form-control" name="listing" id="listing">
-                    <option value="">Show All</option>
-                    <option value="ongoing" <?php echo $listing == 'ongoing' ? 'selected' : ''; ?>>Ongoing only</option>
-                    <option value="upcoming" <?php echo $listing == 'upcoming' ? 'selected' : ''; ?>>Upcoming only</option>
-                </select>
-            </div>
             <input type="hidden" name="order_by" id="order_by" value="<?php echo $order_by; ?>" >
             <input type="hidden" name="direction" id="direction" value="<?php echo $direction; ?>" >
         </form>
-        <a href="<?php echo base_url(); ?>cron/icobench/" target="_blank" class="btn btn-wide btn-warning pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Sync Data from ICO Bench</a>
+        <a href="<?php echo base_url(); ?>admin/article/update" class="btn btn-wide btn-warning pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Add</a>
 
         <script>
-            $('#order_by, #direction, #listing').change(function(e) {
+            $('#order_by, #direction').change(function(e) {
                 $('#search_form').submit();
             });
         </script>
@@ -67,9 +61,17 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th width="100">Image</th>
-                    <th width="400">Name / Description</th>
-                    <th>Date / Time</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Code</th>
+                    <th>Objective</th>
+                    <th>Geo Scope</th>
+                    <!--
+                    <th>Priority</th>
+                    <th>Planned Engagement</th>
+                    <th>Delegation Visit</th>
+                    -->
+                    <th>Status</th>
                     <th>Options</th>
                 </tr>
                 </thead>
@@ -77,36 +79,25 @@
 
                 <?php foreach($rows->result() as $row)
                 {
+                    $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' : base_url().'uploads/articles/'.$row->image;
+                    $image = base_url()."thumb.php?src=".$image_url."&w=50&h=50";
+
                     ?>
                     <tr>
+                        <td class="center"><img src="<?php echo $image; ?>" class="img-rounded" alt="image"/></td>
+                        <td><?php echo $row->article; ?></td>
+                        <td><?php echo $row->org_code; ?></td>
+                        <td><?php echo $row->objective; ?></td>
+                        <td><?php echo $row->geo_scope; ?></td>
+                        <!--
+				                  <td><?php echo $row->priority; ?></td>
+				                  <td><?php echo $row->planned_engagement; ?></td>
+				                  <td><?php echo $row->delegation_visit; ?></td>
+				                  -->
+                        <td><?php echo $row->is_activated == '1' ? 'Active':'Inactive'; ?></td>
                         <td>
-                            <img src="<?php echo $row->logo; ?>" class="img-rounded" alt="image"/>
-                            <div align="center">ICO Rate: <?php echo $row->rating; ?></div>
-                        </td>
-                        <td>
-                            <h3><?php echo $row->name; ?></h3>
-                            <p><?php echo $row->desc; ?></p>
-
-                            <!--<div>preIcoStart: <?php /*echo $row->preIcoStart; */?></div>
-                            <div>preIcoEnd: <?php /*echo $row->preIcoEnd; */?></div>-->
-                            <h4><?php echo $row->icoStart; ?></h4>
-                            <h4><?php echo $row->icoEnd; ?></h4>
-                        </td>
-                        <td>
-                            <h4>Hype Rate: <?php echo $row->hype_rate; ?></h4>
-                            <h4>Risk Rate: <?php echo $row->risk_rate; ?></h4>
-                            <h4>ROI Rate: <?php echo $row->roi_rate; ?></h4>
-                            <h4>SOUC Rate: <?php echo $row->ico_souq_rate; ?></h4>
-
-
-                        </td>
-
-                        <td>
-                            <div class="checkbox">
-                                <input id="<?php echo $row->id; ?>" value="<?php echo $row->id; ?>" type="checkbox" class="js-switch" <?php echo $row->status ? 'checked' : ''; ?> />
-                            </div>
-                            <a href="<?php echo base_url(); ?>admin/ico/update/?id=<?php echo $row->id; ?>" class="btn btn-transparent btn-xs"><i class="fa fa-pencil"></i> Edit</a>
-                            <a href="#_" id="<?php echo $row->id; ?>" class="btn btn-transparent btn-xs tooltips delete_button" data-toggle="modal" data-target="#DeleteModal" ><i class="fa fa-times fa fa-white"></i> Delete</a>
+                            <a href="<?php echo base_url(); ?>admin/article/update/?id=<?php echo $row->article_id; ?>" class="btn btn-transparent btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                            <a href="#_" id="<?php echo $row->article_id; ?>" class="btn btn-transparent btn-xs tooltips delete_button" data-toggle="modal" data-target="#DeleteModal" ><i class="fa fa-times fa fa-white"></i> Delete</a>
                         </td>
                     </tr>
                 <?php } ?>
@@ -136,7 +127,7 @@
 <div class="modal fade" id="DeleteModal">
   <div class="modal-dialog">
     <div class="modal-content">
-    <form action="<?php echo base_url(); ?>admin/ico/delete" method="get" name="delete_model_form" class="form-horizontal" id="delete_model_form" role="form">
+    <form action="<?php echo base_url(); ?>admin/article/delete" method="get" name="delete_model_form" class="form-horizontal" id="delete_model_form" role="form">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Confirmation</h4>
@@ -166,19 +157,6 @@ function apply_sort(order_by,direction)
 	$('#direction').val(direction);
 	$('#search_form').submit();
 }
-
-$(document).on('change','.js-switch',function (e) {
-
-    var id = this.id;
-    var status = this.checked ? 1 : 0;
-    $.ajax({
-        type: "POST",
-        url: '<?php echo base_url(); ?>admin/ico/change_status',
-        data: {'id':id,'status':status},
-        dataType: 'html'
-    });
-});
-
 </script>
 
 

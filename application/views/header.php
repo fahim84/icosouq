@@ -42,18 +42,6 @@
 
         <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
 
-        <!--<div class='main-menu'>
-            <div class='menu-icon'><img src='<?php /*echo base_url(); */?>assets/icosouq/images/menu.jpg'></div>
-            <div class="menu-box">
-                <a href='<?php /*echo base_url(); */?>?listing=ongoing'><p class='menu-link'>Live ICO List</p></a>
-                <a href='<?php /*echo base_url(); */?>?listing=upcoming'><p class='menu-link'>Upcoming ICO List</p></a>
-            </div>
-
-            <div class="share-box">
-                <div class="addthis_inline_share_toolbox"></div>
-            </div>
-        </div>-->
-
         <div class='menu-link-header' style="float: left;">
             &nbsp;
         </div>
@@ -157,15 +145,11 @@
         </div>
 
         <div class='menu-link-header'>
-            <a href='#' style="color: orange;font-weight: bold;">PRIVATE MEMBERS</a>
+            <a href='#' style="color: #FFD700;font-weight: bold;">PRIVATE MEMBERS</a>
         </div>
 
         <div class='menu-link-header'>
-            <a href='#' class="currency_name">GUIDES</a>
-        </div>
-
-        <div class='menu-link-header'>
-            <a href='#' class="currency_name">LOCAL</a>
+            <a href='#' class="currency_name">LOCAL GUIDES</a>
         </div>
 
         <div class='menu-link-header'>

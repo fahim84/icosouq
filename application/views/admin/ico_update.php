@@ -36,7 +36,7 @@
     </div>
 <?php } ?>
 
-        <h3><?php echo isset($update_data->id) ? 'Update' : 'Add'; ?> ICO</h3>
+        <h3><?php echo isset($update_data->id) ? 'Update' : 'Add'; ?> ICO Rating</h3>
 
         <div class="col-md-6">
             <div class="content-box-large">

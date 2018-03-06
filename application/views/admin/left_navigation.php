@@ -46,6 +46,20 @@
                     </a>
                 </li>
 
+                <?php $active_class = $selected_page == 'article' ? 'active open' : ''; ?>
+                <li class="<?php echo $active_class; ?>">
+                    <a href="<?php echo base_url(); ?>admin/article/">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-layout-tab"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> NEWS </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
                 <li>
                     <a href="<?php echo base_url(); ?>admin/login/logout">
                         <div class="item-content">

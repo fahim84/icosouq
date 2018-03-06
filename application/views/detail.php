@@ -25,7 +25,7 @@
         ?>
         <div style="float: left;margin-top: 23px;margin-left: 65px;">
             <style>
-                .currency_name{color: #0195d5;font-size: 16px;font-weight: bold}
+                .currency_name{color: #0195d5;font-size: 16px;font-weight: bold; font: Arial, Verdana;}
             </style>
             <table width="200">
                 <thead>
@@ -36,8 +36,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td align="left"><strong>$ <?php echo $currencies['BTC']->price; ?></strong></td>
-                    <td align="left"><strong>$ <?php echo $currencies['ETH']->price; ?></strong></td>
+                    <td align="left" style="font-size: 14px; font: Arial, Verdana;"><strong>$ <?php echo $currencies['BTC']->price; ?></strong></td>
+                    <td align="left" style="font-size: 14px; font: Arial, Verdana;"><strong>$ <?php echo $currencies['ETH']->price; ?></strong></td>
                 </tr>
                 </tbody>
             </table>
@@ -46,9 +46,8 @@
         <div id="hamburger"></div>
         <nav id="top_menu">
             <a href="#" class="link">NEWS</a>
-            <a href="#" class="link">LOCAL</a>
-            <a href="#" class="link">GUIDES</a>
-            <a href="#" class="link" style="color: orange;font-weight: bold;">PRIVATE MEMBERS</a>
+            <a href="#" class="link">LOCAL GUIDES</a>
+            <a href="#" class="link" style="color: #FFD700;font-weight: bold;">PRIVATE MEMBERS</a>
 
 
             <div class="link" id="google_translate_element" align="right"></div>
