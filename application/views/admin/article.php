@@ -61,17 +61,7 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Image</th>
-                    <th>Name</th>
-                    <th>Code</th>
-                    <th>Objective</th>
-                    <th>Geo Scope</th>
-                    <!--
-                    <th>Priority</th>
-                    <th>Planned Engagement</th>
-                    <th>Delegation Visit</th>
-                    -->
-                    <th>Status</th>
+                    <th>Article</th>
                     <th>Options</th>
                 </tr>
                 </thead>
@@ -80,22 +70,21 @@
                 <?php foreach($rows->result() as $row)
                 {
                     $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' : base_url().'uploads/articles/'.$row->image;
-                    $image = base_url()."thumb.php?src=".$image_url."&w=50&h=50";
+                    $image = base_url()."thumb.php?src=".$image_url."&w=800&h=600";
 
                     ?>
                     <tr>
-                        <td class="center"><img src="<?php echo $image; ?>" class="img-rounded" alt="image"/></td>
-                        <td><?php echo $row->article; ?></td>
-                        <td><?php echo $row->org_code; ?></td>
-                        <td><?php echo $row->objective; ?></td>
-                        <td><?php echo $row->geo_scope; ?></td>
-                        <!--
-				                  <td><?php echo $row->priority; ?></td>
-				                  <td><?php echo $row->planned_engagement; ?></td>
-				                  <td><?php echo $row->delegation_visit; ?></td>
-				                  -->
-                        <td><?php echo $row->is_activated == '1' ? 'Active':'Inactive'; ?></td>
                         <td>
+                            <h3><?php echo $row->article; ?></h3>
+                            <img src="<?php echo $image; ?>" class="img-rounded" alt="image"/>
+                            <p><?php echo $row->description; ?></p>
+                        </td>
+
+                        <td>
+                            <div class="checkbox">
+                                <input id="<?php echo $row->article_id; ?>" value="<?php echo $row->article_id; ?>" type="checkbox" class="js-switch" <?php echo $row->status ? 'checked' : ''; ?> />
+                            </div>
+
                             <a href="<?php echo base_url(); ?>admin/article/update/?id=<?php echo $row->article_id; ?>" class="btn btn-transparent btn-xs"><i class="fa fa-pencil"></i> Edit</a>
                             <a href="#_" id="<?php echo $row->article_id; ?>" class="btn btn-transparent btn-xs tooltips delete_button" data-toggle="modal" data-target="#DeleteModal" ><i class="fa fa-times fa fa-white"></i> Delete</a>
                         </td>
@@ -157,6 +146,19 @@ function apply_sort(order_by,direction)
 	$('#direction').val(direction);
 	$('#search_form').submit();
 }
+
+$(document).on('change','.js-switch',function (e) {
+
+    var id = this.id;
+    var status = this.checked ? 1 : 0;
+    $.ajax({
+        type: "POST",
+        url: '<?php echo base_url(); ?>admin/article/change_status',
+        data: {'id':id,'status':status},
+        dataType: 'html'
+    });
+});
+
 </script>
 
 
