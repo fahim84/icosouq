@@ -103,7 +103,7 @@ table.main-ico-table tr:nth-child(even) {
 .junior td {
 	padding:7px 7px 7px 15px!important;
 }
-.innerpage{ margin-top: 100px;}
+.innerpage{ margin-top: 90px;}
 
 .main-ico-table th {
 	padding: 1px 15px 1px 15px;
@@ -356,7 +356,14 @@ footer .footer_bottom .col_3_3 a:link, footer .footer_bottom .col_3_3 a:visited,
 footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited:hover{color:#c0c7f5;}
 
 */
-
+.mainheader{
+	position:fixed;
+	top:0px;
+	background-color:#fefefe;
+	z-index:100000;
+	max-width:1170px;
+	border-bottom:1px gray solid;
+}
 .footer-div {
 	padding: 10px;
 	border-top: 1px solid #b5b5b5;
@@ -381,7 +388,10 @@ h4.footer-title{
 	font-size: 12px;
 	color: #000;
 }
-
+.youtubevid{
+	width: 100%;
+	height:500px;
+}
 
 @media (max-width: 1240px) {
 	.frame{width:calc(100% - 60px);margin:0 30px;min-width:280px;}
@@ -640,7 +650,7 @@ h4.footer-title{
 #page #profile_header{background:#fcfcfc;border-bottom:1px solid #e1e1e1;padding:0 40px 40px 40px;position:relative;text-align:left;overflow:hidden;}
 #page #profile_header .frame{position:relative;}
 #page #profile_header .ico_information{float:left;width:calc(100% - 400px);text-align:left;margin-top:40px;}
-#page #profile_header .ico_information .row{overflow:hidden;border-bottom:1px solid #e1e1e1;padding-bottom:20px;margin-bottom:15px;}
+#page #profile_header .ico_information .row{overflow:hidden;border-bottom:1px solid #e1e1e1;padding-bottom:20px;margin-bottom:15px; margin-left: 0; margin-right: 0;}
 #page #profile_header .ico_information .row .image{border:1px solid #dbdbdb;border-radius:5px;background:#fff;padding:5px;width:97px;height:97px;float:left;}
 #page #profile_header .ico_information .row .image img{width:85px;height:85px;}
 #page #profile_header .ico_information .row .name{float:left;width:calc(100% - 120px);margin-left:20px;position:relative;}
@@ -981,7 +991,6 @@ h4.footer-title{
 #page #profile_content .agencies_list .row .text p{margin:0;padding:0;line-height:1.15;color:#999;}
 #page #profile_content .agencies_list .row .text a:link, #page #profile_content .row .text a:visited, #page #profile_content .agencies_list .row .text a:active{font-weight:bold;color:#1e1d1d;font-size:16px;display:table;text-decoration:none;}
 #page #profile_content .agencies_list .row .text a:hover, #page #profile_content .row .text a:visited:hover{color:#4954ac;}
-
 #page #profile_content .exchanges_list{margin:20px 0 0 0;}
 #page #profile_content .exchanges_list .row{overflow:hidden;margin-bottom:15px;border-bottom:1px solid #dbdbdb;padding-bottom:15px;}
 #page #profile_content .exchanges_list .row:last-child{border-bottom:0;}
@@ -1355,6 +1364,9 @@ h4.footer-title{
 	#page #category .row .ico_list{float:none;width:100%;}
 
 }
+
+.footer-div{background-color:#ededed;}
+.footercol{ height: 160px;}
 
 @media (max-width: 740px) {
 	#page #category{padding:20px 0;}
@@ -3554,4 +3566,10 @@ div.mce-edit-area{border:0 !important;}
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
+}
+@media (max-width: 767px) {
+	.mainheader {
+		position: relative;
+	}
+	.innerpage{ margin-top: 40px;}
 }

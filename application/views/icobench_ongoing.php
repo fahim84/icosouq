@@ -35,7 +35,7 @@
                 <td>
                     <div class="row" style='position:relative;'>
 
-                        <div class='db logo-div col-xs-3 col-sm-3 col-md-1 col-xl-2'>
+                        <div class='db logo-div col-xs-12 col-sm-3 col-md-1 col-xl-2'>
                             <div style='margin:5px 15px;'>
                                 <a title="<?php echo $row->name; ?>" href='<?php echo base_url(); ?>welcome/detail?id=<?php echo $row->id; ?>' style='text-decoration: none;'>
                                     <img src='<?php echo $row->logo; ?>'  alt='<?php echo $row->name; ?>'>
@@ -45,15 +45,15 @@
                         </div>
 
 
-                        <div class='db description-div  hidden-sm hidden-xs col-xs-8 col-sm-3 col-md-3 col-lg-4 col-xl-2'>
-                            <div style="margin:8px;padding-left: 20px;">
+                        <div class='db description-div  col-xs-12 col-sm-3 col-md-3 col-lg-4 col-xl-2'>
+                            <div class="aligndesc">
                                 <div class='project-time' style="font-size: 16px;" ><?php echo $row->name; ?></div>
                                 <p class='project-info'><?php echo $row->desc; ?></p>
                             </div>
                         </div>
 
 
-                        <div class='db countdown-div hidden-xs col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xl-2'>
+                        <div class='db countdown-div hidden-xs col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2'>
                             <div style='margin-top:5px;'>
                                 <p style="font-size:12px;margin:0px;"><!--<span style="color:#ffae00;font-weight:bold;">PRESALE</span>-->ENDS IN:</p>
                                 <div class='time-unit-div'>
@@ -71,14 +71,14 @@
                             </div>
                         </div>
 
-                        <div class="db progress-div col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                        <div class="db progress-div col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
 
 
                                 <p class='project-time' style='margin:26px;font-size: 22px;' align="center"><?php echo $row->ico_souq_rate; ?></p>
 
                         </div>
 
-                        <div class='db button-div col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
+                        <div class='db button-div col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
                             <div style='text-align: center;'>
                                 <a href='<?php echo base_url(); ?>welcome/detail?id=<?php echo $row->id; ?>' title='<?php echo $row->name; ?> Details'><div class='progress-ico'>ICO Details</div></a>
                             </div>
