@@ -503,6 +503,7 @@
             <p class='footer-menu-link'><a href='https://www.facebook.com/icowatchlist/' target='_blank'><span class='footer-menu-link'>Facebook</a></p>
             <p class='footer-menu-link'><a href='https://t.me/joinchat/FrpyWkHXf62SVjzPrYwUJw'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>
         </div>
+
         <!--<div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
             <h4 class='footer-title'>Developers</h4>
             <p class='footer-menu-link'><a href='tools/sticker'>Stickers</a></p>
