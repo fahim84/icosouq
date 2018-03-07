@@ -5,6 +5,8 @@
     <title>ICO rating and details | <?php echo SYSTEM_NAME; ?></title>
     <meta name="keywords" content="">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/icosouq/css/bootstrap.css">
+
 
     <link href="<?php echo base_url(); ?>assets/icosouq/icobench_files/style.css" id="css" rel="stylesheet" type="text/css">
     <script src="<?php echo base_url(); ?>assets/icosouq/icobench_files/jquery.js"></script>
@@ -12,59 +14,127 @@
 
     <script type="text/javascript" charset="utf-8" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/172.js"></script><script type="text/javascript" charset="utf-8" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/15.js"></script></head>
 <body>
-<header>
-    <div class="frame" style="border-bottom:1px gray solid;">
-        <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
+<div class="container">
+<div class="row" style='position:fixed;top:0px;background-color:#fefefe;z-index:100000;width:100%;max-width:1170px;border-bottom:1px gray solid;'>
 
-        <?php
-        $query = $this->db->get('currencies');
-        foreach ($query->result() as $currency)
-        {
-            $currencies[$currency->name] = $currency;
-        }
-        ?>
-        <div style="float: left;margin-top: 23px;margin-left: 65px;">
-            <style>
-                .currency_name{color: #0195d5;font-size: 16px;font-weight: bold; font: Arial, Verdana;}
-            </style>
-            <table width="200">
-                <thead>
-                <tr>
-                    <th class="currency_name" align="left">BTC</th>
-                    <th class="currency_name" align="left">ETH</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td align="left" style="font-size: 14px; font: Arial, Verdana;"><strong>$ <?php echo $currencies['BTC']->price; ?></strong></td>
-                    <td align="left" style="font-size: 14px; font: Arial, Verdana;"><strong>$ <?php echo $currencies['ETH']->price; ?></strong></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+    <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
 
-        <div id="hamburger"></div>
-        <nav id="top_menu">
-            <a href="#" class="link">NEWS</a>
-            <a href="#" class="link">LOCAL GUIDES</a>
-            <a href="#" class="link" style="color: #FFD700;font-weight: bold;">PRIVATE MEMBERS</a>
+    <div class='menu-link-header' style="float: left;">
+        &nbsp;
+    </div>
+    <div class='menu-link-header' style="float: left;">
+        &nbsp;
+    </div>
+    <div class='menu-link-header' style="float: left;">
+        &nbsp;
+    </div>
+    <?php
 
+    //my_var_dump('Updating prices of ETH and BTC');
 
-            <div class="link" id="google_translate_element" align="right"></div>
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                }
-            </script>
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <!--<a href="#" class="link"><img src='<?php /*echo base_url(); */?>assets/icosouq/images/menu.jpg'></a>-->
+    $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
+    //my_var_dump($api_end_point);
+    $response = file_get_contents($api_end_point);
+    if($response)
+    {
+        $response = json_decode($response);
+        //my_var_dump($response);
 
-        </nav>
+        $datetime = date('Y-m-d H:i:s');
+        $sql_data['name'] = $response->data->currency;
+        $sql_data['fullname'] = $response->data->currency;
+        $sql_data['price'] = $response->data->rates->USD;
+        $sql_data['currency'] = 'USD';
+        $sql_data['updated_at'] = $datetime;
+
+        $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
+        $this->db->query($sql);
+        //my_var_dump($this->db->last_query());
+        $id = $this->db->insert_id();
+        //my_var_dump($id);
+
+    }
+    else{
+        //my_var_dump($response);
+    }
+
+    $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
+    //my_var_dump($api_end_point);
+    $response = file_get_contents($api_end_point);
+    if($response)
+    {
+        $response = json_decode($response);
+        //my_var_dump($response);
+
+        $datetime = date('Y-m-d H:i:s');
+        $sql_data['name'] = $response->data->currency;
+        $sql_data['fullname'] = $response->data->currency;
+        $sql_data['price'] = $response->data->rates->USD;
+        $sql_data['currency'] = 'USD';
+        $sql_data['updated_at'] = $datetime;
+
+        $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
+        $this->db->query($sql);
+        //my_var_dump($this->db->last_query());
+        $id = $this->db->insert_id();
+        //my_var_dump($id);
+
+    }
+    else{
+        //my_var_dump($response);
+    }
+
+    $query = $this->db->get('currencies');
+    foreach ($query->result() as $currency)
+    {
+        $currencies[$currency->name] = $currency;
+    }
+    ?>
+    <div class='menu-link-header' style="float: left;">
+        <style>
+            .currency_name{color: #0195d5;font-size: 16px;font-weight: bold}
+        </style>
+        <table width="200">
+            <thead>
+            <tr>
+                <th class="currency_name">BTC</th>
+                <th class="currency_name">ETH</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong>$ <?php echo $currencies['BTC']->price; ?></strong></td>
+                <td><strong>$ <?php echo $currencies['ETH']->price; ?></strong></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class='menu-link-header'>
+        <div id="google_translate_element" align="right"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </div>
 
-</header>
+    <div class='menu-link-header'>
+        <a href='#' style="color: #FFD700;font-weight: bold;">PRIVATE MEMBERS</a>
+    </div>
 
+    <div class='menu-link-header'>
+        <a href='#' class="currency_name">LOCAL GUIDES</a>
+    </div>
+
+    <div class='menu-link-header'>
+        <a href='#' class="currency_name">NEWS</a>
+    </div>
+
+</div>
+</div>
 <script>
     $(function(){
         $("#hamburger").click(function(){
@@ -79,10 +149,11 @@
     });
 </script>
 
-<div id="page">
+<div id="page" class="innerpage">
 
     <?php //my_var_dump($api_response); ?>
-    <div id="profile_header"><div class="frame">
+    <div id="profile_header">
+        <div class="frame">
             <div class="ico_information">
                 <div class="row">
                     <div class="image"><img src="<?php echo $api_response->logo; ?>"></div>
@@ -215,7 +286,8 @@
                 </div>
 
             </div>
-        </div></div>
+        </div>
+    </div>
 
 
     <div id="profile_content">
@@ -398,54 +470,61 @@
 
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/icosouq/icobench_files/jquery.css">
 <script src="<?php echo base_url(); ?>assets/icosouq/icobench_files/jquery_002.js"></script>
-<footer>
-    <div class="navigation">
-        <div class="frame" style="padding-left: 100px;">
+<div class="container">
 
-            <div class="col_5">
-                <h4>ICO List</h4>
-                <ul>
-                    <li><a href="<?php echo base_url(); ?>" title="Stats and Facts">Live ICO</a></li>
-                    <li><a href="<?php echo base_url(); ?>" title="Media">Upcoming ICO</a></li>
-                </ul>
-            </div>
-            <div class="col_5">
-                <h4>Website</h4>
-                <ul>
-                    <li><a href="<?php echo base_url(); ?>publish" title="Publish new ICO">About Us</a></li>
-                    <li><a href="<?php echo base_url(); ?>ico-analyzer" title="ICO Analyzer">Contact Us</a></li>
-                    <li><a href="<?php echo base_url(); ?>premium" title="Premium listing">Our Blog</a></li>
-                    <li><a href="<?php echo base_url(); ?>services" title="ICO Services">Add Your ICO</a></li>
-                </ul>
-            </div>
-            <div class="col_5">
-                <h4>Research & Data</h4>
-                <ul>
-                    <li><a href="<?php echo base_url(); ?>icos" title="ICO listing">ICO Guide</a></li>
-                    <li><a href="<?php echo base_url(); ?>people" title="People of Blockchain">ICO Statistics</a></li>
-                </ul>
-            </div>
-            <div class="col_5">
-                <h4>Social</h4>
-                <ul>
-                    <li><a href="https://www.twitter.com/<?php echo SYSTEM_NAME; ?>" title="<?php echo SYSTEM_NAME; ?> on Twitter" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/<?php echo SYSTEM_NAME; ?>" title="<?php echo SYSTEM_NAME; ?> on Facebook" target="_blank">Facebook</a></li>
-                    <li><a href="https://t.me/icobench" title="<?php echo SYSTEM_NAME; ?> on Telegram" target="_blank">Telegram</a></li>
-                </ul>
-            </div>
 
-            <div class="col_5">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="https://www.twitter.com/<?php echo SYSTEM_NAME; ?>" title="<?php echo SYSTEM_NAME; ?> on Twitter" target="_blank">Disclaimer</a></li>
-                    <li><a href="https://www.facebook.com/<?php echo SYSTEM_NAME; ?>" title="<?php echo SYSTEM_NAME; ?> on Facebook" target="_blank">Terms Of Use</a></li>
-                    <li><a href="https://t.me/icobench" title="<?php echo SYSTEM_NAME; ?> on Telegram" target="_blank">Privacy</a></li>
-                    <li><a href="https://t.me/icobench" title="<?php echo SYSTEM_NAME; ?> on Telegram" target="_blank">General Info</a></li>
-                </ul>
-            </div>
+    <div class='row footer-div' style='background-color:#ededed;' >
 
-        </div></div>
-</footer>
+        <div class='col-xs-6 col-sm-4 col-md-1' style='margin-bottom:20px;'>
+
+        </div>
+
+        <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
+            <h4 class='footer-title'>ICO List</h4>
+            <p class='footer-menu-link'><a href='live'>Live ICO</a></p>
+            <p class='footer-menu-link'><a href='upcoming'><span class='footer-menu-link'>Upcoming ICO</a></p>
+
+        </div>
+        <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
+            <h4 class='footer-title'>Website</h4>
+            <p class='footer-menu-link'><a href='about'><span class='footer-menu-link'>About Us</a></p>
+            <p class='footer-menu-link'><a href='contact'><span class='footer-menu-link'>Contact Us</a></p>
+            <p class='footer-menu-link'><a href='<?php echo base_url(); ?>blog/'>Our Blog</a></p>
+            <p class='footer-menu-link'><a href='add-ico'><span class='footer-menu-link'>Add Your ICO</a></p>
+        </div>
+        <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
+            <h4 class='footer-title'>Research & Data</h4>
+            <p class='footer-menu-link'><a href='education'><span class='footer-menu-link'>ICO Guide</a></p>
+            <p class='footer-menu-link'><a href='statistics'><span class='footer-menu-link'>ICO Statistics</a></p>
+        </div>
+        <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
+            <h4 class='footer-title'>Social</h4>
+            <p class='footer-menu-link'><a href='https://twitter.com/icowatchlist' target='_blank'><span class='footer-menu-link'>Twitter</a></p>
+            <p class='footer-menu-link'><a href='https://www.facebook.com/icowatchlist/' target='_blank'><span class='footer-menu-link'>Facebook</a></p>
+            <p class='footer-menu-link'><a href='https://t.me/joinchat/FrpyWkHXf62SVjzPrYwUJw'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>
+        </div>
+        <!--<div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
+            <h4 class='footer-title'>Developers</h4>
+            <p class='footer-menu-link'><a href='tools/sticker'>Stickers</a></p>
+            <p class='footer-menu-link'><a href='tools/widget'><span class='footer-menu-link'>ICO List Widget</a></p>
+            <p class='footer-menu-link'><a href='tools/stats-widget'><span class='footer-menu-link'>ICO Stats Widgets</a></p>
+            <p class='footer-menu-link'><a href='tools/api'><span class='footer-menu-link'>API</a></p>
+        </div>-->
+        <div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
+            <h4 class='footer-title'>Legal</h4>
+            <p class='footer-menu-link'><a href='disclaimer'><span class='footer-menu-link'>Disclaimer</a></p>
+            <p class='footer-menu-link'><a href='terms'><span class='footer-menu-link'>Terms Of Use</a></p>
+            <p class='footer-menu-link'><a href='privacy'><span class='footer-menu-link'>Privacy</a></p>
+            <p class='footer-menu-link'><a href='info'><span class='footer-menu-link'>General Info</a></p>
+        </div>
+        <div class='col-xs-6 col-sm-4 col-md-1' style='margin-bottom:20px;'>
+
+        </div>
+    </div>
+
+
+</div>
+
 
 </body>
 </html>
