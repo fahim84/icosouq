@@ -38,7 +38,7 @@
 <body>
 <div class="container">
 
-    <div class="row" style='position:fixed;top:0px;background-color:#fefefe;z-index:100000;width:100%;max-width:1170px;border-bottom:1px gray solid;'>
+    <div class="row mainheader">
 
         <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
 
@@ -117,12 +117,13 @@
             <style>
                 .currency_name{color: #0195d5;font-size: 16px;font-weight: bold}
             </style>
-        <table width="200">
+
+            <table width="200">
             <thead>
-            <tr>
-                <th class="currency_name">BTC</th>
-                <th class="currency_name">ETH</th>
-            </tr>
+                <tr>
+                    <th class="currency_name">BTC</th>
+                    <th class="currency_name">ETH</th>
+                </tr>
             </thead>
             <tbody>
             <tr>
@@ -144,6 +145,8 @@
 
         </div>
 
+
+
         <div class='menu-link-header'>
             <a href='#' style="color: #FFD700;font-weight: bold;">PRIVATE MEMBERS</a>
         </div>
@@ -159,7 +162,7 @@
     </div>
 
 
-    <div class="row" style='margin-top:80px;padding:10px;'>
+    <div class="row innerpage">
         <p>
         <h1 class='h1-title'>Welcome to ICO Souq!</h1>
         ICO Souq is the Middle East’s leading destination for crypto insights with analysis and ratings on Initial Coin Offerings. Our portfolio is updated daily and available in English or Arabic.
