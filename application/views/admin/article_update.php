@@ -46,14 +46,14 @@
 
                 <div class="form-group">
                     <label>Description</label>
-                    <textarea name="description" rows="3" class="form-control" id="description" placeholder="Description"><?php echo @$update_data->description; ?></textarea>
+                    <textarea required name="description" rows="3" class="form-control" id="description" placeholder="Description"><?php echo @$update_data->description; ?></textarea>
                 </div>
 
                 <div class="form-group">
                     <label>Status</label>
-                    <select class="form-control" name="is_activated">
-                        <option value="1" <?php echo @$update_data->is_activated == '1' ? 'selected="selected"' : ''; ?> >Active</option>
-                        <option value="0" <?php echo @$update_data->is_activated == '0' ? 'selected="selected"' : ''; ?> >Inactive</option>
+                    <select required class="form-control" name="status">
+                        <option value="1" <?php echo @$update_data->status == '1' ? 'selected="selected"' : ''; ?> >Active</option>
+                        <option value="0" <?php echo @$update_data->status == '0' ? 'selected="selected"' : ''; ?> >Inactive</option>
                     </select>
                 </div>
 
@@ -73,7 +73,7 @@
                     }
                     ?>
                     <div>
-                        <input name="image" type="file" id="image" accept="image/*">
+                        <input <?php echo isset($update_data->article_id) ? '' : 'required'; ?> name="image" type="file" id="image" accept="image/*">
                     </div>
                 </div>
 

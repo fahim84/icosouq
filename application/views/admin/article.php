@@ -70,7 +70,7 @@
                 <?php foreach($rows->result() as $row)
                 {
                     $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' : base_url().'uploads/articles/'.$row->image;
-                    $image = base_url()."thumb.php?src=".$image_url."&w=800&h=600";
+                    $image = base_url()."thumb.php?src=".$image_url."&w=400&h=300";
 
                     ?>
                     <tr>
