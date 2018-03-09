@@ -40,17 +40,21 @@
 
     <div class="row mainheader">
 
-        <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
 
-        <div class='menu-link-header' style="float: left;">
-            &nbsp;
+            <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
         </div>
-        <div class='menu-link-header' style="float: left;">
-            &nbsp;
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainsitenav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-        <div class='menu-link-header' style="float: left;">
-            &nbsp;
-        </div>
+
+
         <?php
 
         //my_var_dump('Updating prices of ETH and BTC');
@@ -113,51 +117,49 @@
             $currencies[$currency->name] = $currency;
         }
         ?>
-        <div class='menu-link-header' style="float: left;">
-            <style>
-                .currency_name{color: #0195d5;font-size: 16px;font-weight: bold}
-            </style>
 
-            <table width="200">
-            <thead>
-                <tr>
-                    <th class="currency_name">BTC</th>
-                    <th class="currency_name">ETH</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><strong>$ <?php echo $currencies['BTC']->price; ?></strong></td>
-                <td><strong>$ <?php echo $currencies['ETH']->price; ?></strong></td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 currencyholder">
+            <ul>
+                <li>
+                    <span>BTC</span>
+                    <strong>$ <?php echo $currencies['BTC']->price; ?></strong>
+                </li>
+                <li>
+                    <span>ETH</span>
+                    <strong>$ <?php echo $currencies['ETH']->price; ?></strong>
+                </li>
+            </ul>
         </div>
 
-        <div class='menu-link-header'>
-            <div id="google_translate_element" align="right"></div>
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                }
-            </script>
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div class="mainmenu">
+                <div class="sitenavbar">
 
-        </div>
+                    <div class="collapse navbar-collapse mainnavbar" id="mainsitenav">
+                        <ul>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">LOCAL GUIDES</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Page 1-1</a></li>
+                                    <li><a href="#">Page 1-2</a></li>
+                                    <li><a href="#">Page 1-3</a></li>
+                                </ul>
 
-
-
-        <div class='menu-link-header'>
-            <a href='#' style="color: #FFD700;font-weight: bold;">PRIVATE MEMBERS</a>
-        </div>
-
-        <div class='menu-link-header'>
-            <a href='#' class="currency_name">LOCAL GUIDES</a>
-        </div>
-
-        <div class='menu-link-header'>
-            <a href='#' class="currency_name">NEWS</a>
-        </div>
+                            </li>
+                            <li><div id="google_translate_element" align="right"></div>
+                                <script type="text/javascript">
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                                    }
+                                </script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse// .mainnavbar -->
+                </div><!-- sitenavbar //ends-->
+            </div><!--//mainmenu//-->
+        </div><!--//col//-->
 
     </div>
 

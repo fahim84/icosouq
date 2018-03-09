@@ -19,6 +19,7 @@
 
 
 <div class="row">
+    <div class="col-xs-12">
     <table class="main-ico-table">
         <?php
         foreach($rows->result() as $row)
@@ -78,6 +79,7 @@
 
 
     </table>
+    </div>
     <?php //echo $pagination_links; ?>
 </div>
 
