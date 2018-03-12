@@ -703,6 +703,100 @@
 			margin:8px;
 			padding-left: 20px;
 		}
+		#tag-page #tag, .grid #tag {
+		    margin: 25px 0 0 0;
+		    border: none;
+		    background: #fafafa;
+		}
+		#tag-page #tag .image, .grid #tag .image {
+		    padding: 50px;
+		    text-align: center;
+		}
+		#tag-page #tag .image img, .grid #tag .image img {
+		    max-width: 100%;
+		}
+		#tag-page #tag .description, .grid #tag .description {
+		    padding-right: 50px;
+		    padding-top: 25px;
+		}
+		h1, h2{ position: relative;}
+		h1.title:after, h2.title:after {
+		    content: "";
+		    background:#0195d5;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    height: 2px;
+		    width: 15%;
+		    max-width: 50px;
+		    min-width: 30px;
+		}
+		#tag-page .results, .grid .results {
+		    margin-top: 20px;
+		    padding: 0 10px;
+		    clear: both;
+		}
+		.tab-content>.active {
+		    display: block;
+		}
+		#tag-page .result .image, .grid .result .image {
+		    overflow: hidden;
+		    position: relative;
+		    padding: 0 2px 5px;
+		}
+		#tag-page .badge.badge-default, .grid .badge.badge-default {
+		    background-color: #ffcd04!important;
+		}
+		#tag-page .image .sponsored, .grid .image .sponsored {
+		    background: #ffcd04;
+		    position: absolute;
+		    bottom: 0;
+		    right: 10px;
+		    padding: 5px;
+		    text-transform: uppercase;
+		    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.75);
+		    -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,.75);
+		    box-shadow: 0 0 2px 0 rgba(0,0,0,.75);
+		    border-radius: 4px;
+		    display: none;
+		}
+		#tag-page .result, .grid .result {
+		    margin-bottom: 20px;
+		    margin-top: 20px;
+		}
+		.result .image img{ width: 100%;}
+		#tag-page .result h2, .grid .result h2{ font-size: 18px;}
+		#tag-page .result .info a, .grid .result .info a {
+		    font-size: 14px;
+		    color: #27282d;
+		}
+		#tag-page .result p a, .grid .result p a {
+		    color: #27282d;
+		    font-size: 14px;
+		}
+		#tag-page .result h2 a, .grid .result h2 a {
+		    color: #010101;
+		    font-family: arial;
+		    font-weight: 600;
+		}
+		
+		#tag-page .result .info, .grid .result .info {
+		    padding: 10px 0;
+		    font-size: 14px;
+		    color: #a1a1a1;
+		}
+		#tag-page .result .info .date, .grid .result .info .date {
+		    margin-right: 10px;
+		    display: inline-block;
+		    white-space: nowrap;
+		}
+		#tag-page .result .info .author, .grid .result .info .author {
+		    margin-left: 10px;
+		    display: inline-block;
+		    white-space: nowrap;
+		}
+
 		@media (max-width: 767px) {
 			.mainheader {
 				position: relative;
@@ -804,3 +898,5 @@
 				margin: 0 4px;
 			}
 		}
+
+

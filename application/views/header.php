@@ -23,7 +23,7 @@
     <meta property='og:image' content='<?php echo base_url(); ?>assets/icosouq/images/social_logo.jpg'/>
     <meta property="og:site_name" content="ICO Watch List"/>
     <meta property="og:description" content="Follow all the best ICOs (Initial Coin Offering) & new token crowdsales. The ultimate ICO list for crypto investors!"/>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel='canonical' href='<?php echo base_url(); ?>'>
 
 
