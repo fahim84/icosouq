@@ -174,4 +174,9 @@ class Welcome extends CI_Controller {
             my_var_dump($response);
         }
     }
+
+    public function news()
+    {
+        $this->load->view('news',$this->data);
+    }
 }
