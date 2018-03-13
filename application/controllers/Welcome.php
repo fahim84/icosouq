@@ -179,4 +179,8 @@ class Welcome extends CI_Controller {
     {
         $this->load->view('news',$this->data);
     }
+    public function newsdetail()
+    {
+        $this->load->view('newsdetail',$this->data);
+    }
 }
