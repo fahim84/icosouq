@@ -143,6 +143,11 @@ class Article extends CI_Controller {
                 unset($get_post['oldfile']);
                 unset($get_post['delete_old_file']);
 
+                if(isset($get_post['post_date']))
+                {
+                    $get_post['post_date'] = date('Y-m-d H:i:s',strtotime($get_post['post_date']));
+                }
+
 				if($id > 0) // update
                 {
                     if($this->article_model->update($id,$get_post))

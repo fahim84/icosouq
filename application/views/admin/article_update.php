@@ -58,6 +58,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Date</label>
+                    <input name="post_date" type="text" class="form-control" id="post_date" placeholder="DD-MM-YYYY" style="cursor:pointer;" readonly value="<?php echo date('j M Y',strtotime(@$update_data->post_date)); ?>">
+                </div>
+
+                <div class="form-group">
                     <label>Image</label>
                     <?php
                     if(@$update_data->image != '')
@@ -101,6 +106,11 @@
 <script>
 $(document).ready(function(){
 
+    $('#post_date').datepicker({
+        dateFormat: 'dd M yy',
+        changeYear: true,
+        changeMonth: true
+    });
 
 });
 </script>

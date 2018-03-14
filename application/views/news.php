@@ -24,11 +24,17 @@
             </div> 
         </div>
         <div class="col-sm-12">
+            <?php foreach($rows->result() as $row)
+            {
+            $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' : base_url().'uploads/articles/'.$row->image;
+            $image = base_url()."thumb.php?src=".$image_url."&w=356&h=356";
+
+            ?>
             <div class="row result">
                 <figure class="col-sm-4">
                     <div class="image">
-                        <a href="https://cointelegraph.com/news/cryptomatoes-grows-5-acres-of-fruit-from-bitcoin-mining-heat" id=""> 
-                                <img src="https://cointelegraph.com/images/420_Ly9jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82Nzk3NTdiNTY1YTk2MDVhZTc5OTliMjYyYjJkYTI2My5qcGc=.jpg" alt="‘Cryptomatoes’ Grows 5 Acres Of Fruit From Bitcoin Mining Heat"> 
+                        <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>" >
+                                <img src="<?php echo $image; ?>" alt="<?php echo $row->article; ?>">
                                 <p class="sponsored badge badge-default" style="display: block;">News</p> 
                              
                         </a>
@@ -36,59 +42,29 @@
                 </figure>
                 <figure class="col-sm-8">
                     <h2 class="header">
-                        <a href="https://cointelegraph.com/news/cryptomatoes-grows-5-acres-of-fruit-from-bitcoin-mining-heat" id=""> ‘Cryptomatoes’ Grows 5 Acres Of Fruit From Bitcoin Mining Heat </a> 
+                        <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo $row->article; ?> </a>
                     </h2>
                     <div class="info"> 
-                        <span class="date"> 3 HOURS AGO </span> | 
-                        <span class="author">
+                        <span class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </span>
+                        <!--<span class="author">
                             <a href="https://cointelegraph.com/authors/william_suberg"> William Suberg </a> 
-                        </span> 
+                        </span>-->
                     </div>
                     <p class="text"> 
-                        <a href="https://cointelegraph.com/news/cryptomatoes-grows-5-acres-of-fruit-from-bitcoin-mining-heat"> Excess heat from Bitcoin mining has produced huge amounts of ‘cryptomatoes’ with organizers about to launch a dedicated startup. </a> 
+                        <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo character_limiter($row->description,200); ?> </a>
                     </p>
-                    <div> 
+                    <!--<div>
                         <div class="stats"> 
                             <i class="fa fa-eye"></i>&nbsp;<span>8847</span> 
                             <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 
                             <i class="fa fa-comments"></i>&nbsp;<span>3</span> 
                         </div> 
-                    </div>
+                    </div>-->
                 </figure>
             </div>
-            <div class="row result">
-                <figure class="col-sm-4">
-                    <div class="image">
-                        <a href="https://cointelegraph.com/news/cryptomatoes-grows-5-acres-of-fruit-from-bitcoin-mining-heat" id=""> 
-                            <div class="image"> 
-                                <img src="https://cointelegraph.com/images/420_Ly9jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82Nzk3NTdiNTY1YTk2MDVhZTc5OTliMjYyYjJkYTI2My5qcGc=.jpg" alt="‘Cryptomatoes’ Grows 5 Acres Of Fruit From Bitcoin Mining Heat"> 
-                                <p class="sponsored badge badge-default" style="display: block;">News</p> 
-                            </div> 
-                        </a>
-                    </div>
-                </figure>
-                <figure class="col-sm-8">
-                    <h2 class="header">
-                        <a href="https://cointelegraph.com/news/cryptomatoes-grows-5-acres-of-fruit-from-bitcoin-mining-heat" id=""> ‘Cryptomatoes’ Grows 5 Acres Of Fruit From Bitcoin Mining Heat </a> 
-                    </h2>
-                    <div class="info"> 
-                        <span class="date"> 3 HOURS AGO </span> | 
-                        <span class="author">
-                            <a href="https://cointelegraph.com/authors/william_suberg"> William Suberg </a> 
-                        </span> 
-                    </div>
-                    <p class="text"> 
-                        <a href="https://cointelegraph.com/news/cryptomatoes-grows-5-acres-of-fruit-from-bitcoin-mining-heat"> Excess heat from Bitcoin mining has produced huge amounts of ‘cryptomatoes’ with organizers about to launch a dedicated startup. </a> 
-                    </p>
-                    <div> 
-                        <div class="stats"> 
-                            <i class="fa fa-eye"></i>&nbsp;<span>8847</span> 
-                            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 
-                            <i class="fa fa-comments"></i>&nbsp;<span>3</span> 
-                        </div> 
-                    </div>
-                </figure>
-            </div>
+            <?php } ?>
+
+            <?php echo $pagination_links; ?>
         </div> 
     </div>
 
