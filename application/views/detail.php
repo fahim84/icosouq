@@ -17,9 +17,9 @@
 <div class="container">
     <div class="row mainheader">
 
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 sitelogo">
 
-            <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' style='width:120px;float:left;' ></a>
+            <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' ></a>
         </div>
 
         <div class="navbar-header">
@@ -30,6 +30,26 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
+        <div class="mainmenu visible-sm visible-xs">
+                <div class="sitenavbar">
+
+                    <div class="collapse navbar-collapse mainnavbar" id="mainsitenav">
+                        <ul>
+                            <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
+                            <li><a href="#">LOCAL GUIDES</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Page 1-1</a></li>
+                                    <li><a href="#">Page 1-2</a></li>
+                                    <li><a href="#">Page 1-3</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse// .mainnavbar -->
+                </div><!-- sitenavbar //ends-->
+            </div><!--//mainmenu//-->
 
 
         <?php
@@ -106,15 +126,26 @@
                     <strong>$ <?php echo $currencies['ETH']->price; ?></strong>
                 </li>
             </ul>
+            
+        </div>
+        <div class="hidden-lg hidden-md col-sm-3 col-xs-12 languageholder">
+            <div id="google_translate_element2" align="right" class="hideimpd"></div>
+                <script type="text/javascript">
+                    if($(window).width() < 992){
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element2');
+                    }
+                    }
+                </script>
         </div>
 
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 hidden-sm hidden-xs">
             <div class="mainmenu">
                 <div class="sitenavbar">
 
-                    <div class="collapse navbar-collapse mainnavbar" id="mainsitenav">
+                    <div class="collapse navbar-collapse mainnavbar">
                         <ul>
-                            <li><a href="#">NEWS</a></li>
+                            <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
                             <li><a href="#">LOCAL GUIDES</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
@@ -125,20 +156,24 @@
                                 </ul>
 
                             </li>
-                            <li><div id="google_translate_element" align="right"></div>
+                            <li><div id="google_translate_element" align="right" class="hideimp"></div></li>
+                            
+                        </ul>
+                        
                                 <script type="text/javascript">
+                                    if($(window).width() > 992){
                                     function googleTranslateElementInit() {
                                         new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                                     }
+                                }
                                 </script>
-                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
-                        </ul>
                     </div><!-- /.navbar-collapse// .mainnavbar -->
                 </div><!-- sitenavbar //ends-->
             </div><!--//mainmenu//-->
         </div><!--//col//-->
 
     </div>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div>
 <script>
     $(function(){
@@ -480,27 +515,11 @@
         <div class='col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-10'>
             <div class='row'>
                 <div class='col-xs-6 col-sm-4 col-md-2 footercol'>
-                    <h4 class='footer-title'>ICO List</h4>
-                    <p class='footer-menu-link'><a href='live'>Live ICO</a></p>
-                    <p class='footer-menu-link'><a href='upcoming'><span class='footer-menu-link'>Upcoming ICO</a></p>
-                </div>
-                <div class='col-xs-6 col-sm-4 col-md-2 footercol'>
                     <h4 class='footer-title'>Website</h4>
                     <p class='footer-menu-link'><a href='about'><span class='footer-menu-link'>About Us</a></p>
                     <p class='footer-menu-link'><a href='contact'><span class='footer-menu-link'>Contact Us</a></p>
                     <p class='footer-menu-link'><a href='<?php echo base_url(); ?>blog/'>Our Blog</a></p>
                     <p class='footer-menu-link'><a href='add-ico'><span class='footer-menu-link'>Add Your ICO</a></p>
-                </div>
-                <div class='col-xs-6 col-sm-4 col-md-2 footercol'>
-                    <h4 class='footer-title'>Research & Data</h4>
-                    <p class='footer-menu-link'><a href='education'><span class='footer-menu-link'>ICO Guide</a></p>
-                    <p class='footer-menu-link'><a href='statistics'><span class='footer-menu-link'>ICO Statistics</a></p>
-                </div>
-                <div class='col-xs-6 col-sm-4 col-md-2 footercol'>
-                    <h4 class='footer-title'>Social</h4>
-                    <p class='footer-menu-link'><a href='https://twitter.com/icowatchlist' target='_blank'><span class='footer-menu-link'>Twitter</a></p>
-                    <p class='footer-menu-link'><a href='https://www.facebook.com/icowatchlist/' target='_blank'><span class='footer-menu-link'>Facebook</a></p>
-                    <p class='footer-menu-link'><a href='https://t.me/joinchat/FrpyWkHXf62SVjzPrYwUJw'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>
                 </div>
                 <!--<div class='col-xs-6 col-sm-4 col-md-2' style='margin-bottom:20px;'>
                     <h4 class='footer-title'>Developers</h4>
@@ -516,6 +535,23 @@
                     <p class='footer-menu-link'><a href='privacy'><span class='footer-menu-link'>Privacy</a></p>
                     <p class='footer-menu-link'><a href='info'><span class='footer-menu-link'>General Info</a></p>
                 </div>
+                <div class='col-xs-6 col-sm-4 col-md-2 footercol'>
+                    <h4 class='footer-title'>ICO List</h4>
+                    <p class='footer-menu-link'><a href='live'>Live ICO</a></p>
+                    <p class='footer-menu-link'><a href='upcoming'><span class='footer-menu-link'>Upcoming ICO</a></p>
+                </div>
+                <div class='col-xs-6 col-sm-4 col-md-3 footercol'>
+                    <h4 class='footer-title'>Research & Data</h4>
+                    <p class='footer-menu-link'><a href='education'><span class='footer-menu-link'>ICO Guide</a></p>
+                    <p class='footer-menu-link'><a href='statistics'><span class='footer-menu-link'>ICO Statistics</a></p>
+                </div>
+                <div class='col-xs-6 col-sm-4 col-md-2 footercol'>
+                    <h4 class='footer-title'>Social</h4>
+                    <p class='footer-menu-link'><a href='https://twitter.com/icowatchlist' target='_blank'><span class='footer-menu-link'>Twitter</a></p>
+                    <p class='footer-menu-link'><a href='https://www.facebook.com/icowatchlist/' target='_blank'><span class='footer-menu-link'>Facebook</a></p>
+                    <p class='footer-menu-link'><a href='https://t.me/joinchat/FrpyWkHXf62SVjzPrYwUJw'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>
+                </div>
+                
             </div>
         </div>
 
