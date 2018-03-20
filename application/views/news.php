@@ -5,7 +5,7 @@
         <div class="col-xs-12">
             <h1 class="title">Bitcoin News</h1>
         </div>
-        <div class="col-xs-12" id="tag">  
+        <!--<div class="col-xs-12" id="tag">
             <div class="row"> 
                 <div class="col-md-4 image"> 
                     <img src="//cointelegraph.com/storage/uploads/view/1ce2f935afa26ebcb64bbe86a6599be0.png" alt="Bitcoin News - Cointelegraph"> 
@@ -22,7 +22,7 @@
                     <p></p> 
                 </div> 
             </div> 
-        </div>
+        </div>-->
         <div class="col-sm-12">
             <?php foreach($rows->result() as $row)
             {

@@ -63,9 +63,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Page 1-1</a></li>
-                                    <li><a href="#">Page 1-2</a></li>
-                                    <li><a href="#">Page 1-3</a></li>
+                                    <li><a href="#">VIP Signals & Alerts</a></li>
+                                    <li><a href="#">ICO Analysis + Ratings</a></li>
+                                    <li><a href="#">Crypto Crash Course</a></li>
+                                    <li><a href="#">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
@@ -142,11 +143,11 @@
             <ul>
                 <li>
                     <span>BTC</span>
-                    <strong>$ <?php echo $currencies['BTC']->price; ?></strong>
+                    <strong>$ <?php echo number_format($currencies['BTC']->price); ?></strong>
                 </li>
                 <li>
                     <span>ETH</span>
-                    <strong>$ <?php echo $currencies['ETH']->price; ?></strong>
+                    <strong>$ <?php echo number_format($currencies['ETH']->price); ?></strong>
                 </li>
             </ul>
             
@@ -173,9 +174,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Page 1-1</a></li>
-                                    <li><a href="#">Page 1-2</a></li>
-                                    <li><a href="#">Page 1-3</a></li>
+                                    <li><a href="#">VIP Signals & Alerts</a></li>
+                                    <li><a href="#">ICO Analysis + Ratings</a></li>
+                                    <li><a href="#">Crypto Crash Course</a></li>
+                                    <li><a href="#">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
