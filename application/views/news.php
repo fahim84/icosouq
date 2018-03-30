@@ -30,6 +30,7 @@
             $image = base_url()."thumb.php?src=".$image_url."&w=356&h=356";
 
             ?>
+
             <div class="row result">
                 <figure class="col-sm-4">
                     <div class="image">
