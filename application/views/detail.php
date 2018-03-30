@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script id="twitter-wjs" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/widgets.js"></script><script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/share.html"></script><script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/a.json"></script><script async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/qevents.txt"></script><script type="text/javascript" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/insight.js"></script><script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/300lo.json"></script><script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/_ate.config_resp"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script id="twitter-wjs" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/widgets.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/share.html"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/a.json"></script>
+    <script async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/qevents.txt"></script>
+    <script type="text/javascript" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/insight.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/300lo.json"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/_ate.config_resp"></script>
     <title>ICO rating and details | <?php echo SYSTEM_NAME; ?></title>
     <meta name="keywords" content="">
     <meta charset="UTF-8">
@@ -40,9 +47,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Page 1-1</a></li>
-                                    <li><a href="#">Page 1-2</a></li>
-                                    <li><a href="#">Page 1-3</a></li>
+                                    <li><a href="#">VIP Signals & Alerts</a></li>
+                                    <li><a href="#">ICO Analysis + Ratings</a></li>
+                                    <li><a href="#">Crypto Crash Course</a></li>
+                                    <li><a href="#">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
@@ -119,11 +127,11 @@
             <ul>
                 <li>
                     <span>BTC</span>
-                    <strong>$ <?php echo $currencies['BTC']->price; ?></strong>
+                    <strong>$ <?php echo number_format($currencies['BTC']->price); ?></strong>
                 </li>
                 <li>
                     <span>ETH</span>
-                    <strong>$ <?php echo $currencies['ETH']->price; ?></strong>
+                    <strong>$ <?php echo number_format($currencies['ETH']->price); ?></strong>
                 </li>
             </ul>
             
@@ -150,9 +158,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Page 1-1</a></li>
-                                    <li><a href="#">Page 1-2</a></li>
-                                    <li><a href="#">Page 1-3</a></li>
+                                    <li><a href="#">VIP Signals & Alerts</a></li>
+                                    <li><a href="#">ICO Analysis + Ratings</a></li>
+                                    <li><a href="#">Crypto Crash Course</a></li>
+                                    <li><a href="#">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
