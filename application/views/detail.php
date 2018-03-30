@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script id="twitter-wjs" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/widgets.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/share.html"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/a.json"></script>
