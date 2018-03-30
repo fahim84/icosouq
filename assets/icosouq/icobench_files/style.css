@@ -377,13 +377,13 @@ footer .footer_bottom .col_3_3 a:hover, footer .footer_bottom .col_3_3 a:visited
 	display: inline-block;
 	width: 45%;
 }
-.currencyholder ul li span {
+.currencyholder ul li>span {
 	color: #0195d5;
 	font-size: 16px;
 	font-weight: bold;
 	display: block;
 }
-.currencyholder ul li strong{
+.currencyholder ul li>strong{
 	display: block;
 	margin-top:2px;
 }
@@ -3658,6 +3658,32 @@ div.mce-edit-area{border:0 !important;}
 	}
 	.innerpage{ margin-top: 15px;}
 	.sitelogo img{ width: 72px; float: left;}
+	.currencyholder ul li {
+		display: inline-block;
+		width: 100px;
+		margin-right: 5px;
+	}
+	.currencyholder ul li:last-child {
+		margin-right: 0;
+		width: auto;
+	}
+}
+@media (max-width:480px) {
+	.mainheader {
+		position: relative;
+		margin:0 -15px; 
+	}
+	.innerpage{ margin-top: 15px;}
+	.sitelogo img{ width: 72px; float: left;}
+	.currencyholder ul li {
+		display: inline-block;
+		width: auto;
+		margin-right: 5px;
+	}
+	.currencyholder ul li:last-child {
+		margin-right: 0;
+		width: auto;
+	}
 }
 @media only screen and (max-width : 991px){
 	.navbar-header {float: none;}
