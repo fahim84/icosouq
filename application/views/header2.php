@@ -1,73 +1,203 @@
-<!doctype html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#" id="admin">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script id="twitter-wjs" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/widgets.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/share.html"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/a.json"></script>
+    <script async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/qevents.txt"></script>
+    <script type="text/javascript" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/insight.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/300lo.json"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/_ate.config_resp"></script>
+    <title>ICO rating and details | <?php echo SYSTEM_NAME; ?></title>
+    <meta name="keywords" content="">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@ICODrops" />
-    <meta name="twitter:title" content="ICO Drops" />
-    <meta name="twitter:description" content="The Simple ICO List." />
-    <meta name="twitter:image" content="<?php echo base_url(); ?>assets/icosouq/detail_files/cropped-Group.png" />
-
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-
-    <link type="text/css" media="all" href="<?php echo base_url(); ?>assets/icosouq/detail_files/autoptimize_d4f7e8e2c2d47cf1b6c5509ffd689591.css" rel="stylesheet" /><title>dadi (DADI) - All information about dadi ICO (Token Sale) - ICO Drops</title>
-
-    <!-- This site is optimized with the Yoast SEO Premium plugin v6.1.2 - https://yoa.st/1yg?utm_content=6.1.2 -->
-    <meta name="description" content="DADI is a global, decentralized cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow."/>
-    <link rel="canonical" href="<?php echo base_url(); ?>dadi/" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="dadi (DADI) - All information about dadi ICO (Token Sale) - ICO Drops" />
-    <meta property="og:description" content="DADI is a global, decentralized cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow." />
-    <meta property="og:url" content="<?php echo base_url(); ?>dadi/" />
-    <meta property="og:site_name" content="ICO Drops" />
-    <meta property="article:section" content="Ended ICO" />
-    <meta property="article:published_time" content="2017-12-11T18:56:41+03:00" />
-    <meta property="article:modified_time" content="2018-02-15T11:38:19+03:00" />
-    <meta property="og:updated_time" content="2018-02-15T11:38:19+03:00" />
-    <meta property="og:image" content="<?php echo base_url(); ?>assets/icosouq/detail_files/7hacBpGB_400x400.jpg" />
-    <meta property="og:image:secure_url" content="<?php echo base_url(); ?>assets/icosouq/detail_files/7hacBpGB_400x400.jpg" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="400" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="DADI is a global, decentralized cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow." />
-    <meta name="twitter:title" content="dadi (DADI) - All information about dadi ICO (Token Sale) - ICO Drops" />
-    <meta name="twitter:site" content="@ICODrops" />
-    <meta name="twitter:image" content="<?php echo base_url(); ?>assets/icosouq/detail_files/7hacBpGB_400x400.jpg" />
-    <meta name="twitter:creator" content="@ICODrops" />
-    <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"<?php echo base_url(); ?>","name":"ICO Drops","potentialAction":{"@type":"SearchAction","target":"<?php echo base_url(); ?>?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
-    <!-- / Yoast SEO Premium plugin. -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/icosouq/css/bootstrap.css">
 
 
+    <link href="<?php echo base_url(); ?>assets/icosouq/icobench_files/style.css" id="css" rel="stylesheet" type="text/css">
+    <script src="<?php echo base_url(); ?>assets/icosouq/icobench_files/jquery.js"></script>
 
 
+    <script type="text/javascript" charset="utf-8" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/172.js"></script><script type="text/javascript" charset="utf-8" async="" src="<?php echo base_url(); ?>assets/icosouq/icobench_files/15.js"></script></head>
+<body>
+<div class="container">
+    <div class="row mainheader">
+
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 sitelogo">
+
+            <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' ></a>
+        </div>
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainsitenav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="mainmenu visible-sm visible-xs">
+            <div class="sitenavbar">
+
+                <div class="collapse navbar-collapse mainnavbar" id="mainsitenav">
+                    <ul>
+                        <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
+                        <li><a href="#">LOCAL GUIDES</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo base_url(); ?>private_member/index?show=1">VIP Signals & Alerts</a></li>
+                                <li><a href="<?php echo base_url(); ?>private_member/index?show=2">ICO Analysis + Ratings</a></li>
+                                <li><a href="<?php echo base_url(); ?>private_member/index?show=3">Crypto Crash Course</a></li>
+                                <li><a href="<?php echo base_url(); ?>private_member/index?show=4">VIP Events Calendar</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse// .mainnavbar -->
+            </div><!-- sitenavbar //ends-->
+        </div><!--//mainmenu//-->
 
 
+        <?php
+
+        //my_var_dump('Updating prices of ETH and BTC');
+
+        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
+        //my_var_dump($api_end_point);
+        $response = file_get_contents($api_end_point);
+        if($response)
+        {
+            $response = json_decode($response);
+            //my_var_dump($response);
+
+            $datetime = date('Y-m-d H:i:s');
+            $sql_data['name'] = $response->data->currency;
+            $sql_data['fullname'] = $response->data->currency;
+            $sql_data['price'] = $response->data->rates->USD;
+            $sql_data['currency'] = 'USD';
+            $sql_data['updated_at'] = $datetime;
+
+            $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
+            $this->db->query($sql);
+            //my_var_dump($this->db->last_query());
+            $id = $this->db->insert_id();
+            //my_var_dump($id);
+
+        }
+        else{
+            //my_var_dump($response);
+        }
+
+        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
+        //my_var_dump($api_end_point);
+        $response = file_get_contents($api_end_point);
+        if($response)
+        {
+            $response = json_decode($response);
+            //my_var_dump($response);
+
+            $datetime = date('Y-m-d H:i:s');
+            $sql_data['name'] = $response->data->currency;
+            $sql_data['fullname'] = $response->data->currency;
+            $sql_data['price'] = $response->data->rates->USD;
+            $sql_data['currency'] = 'USD';
+            $sql_data['updated_at'] = $datetime;
+
+            $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
+            $this->db->query($sql);
+            //my_var_dump($this->db->last_query());
+            $id = $this->db->insert_id();
+            //my_var_dump($id);
+
+        }
+        else{
+            //my_var_dump($response);
+        }
+
+        $query = $this->db->get('currencies');
+        foreach ($query->result() as $currency)
+        {
+            $currencies[$currency->name] = $currency;
+        }
+        ?>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 currencyholder">
+            <ul>
+                <li>
+                    <span>BTC</span>
+                    <strong>$ <?php echo number_format($currencies['BTC']->price); ?></strong>
+                </li>
+                <li>
+                    <span>ETH</span>
+                    <strong>$ <?php echo number_format($currencies['ETH']->price); ?></strong>
+                </li>
+                <li> <div class="hidden-lg hidden-md col-sm-3 col-xs-12 languageholder">
+                        <div id="google_translate_element2" align="right" class="hideimpd"></div>
+                        <script type="text/javascript">
+                            if($(window).width() < 992){
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element2');
+                                }
+                            }
+                        </script>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
 
 
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+            <div class="mainmenu">
+                <div class="sitenavbar">
 
+                    <div class="collapse navbar-collapse mainnavbar">
+                        <ul>
+                            <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
+                            <li><a href="#">LOCAL GUIDES</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=1">VIP Signals & Alerts</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=2">ICO Analysis + Ratings</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=3">Crypto Crash Course</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=4">VIP Events Calendar</a></li>
+                                </ul>
 
-    <script type='text/javascript' src='<?php echo base_url(); ?>assets/icosouq/detail_files/jquery.js?ver=1.12.4'></script>
+                            </li>
+                            <li><div id="google_translate_element" align="right" class="hideimp"></div></li>
 
+                        </ul>
 
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var rlArgs = {"script":"nivo","selector":"lightbox","customEvents":"","activeGalleries":"0","effect":"fade","clickOverlayToClose":"1","keyboardNav":"1","errorMessage":"The requested content cannot be loaded. Please try again later.","woocommerce_gallery":"0"};
-        /* ]]> */
-    </script>
+                        <script type="text/javascript">
+                            if($(window).width() > 992){
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                                }
+                            }
+                        </script>
+                    </div><!-- /.navbar-collapse// .mainnavbar -->
+                </div><!-- sitenavbar //ends-->
+            </div><!--//mainmenu//-->
+        </div><!--//col//-->
 
-
-
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php echo base_url(); ?>assets/icosouq/detail_files/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="<?php echo base_url(); ?>assets/icosouq/detail_files/wlwmanifest.xml" />
-    <link rel='shortlink' href='<?php echo base_url(); ?>?p=18165' />
-    <link rel="icon" href="<?php echo base_url(); ?>assets/icosouq/detail_files/cropped-Group-32x32.png" sizes="32x32" />
-    <link rel="icon" href="<?php echo base_url(); ?>assets/icosouq/detail_files/cropped-Group-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>assets/icosouq/detail_files/cropped-Group-180x180.png" />
-    <meta name="msapplication-TileImage" content="<?php echo base_url(); ?>assets/icosouq/detail_files/cropped-Group-270x270.png" />
-
-</head>
-
-<body class="post-template-default single single-post postid-18165 single-format-standard wp-custom-logo">
+    </div>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+<script>
+    $(function(){
+        $("#hamburger").click(function(){
+            $("#top_menu").toggleClass("display");
+        });
+        $("#bottom_hamburger").click(function(){
+            $("#bottom_hamburger_open").toggleClass("display");
+        });
+        $("#profile > .arrow").click(function(){
+            $("#profile_dropdown").toggle();
+        });
+    });
+</script>

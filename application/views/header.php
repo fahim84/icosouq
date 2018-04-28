@@ -63,10 +63,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">VIP Signals & Alerts</a></li>
-                                    <li><a href="#">ICO Analysis + Ratings</a></li>
-                                    <li><a href="#">Crypto Crash Course</a></li>
-                                    <li><a href="#">VIP Events Calendar</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=1">VIP Signals & Alerts</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=2">ICO Analysis + Ratings</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=3">Crypto Crash Course</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=4">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
