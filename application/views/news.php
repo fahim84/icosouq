@@ -1,7 +1,7 @@
 <?php $this->load->view('header',$this->data); ?>
 
 
-    <div class="row" id="tag-page">
+    <div class="row innerpage" id="tag-page">
         <div class="col-xs-12">
             <h1 class="title">Bitcoin News</h1>
         </div>

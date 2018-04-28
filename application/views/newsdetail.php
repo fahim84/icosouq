@@ -5,7 +5,7 @@ $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' :
 $image = base_url()."thumb.php?src=".$image_url."&w=740&h=500";
 ?>
 
-    <div class="row"  id="post"> 
+    <div class="row innerpage"  id="post">
         
         <div class="col-xs-12 col-sm-8 post-area"> 
             <div class="post-header"> 
