@@ -1,5 +1,5 @@
 <?php $this->load->view('header',$this->data); ?>
-
+<?php $this->load->view('top_msg',$this->data); ?>
 
 <div class="row">
     <table class="main-ico-table titles-table">

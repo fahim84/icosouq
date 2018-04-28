@@ -185,4 +185,55 @@ class Welcome extends CI_Controller {
         $this->data['row'] = $row;
         $this->load->view('newsdetail',$this->data);
     }
+
+    public function terms_and_condition()
+    {
+        $this->data['selected_page'] = 'terms_and_condition';
+
+        $this->load->view('terms_and_condition', $this->data);
+    }
+
+    public function privacy()
+    {
+        $this->data['selected_page'] = 'privacy';
+
+        $this->load->view('privacy', $this->data);
+    }
+
+    public function contact_us()
+    {
+        // Set the validation rules
+        $this->form_validation->set_rules('fullname', 'Name', 'required|trim');
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
+
+        if ($this->form_validation->run())
+        {
+            $get_post = $this->input->get_post(null,true);
+
+            # Send email to Signup User
+            $this->email->clear(TRUE);
+            $this->email->set_mailtype("html");
+            $this->email->from(SYSTEM_EMAIL, SYSTEM_NAME);
+            $this->email->reply_to($get_post['email'], $get_post['fullname']);
+            $this->email->to("ahmad.hello@gmail.com");
+            $this->email->to("ward0044@outlook.com");
+            $this->email->subject("{$get_post['fullname']} wants to contact you!");
+            $this->email->message($get_post['message']);
+            $response = $this->email->send();
+
+            if($response)
+            {
+                $_SESSION['msg_success'][] = 'Email has been sent.';
+            }
+            else
+            {
+                $_SESSION['msg_error'][] = 'Email could not be sent.';
+            }
+            redirect('welcome/contact_us');
+        }
+
+        $this->data['selected_page'] = 'contact_us';
+
+        $this->load->view('contact_us', $this->data);
+    }
 }

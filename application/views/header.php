@@ -174,10 +174,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">VIP Signals & Alerts</a></li>
-                                    <li><a href="#">ICO Analysis + Ratings</a></li>
-                                    <li><a href="#">Crypto Crash Course</a></li>
-                                    <li><a href="#">VIP Events Calendar</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=1">VIP Signals & Alerts</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=2">ICO Analysis + Ratings</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=3">Crypto Crash Course</a></li>
+                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=4">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
@@ -200,28 +200,5 @@
     </div>
 
 
-    <div class="row innerpage">
-        <p>
-        <h1 class='h1-title'>Welcome to ICO Souq!</h1>
-        ICO Souq is the Middle East’s leading destination for crypto insights with analysis and ratings on Initial Coin Offerings. Our portfolio is updated daily and available in English or Arabic.
-        </p>
-    </div>
 
-    <div class="row">
-
-        <div class='table-tabs'>
-            <a href='<?php echo base_url(); ?>?listing=ongoing'>
-                <div class='tab <?php echo $listing=='ongoing' ? 'selected-tab' : ''; ?>'>
-                    LIVE ICOs
-                </div>
-            </a>
-
-            <a href='<?php echo base_url(); ?>?listing=upcoming'>
-                <div class='tab <?php echo $listing=='upcoming' ? 'selected-tab' : ''; ?>'>
-                    UPCOMING ICOs
-                </div>
-            </a>
-        </div>
-
-    </div>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
