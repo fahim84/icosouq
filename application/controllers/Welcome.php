@@ -204,7 +204,7 @@ class Welcome extends CI_Controller {
     {
         // Set the validation rules
         $this->form_validation->set_rules('fullname', 'Name', 'required|trim');
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
+        $this->form_validation->set_rules('email', 'Email', 'required|trim');
 
         if ($this->form_validation->run())
         {
