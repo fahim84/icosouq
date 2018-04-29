@@ -56,16 +56,6 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <?php
-            $this->load->library('Rssparser');							// load library
-            $this->rssparser->set_feed_url('https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed'); 	// get feed
-            $this->rssparser->set_cache_life(30); 						// Set cache life time in minutes
-            $rss = $this->rssparser->getFeed(6);
-
-            foreach ($rss as $item) :
-                my_var_dump($item);
-            endforeach;
-            ?>
             <iframe src="https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/" width="100%" height="400"></iframe>
         </div>
         <?php //echo $pagination_links; ?>
