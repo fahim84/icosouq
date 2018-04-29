@@ -30,7 +30,7 @@
 
 
 
-            <form method="post" name="contactus" id="contactus">
+            <form method="post" name="contactus" id="contactus" enctype="multipart/form-data">
                 <table width="70%" cellpadding="5" cellspacing="5">
                 <tr>
                     <td width="100">Name</td>
@@ -39,6 +39,10 @@
                 <tr>
                     <td>Email</td>
                     <td><input type="email" required name="email" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Attachment</td>
+                    <td><input name="image" type="file" id="image" ></td>
                 </tr>
                 <tr>
                     <td valign="top">Message</td>

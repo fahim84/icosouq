@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 require_once(APPPATH . 'libraries/ICObenchAPI.php');
+require_once(APPPATH . 'libraries/RSSParser.php');
 
 class Welcome extends CI_Controller {
 
@@ -210,6 +211,35 @@ class Welcome extends CI_Controller {
         {
             $get_post = $this->input->get_post(null,true);
 
+            # File uploading configuration
+            $upload_path = './uploads/attachments/';
+            $config['upload_path'] = $upload_path;
+            //$config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['encrypt_name'] = false;
+            $config['max_size'] = 51200; //KB
+
+            $this->load->library('upload', $config);
+
+            $uploaded_file = '';
+            # Try to upload file now
+            if ($this->upload->do_upload('image'))
+            {
+                # Get uploading detail here
+                $upload_detail = $this->upload->data();
+                $uploaded_file = $upload_detail['file_name'];
+            }
+            else
+            {
+                $uploaded_file_array = (isset($_FILES['image']) and $_FILES['image']['name']!='') ? $_FILES['image'] : '';
+
+                # Show uploading error only when the file uploading attempt exist.
+                if( is_array($uploaded_file_array) )
+                {
+                    $uploading_error = $this->upload->display_errors();
+                    $_SESSION['msg_error'][] = $uploading_error;
+                }
+            }
+
             # Send email to Signup User
             $this->email->clear(TRUE);
             $this->email->set_mailtype("html");
@@ -217,8 +247,13 @@ class Welcome extends CI_Controller {
             $this->email->reply_to($get_post['email'], $get_post['fullname']);
             $this->email->to("ahmad.hello@gmail.com");
             $this->email->to("ward0044@outlook.com");
+            $this->email->to("fahim@blazebuddies.com");
             $this->email->subject("{$get_post['fullname']} wants to contact you!");
             $this->email->message($get_post['message']);
+            if($uploaded_file)
+            {
+                $this->email->attach($upload_path.$uploaded_file);
+            }
             $response = $this->email->send();
 
             if($response)

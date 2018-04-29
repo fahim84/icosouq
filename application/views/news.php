@@ -20,8 +20,8 @@
                     <div class="image">
                         <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>" >
                                 <img src="<?php echo $image; ?>" alt="<?php echo $row->article; ?>">
-                                <p class="sponsored badge badge-default" style="display: block;">News</p> 
-                             
+                                <p class="sponsored badge badge-default" style="display: block;">News</p>
+
                         </a>
                     </div>
                 </figure>
@@ -29,33 +29,43 @@
                     <h2 class="header">
                         <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo $row->article; ?> </a>
                     </h2>
-                    <div class="info"> 
+                    <div class="info">
                         <span class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </span>
                         <!--<span class="author">
-                            <a href="https://cointelegraph.com/authors/william_suberg"> William Suberg </a> 
+                            <a href="https://cointelegraph.com/authors/william_suberg"> William Suberg </a>
                         </span>-->
                     </div>
-                    <p class="text"> 
+                    <p class="text">
                         <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo character_limiter($row->description,200); ?> </a>
                     </p>
                     <!--<div>
-                        <div class="stats"> 
-                            <i class="fa fa-eye"></i>&nbsp;<span>8847</span> 
-                            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 
-                            <i class="fa fa-comments"></i>&nbsp;<span>3</span> 
-                        </div> 
+                        <div class="stats">
+                            <i class="fa fa-eye"></i>&nbsp;<span>8847</span>
+                            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                            <i class="fa fa-comments"></i>&nbsp;<span>3</span>
+                        </div>
                     </div>-->
                 </figure>
             </div>
             <?php } ?>
 
             <?php echo $pagination_links; ?>
-        </div> 
+        </div>
     </div>
 
 
     <div class="row">
         <div class="col-xs-12">
+            <?php
+            $this->load->library('Rssparser');							// load library
+            $this->rssparser->set_feed_url('https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed'); 	// get feed
+            $this->rssparser->set_cache_life(30); 						// Set cache life time in minutes
+            $rss = $this->rssparser->getFeed(6);
+
+            foreach ($rss as $item) :
+                my_var_dump($item);
+            endforeach;
+            ?>
             <iframe src="https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/" width="100%" height="400"></iframe>
         </div>
         <?php //echo $pagination_links; ?>
