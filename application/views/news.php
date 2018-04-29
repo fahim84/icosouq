@@ -5,24 +5,8 @@
         <div class="col-xs-12">
             <h1 class="title">Bitcoin News</h1>
         </div>
-        <!--<div class="col-xs-12" id="tag">
-            <div class="row"> 
-                <div class="col-md-4 image"> 
-                    <img src="//cointelegraph.com/storage/uploads/view/1ce2f935afa26ebcb64bbe86a6599be0.png" alt="Bitcoin News - Cointelegraph"> 
-                </div> 
-                <div class="col-md-8 description"> 
-                    <p></p>
-                    <p>Bitcoin is an open-source, peer-to-peer, digital decentralized cryptocurrency. Powered by the Blockchain technology, its defining characteristic is its decentralization, i.e. the lack of central governing authority, such as a central bank or a ministry of finance. Bitcoin's issuance and circulation are ensured by regular users via a process known as "Bitcoin mining". Bitcoin can be sent anywhere, anytime, (almost) for free, and with little regard for national borders or government/bank-imposed restrictions.</p>
-                    <p>Related links:</p>
-                    <ul>
-                        <li><a href="https://cointelegraph.com/tags/bitcoin-price">Bitcoin Price</a></li>
-                        <li><a href="https://cointelegraph.com/bitcoin-price-index">Bitcoin Price Index</a></li>
-                        <li><a href="https://cointelegraph.com/bitcoin-for-beginners/what-is-bitcoin">Bitcoin 101</a></li>
-                    </ul>
-                    <p></p> 
-                </div> 
-            </div> 
-        </div>-->
+
+        <iframe src="https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/" width="100%" height="400"></iframe>
         <div class="col-sm-12">
             <?php foreach($rows->result() as $row)
             {
