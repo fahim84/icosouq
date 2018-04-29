@@ -6,7 +6,7 @@
             <h1 class="title">Bitcoin News</h1>
         </div>
 
-        <iframe src="https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/" width="100%" height="400"></iframe>
+
         <div class="col-sm-12">
             <?php foreach($rows->result() as $row)
             {
@@ -56,6 +56,7 @@
 
     <div class="row">
         <div class="col-xs-12">
+            <iframe src="https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/" width="100%" height="400"></iframe>
         </div>
         <?php //echo $pagination_links; ?>
     </div>
