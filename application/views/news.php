@@ -1,4 +1,4 @@
-<?php //$this->load->view('header',$this->data); ?>
+<?php $this->load->view('header',$this->data); ?>
 
 
     <div class="row innerpage" id="tag-page">
@@ -119,5 +119,5 @@
     </div>
 
 
-<?php //$this->load->view('footer',$this->data); ?>
+<?php $this->load->view('footer',$this->data); ?>
 
