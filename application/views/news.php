@@ -1,4 +1,4 @@
-<?php $this->load->view('header',$this->data); ?>
+<?php //$this->load->view('header',$this->data); ?>
 
 
     <div class="row innerpage" id="tag-page">
@@ -8,18 +8,38 @@
 
 
         <div class="col-sm-12">
+            <table width="100%">
             <?php foreach($rows->result() as $row)
             {
             $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' : base_url().'uploads/articles/'.$row->image;
-            $image = base_url()."thumb.php?src=".$image_url."&w=356&h=356";
+            //$image = base_url()."thumb.php?src=".$image_url."&w=200&h=200";
 
             ?>
 
-            <div class="row result">
+                <tr>
+                    <td valign="top" width="200">
+                        <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>" >
+                            <img src="<?php echo $image_url; ?>" alt="<?php echo $row->article; ?>" width="200">
+                        </a>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td valign="top">
+                        <h2 class="header">
+                            <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo $row->article; ?> </a>
+                        </h2>
+                        <div class="info">
+                            <span class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </span>
+                        </div>
+                        <p class="text">
+                            <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo character_limiter($row->description,200); ?> </a>
+                        </p>
+                    </td>
+                </tr>
+            <!--<div class="row result">
                 <figure class="col-sm-4">
                     <div class="image">
-                        <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>" >
-                                <img src="<?php echo $image; ?>" alt="<?php echo $row->article; ?>">
+                        <a href="<?php /*echo base_url(); */?>welcome/newsdetail?id=<?php /*echo $row->article_id; */?>" >
+                                <img src="<?php /*echo $image_url; */?>" alt="<?php /*echo $row->article; */?>" width="200">
                                 <p class="sponsored badge badge-default" style="display: block;">News</p>
 
                         </a>
@@ -27,28 +47,18 @@
                 </figure>
                 <figure class="col-sm-8">
                     <h2 class="header">
-                        <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo $row->article; ?> </a>
+                        <a href="<?php /*echo base_url(); */?>welcome/newsdetail?id=<?php /*echo $row->article_id; */?>"> <?php /*echo $row->article; */?> </a>
                     </h2>
                     <div class="info">
-                        <span class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </span>
-                        <!--<span class="author">
-                            <a href="https://cointelegraph.com/authors/william_suberg"> William Suberg </a>
-                        </span>-->
+                        <span class="date"> <?php /*echo date("j M Y",strtotime($row->post_date)); */?> </span>
                     </div>
                     <p class="text">
-                        <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo character_limiter($row->description,200); ?> </a>
+                        <a href="<?php /*echo base_url(); */?>welcome/newsdetail?id=<?php /*echo $row->article_id; */?>"> <?php /*echo character_limiter($row->description,200); */?> </a>
                     </p>
-                    <!--<div>
-                        <div class="stats">
-                            <i class="fa fa-eye"></i>&nbsp;<span>8847</span>
-                            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                            <i class="fa fa-comments"></i>&nbsp;<span>3</span>
-                        </div>
-                    </div>-->
                 </figure>
-            </div>
+            </div>-->
             <?php } ?>
-
+            </table>
             <?php echo $pagination_links; ?>
         </div>
     </div>
@@ -56,11 +66,58 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <iframe src="https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/" width="100%" height="400"></iframe>
+            <table width="100%">
+            <?php
+            $url = "https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/";
+            $string = file_get_contents($url);
+            $xml = simplexml_load_string($string, 'SimpleXMLElement', LIBXML_NOCDATA | LIBXML_NOBLANKS);
+            foreach($xml->channel->item as $item)
+            {
+                //my_var_dump($item);
+                $description = $item->description;
+
+                $doc = new DOMDocument();
+                @$doc->loadHTML($description);
+
+                $tags = $doc->getElementsByTagName('img');
+                $image_url = $tags[0]->getAttribute('src');
+
+                $tags = $doc->getElementsByTagName('p');
+                $desc = $tags[2]->nodeValue;
+
+                ?>
+
+                <tr>
+                    <td valign="top" width="200">
+                        <a href="<?php echo $item->link; ?>" target="_blank" >
+                            <img src="<?php echo $image_url; ?>" alt="<?php echo $item->title; ?>" width="200">
+                        </a>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td valign="top">
+                        <h2 class="header">
+                            <a href="<?php echo $item->link; ?>" target="_blank"> <?php echo $item->title; ?> </a>
+                        </h2>
+                        <div class="info">
+                            <span class="date"> <?php echo date("j M Y",strtotime($item->pubDate)); ?> </span>
+                        </div>
+                        <p class="text">
+                             <?php echo $desc; ?>
+                        </p>
+                    </td>
+                </tr>
+
+                <?php
+            }
+
+
+            ?>
+            </table>
+
         </div>
         <?php //echo $pagination_links; ?>
     </div>
 
 
-<?php $this->load->view('footer',$this->data); ?>
+<?php //$this->load->view('footer',$this->data); ?>
 
