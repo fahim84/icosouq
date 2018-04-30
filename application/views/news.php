@@ -80,8 +80,7 @@
                 @$doc->loadHTML($description);
 
                 $tags = $doc->getElementsByTagName('img');
-                $image_url = $tags[0]->getAttribute('src');
-
+                $image_url = utf8_decode($tags[0]->getAttribute('src'));
                 $tags = $doc->getElementsByTagName('p');
                 $desc = $tags[2]->nodeValue;
 
