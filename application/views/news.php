@@ -106,6 +106,10 @@
                         </p>
                     </td>
                 </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
 
                 <?php
             }
