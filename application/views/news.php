@@ -22,7 +22,7 @@
                             <img src="<?php echo $image_url; ?>" alt="<?php echo $row->article; ?>" width="200">
                         </a>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
                     <td valign="top">
                         <h2 class="header">
                             <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo $row->article; ?> </a>
@@ -31,7 +31,7 @@
                             <span class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </span>
                         </div>
                         <p class="text">
-                            <a href="<?php echo base_url(); ?>welcome/newsdetail?id=<?php echo $row->article_id; ?>"> <?php echo character_limiter($row->description,200); ?> </a>
+                            <?php echo character_limiter($row->description,400); ?>
                         </p>
                     </td>
                 </tr>
@@ -93,7 +93,7 @@
                             <img src="<?php echo $image_url; ?>" alt="<?php echo $item->title; ?>" width="200">
                         </a>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
                     <td valign="top">
                         <h2 class="header">
                             <a href="<?php echo $item->link; ?>" target="_blank"> <?php echo $item->title; ?> </a>
