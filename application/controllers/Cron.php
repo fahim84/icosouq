@@ -124,6 +124,7 @@ class Cron extends CI_Controller {
             </script>
             <?php
         }
+
         if($page < 5 and $status == 'upcoming')
         {
             $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;

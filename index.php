@@ -66,7 +66,15 @@ elseif($http_host == 'icosouq.blazebuddies.com')
 }
 else
 {
-    define('ENVIRONMENT', 'production');
+    if(isset($_SERVER['SHELL']))
+    {
+        define('ENVIRONMENT', 'testing');
+    }
+    else
+    {
+
+        define('ENVIRONMENT', 'production');
+    }
 }
 /*
  *---------------------------------------------------------------
