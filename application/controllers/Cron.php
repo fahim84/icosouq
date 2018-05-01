@@ -84,7 +84,7 @@ class Cron extends CI_Controller {
             $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
             my_var_dump('redirecting... '.$url);
             my_var_dump("<a href='$url'>$url</a>");
-            redirect($url,'refresh');
+            redirect($url);
             ?>
             <script>
                 window.location.href = "<?php echo $url; ?>";
@@ -103,7 +103,7 @@ class Cron extends CI_Controller {
             $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
             my_var_dump('redirecting... '.$url);
             my_var_dump("<a href='$url'>$url</a>");
-            redirect($url,'refresh');
+            redirect($url);
             ?>
             <script>
                 window.location.href = "<?php echo $url; ?>";
@@ -117,7 +117,7 @@ class Cron extends CI_Controller {
             $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
             my_var_dump('redirecting... '.$url);
             my_var_dump("<a href='$url'>$url</a>");
-            redirect($url,'refresh');
+            redirect($url);
             ?>
             <script>
                 window.location.href = "<?php echo $url; ?>";
@@ -129,7 +129,7 @@ class Cron extends CI_Controller {
             $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
             my_var_dump('redirecting... '.$url);
             my_var_dump("<a href='$url'>$url</a>");
-            redirect($url,'refresh');
+            redirect($url);
             ?>
             <script>
                 window.location.href = "<?php echo $url; ?>";
@@ -195,5 +195,11 @@ class Cron extends CI_Controller {
 
             my_var_dump('cron job finished on page '.$page);
         }
+    }
+
+    public function test()
+    {
+        error_reporting(E_ALL);
+        echo $fahim;
     }
 }
