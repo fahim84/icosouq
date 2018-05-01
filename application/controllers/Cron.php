@@ -81,7 +81,7 @@ class Cron extends CI_Controller {
         {
             $page = 0;
             $status = 'upcoming';
-            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            $url = 'cron/icobench/?page='.++$page.'&status='.$status;
             //my_var_dump('redirecting... '.$url);
             //my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
@@ -100,7 +100,7 @@ class Cron extends CI_Controller {
 
         if($page < 5 and $status == 'ongoing')
         {
-            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            $url = 'cron/icobench/?page='.++$page.'&status='.$status;
             //my_var_dump('redirecting... '.$url);
             //my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
@@ -114,7 +114,7 @@ class Cron extends CI_Controller {
         {
             $page = 0;
             $status = 'upcoming';
-            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            $url = 'cron/icobench/?page='.++$page.'&status='.$status;
             //my_var_dump('redirecting... '.$url);
             //my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
@@ -127,7 +127,7 @@ class Cron extends CI_Controller {
 
         if($page < 5 and $status == 'upcoming')
         {
-            $url = base_url().'cron/icobench/?page='.++$page.'&status='.$status;
+            $url = 'cron/icobench/?page='.++$page.'&status='.$status;
             //my_var_dump('redirecting... '.$url);
             //my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
