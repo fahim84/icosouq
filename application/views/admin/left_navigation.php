@@ -46,6 +46,20 @@
                     </a>
                 </li>
 
+                <?php $active_class = $selected_page == 'icocustom' ? 'active open' : ''; ?>
+                <li class="<?php echo $active_class; ?>">
+                    <a href="<?php echo base_url(); ?>admin/icocustom/">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-layout-tab"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> Custom ICO's </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
                 <?php $active_class = $selected_page == 'article' ? 'active open' : ''; ?>
                 <li class="<?php echo $active_class; ?>">
                     <a href="<?php echo base_url(); ?>admin/article/">
