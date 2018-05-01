@@ -448,6 +448,7 @@ h4.footer-title{
 	height:500px;
 }
 
+
 @media (max-width: 1240px) {
 	.frame{width:calc(100% - 60px);margin:0 30px;min-width:280px;}
 	footer .navigation{padding:30px 0;}
