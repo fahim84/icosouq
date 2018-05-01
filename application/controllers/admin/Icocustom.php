@@ -131,9 +131,9 @@ class Icocustom extends CI_Controller {
                 # Get width and height and resize image keeping aspect ratio same
                 $image_path = $upload_path.$image;
                 $width = get_width($image_path);
-                $width > 800 ? resize_image2($image_path, 800, '', 'W') : '';
+                $width > 200 ? resize_image2($image_path, 200, '', 'W') : '';
                 $height = get_height($image_path);
-                $height > 600 ? resize_image2($image_path, '', 600, 'H') : '';
+                $height > 200 ? resize_image2($image_path, '', 200, 'H') : '';
             }
             else
             {
