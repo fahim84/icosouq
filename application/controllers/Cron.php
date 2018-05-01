@@ -12,14 +12,6 @@ class Cron extends CI_Controller {
 
 	public function icobench()
     {
-        my_var_dump('0 '.$this->uri->segment(0));
-        my_var_dump('1 '.$this->uri->segment(1));
-        my_var_dump('2 '.$this->uri->segment(2));
-        my_var_dump('3 '.$this->uri->segment(3));
-        my_var_dump('4 '.$this->uri->segment(4));
-        my_var_dump('5 '.$this->uri->segment(5));
-        my_var_dump('6 '.$this->uri->segment(6));
-
         if($this->uri->segment(4) != '')
         {
             $status = $this->uri->segment(4);
@@ -164,12 +156,12 @@ class Cron extends CI_Controller {
             my_var_dump('Updating prices of ETH and BTC');
 
             $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
-            //my_var_dump($api_end_point);
+            my_var_dump($api_end_point);
             $response = file_get_contents($api_end_point);
             if($response)
             {
                 $response = json_decode($response);
-                my_var_dump($response);
+                //my_var_dump($response);
 
                 $datetime = date('Y-m-d H:i:s');
                 $sql_data['name'] = $response->data->currency;
@@ -190,12 +182,12 @@ class Cron extends CI_Controller {
             }
 
             $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
-            //my_var_dump($api_end_point);
+            my_var_dump($api_end_point);
             $response = file_get_contents($api_end_point);
             if($response)
             {
                 $response = json_decode($response);
-                my_var_dump($response);
+                //my_var_dump($response);
 
                 $datetime = date('Y-m-d H:i:s');
                 $sql_data['name'] = $response->data->currency;
