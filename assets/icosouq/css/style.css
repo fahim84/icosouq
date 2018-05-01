@@ -1112,32 +1112,32 @@
 			margin: 0 10%;
 		}
 		#vipsignalsbg{
-			padding-top: 100px;
-			padding-bottom:100px;
+			padding-top: 250px;
+			padding-bottom:250px;
 			background-image: url(../../images/privatemember1.jpeg);
 			background-attachment: fixed;
 			background-size: 100%;
 			background-repeat: no-repeat;
 		}
 		#icoanalysisbg{
-			padding-top: 150px;
-			padding-bottom: 150px;
+			padding-top: 250px;
+			padding-bottom:2	50px;
 			background-image: url(../../images/privatemember2.jpeg);
 			background-attachment: fixed;
 			background-size: 100%;
 			background-repeat: no-repeat;
 		}
 		#cryptocrashbg{
-			padding-top: 150px;
-			padding-bottom: 150px;
+			padding-top: 250px;
+			padding-bottom: 250px;
 			background-image: url(../../images/privatemember3.jpeg);
 			background-attachment: fixed;
 			background-size: 100%;
 			background-repeat: no-repeat;
 		}
 		#vipeventsbg{
-			padding-top: 150px;
-			padding-bottom: 150px;
+			padding-top: 250px;
+			padding-bottom:250px;
 			background-image: url(../../images/privatemember4.jpeg);
 			background-attachment: fixed;
 			background-size: 100%;

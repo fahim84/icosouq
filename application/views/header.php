@@ -63,10 +63,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=1">VIP Signals & Alerts</a></li>
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=2">ICO Analysis + Ratings</a></li>
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=3">Crypto Crash Course</a></li>
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=4">VIP Events Calendar</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="vipsignals">VIP Signals & Alerts</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="cryptocrash">Crypto Crash Course</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="vipevents">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
@@ -174,10 +174,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=1">VIP Signals & Alerts</a></li>
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=2">ICO Analysis + Ratings</a></li>
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=3">Crypto Crash Course</a></li>
-                                    <li><a href="<?php echo base_url(); ?>private_member/index?show=4">VIP Events Calendar</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="vipsignals">VIP Signals & Alerts</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="cryptocrash">Crypto Crash Course</a></li>
+                                    <li><a class="privatemenu" href="#" data-target="vipevents">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
@@ -189,8 +189,9 @@
                                     if($(window).width() > 992){
                                     function googleTranslateElementInit() {
                                         new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                                        }
                                     }
-                                }
+
                                 </script>
                     </div><!-- /.navbar-collapse// .mainnavbar -->
                 </div><!-- sitenavbar //ends-->
@@ -202,3 +203,14 @@
 
 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.searchbychar').click(function(event) {
+            event.preventDefault();
+            var target = "#" + this.getAttribute('data-target');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 2000);
+        });
+    }
+</script>
