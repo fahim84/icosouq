@@ -1,7 +1,7 @@
 <?php $this->load->view('header',$this->data); ?>
 
 
-    <div class="row innerpage" id="tag-page">
+    <div class="row innerpage" >
         <div class="col-xs-12">
             <h1 class="title">Bitcoin News</h1>
         </div>
@@ -65,7 +65,7 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <!--<table width="100%">-->
+
             <?php
             $url = "https://cryptocurrencynews.com/category/basic-materials/daily-news/bitcoin-news/feed/";
             $string = file_get_contents($url);
@@ -84,30 +84,6 @@
                 $desc = $tags[2]->nodeValue;
 
                 ?>
-
-                <!--<tr>
-                    <td valign="top" width="200">
-                        <a href="<?php /*echo $item->link; */?>" target="_blank" >
-                            <img src="<?php /*echo $image_url; */?>" alt="<?php /*echo $item->title; */?>" width="200">
-                        </a>
-                    </td>
-                    <td>&nbsp;&nbsp;&nbsp;</td>
-                    <td valign="top">
-                        <h2 class="header">
-                            <a href="<?php /*echo $item->link; */?>" target="_blank"> <?php /*echo $item->title; */?> </a>
-                        </h2>
-                        <div class="info">
-                            <span class="date"> <?php /*echo date("j M Y",strtotime($item->pubDate)); */?> </span>
-                        </div>
-                        <p class="text">
-                             <?php /*echo $desc; */?>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>-->
 
                 <div class="row result">
                     <figure class="col-sm-3">
@@ -133,13 +109,9 @@
                 <div class="row">&nbsp;</div>
                 <?php
             }
-
-
             ?>
-            <!--</table>-->
 
         </div>
-        <?php //echo $pagination_links; ?>
     </div>
 
 
