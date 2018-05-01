@@ -70,6 +70,10 @@ else
     {
         define('ENVIRONMENT', 'testing');
     }
+    elseif(isset($_SERVER['HOMEDRIVE']))
+    {
+        define('ENVIRONMENT', 'development');
+    }
     else
     {
 

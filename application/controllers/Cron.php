@@ -12,15 +12,37 @@ class Cron extends CI_Controller {
 
 	public function icobench()
     {
-        $status = $this->input->get_post('status') ? $this->input->get_post('status') : 'ongoing';
+        my_var_dump('0 '.$this->uri->segment(0));
+        my_var_dump('1 '.$this->uri->segment(1));
+        my_var_dump('2 '.$this->uri->segment(2));
+        my_var_dump('3 '.$this->uri->segment(3));
+        my_var_dump('4 '.$this->uri->segment(4));
+        my_var_dump('5 '.$this->uri->segment(5));
+        my_var_dump('6 '.$this->uri->segment(6));
+
+        if($this->uri->segment(4) != '')
+        {
+            $status = $this->uri->segment(4);
+        }
+        else
+        {
+            $status = $this->input->get_post('status') ? $this->input->get_post('status') : 'ongoing';
+        }
 
         $query_params['status'] = $status;
         $query_params['orderDesc'] = "rating";
         # Pagination Code
-        $page	=	$this->input->get_post('page')!==NULL ? $this->input->get_post('page') : 1;
+        if($this->uri->segment(3) != '')
+        {
+            $page = $this->uri->segment(3);
+        }
+        else
+        {
+            $page = $this->input->get_post('page') !== NULL ? $this->input->get_post('page') : 1;
+        }
         $query_params['page'] = $page-1; // less 1 because api page start from zero
 
-        if ($this->uri->segment(4)) { $limit = $this->uri->segment(4); }else{ $limit = 12; }
+        $limit = 12;
 
         $api = new ICObenchAPI();
         $api->getICOs("all",$query_params);
@@ -47,7 +69,7 @@ class Cron extends CI_Controller {
             $sql_data['status'] = 1;
             $sql_data['ico_type'] = $status;
 
-            //my_var_dump($sql_data);
+            my_var_dump($sql_data);
             $insert_query = $this->db->insert_string('icos', $sql_data);
             $insert_query = str_replace('INSERT INTO','INSERT IGNORE INTO',$insert_query);
             $this->db->query($insert_query);
@@ -82,8 +104,8 @@ class Cron extends CI_Controller {
             $page = 0;
             $status = 'upcoming';
             $url = 'cron/icobench/?page='.++$page.'&status='.$status;
-            //my_var_dump('redirecting... '.$url);
-            //my_var_dump("<a href='$url'>$url</a>");
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
             ?>
             <script>
@@ -101,8 +123,8 @@ class Cron extends CI_Controller {
         if($page < 5 and $status == 'ongoing')
         {
             $url = 'cron/icobench/?page='.++$page.'&status='.$status;
-            //my_var_dump('redirecting... '.$url);
-            //my_var_dump("<a href='$url'>$url</a>");
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
             ?>
             <script>
@@ -115,8 +137,8 @@ class Cron extends CI_Controller {
             $page = 0;
             $status = 'upcoming';
             $url = 'cron/icobench/?page='.++$page.'&status='.$status;
-            //my_var_dump('redirecting... '.$url);
-            //my_var_dump("<a href='$url'>$url</a>");
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
             ?>
             <script>
@@ -128,8 +150,8 @@ class Cron extends CI_Controller {
         if($page < 5 and $status == 'upcoming')
         {
             $url = 'cron/icobench/?page='.++$page.'&status='.$status;
-            //my_var_dump('redirecting... '.$url);
-            //my_var_dump("<a href='$url'>$url</a>");
+            my_var_dump('redirecting... '.$url);
+            my_var_dump("<a href='$url'>$url</a>");
             redirect($url);
             ?>
             <script>
@@ -139,7 +161,7 @@ class Cron extends CI_Controller {
         }
         else
         {
-            //my_var_dump('Updating prices of ETH and BTC');
+            my_var_dump('Updating prices of ETH and BTC');
 
             $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
             //my_var_dump($api_end_point);
@@ -147,7 +169,7 @@ class Cron extends CI_Controller {
             if($response)
             {
                 $response = json_decode($response);
-                //my_var_dump($response);
+                my_var_dump($response);
 
                 $datetime = date('Y-m-d H:i:s');
                 $sql_data['name'] = $response->data->currency;
@@ -158,13 +180,13 @@ class Cron extends CI_Controller {
 
                 $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
                 $this->db->query($sql);
-                //my_var_dump($this->db->last_query());
+                my_var_dump($this->db->last_query());
                 $id = $this->db->insert_id();
-                //my_var_dump($id);
+                my_var_dump($id);
 
             }
             else{
-                //my_var_dump($response);
+                my_var_dump($response);
             }
 
             $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=ETH";
@@ -173,7 +195,7 @@ class Cron extends CI_Controller {
             if($response)
             {
                 $response = json_decode($response);
-                //my_var_dump($response);
+                my_var_dump($response);
 
                 $datetime = date('Y-m-d H:i:s');
                 $sql_data['name'] = $response->data->currency;
@@ -184,13 +206,13 @@ class Cron extends CI_Controller {
 
                 $sql = $this->db->insert_string('currencies', $sql_data) . " ON DUPLICATE KEY UPDATE price={$response->data->rates->USD},updated_at='$datetime'";
                 $this->db->query($sql);
-                //my_var_dump($this->db->last_query());
+                my_var_dump($this->db->last_query());
                 $id = $this->db->insert_id();
-                //my_var_dump($id);
+                my_var_dump($id);
 
             }
             else{
-                //my_var_dump($response);
+                my_var_dump($response);
             }
 
 
