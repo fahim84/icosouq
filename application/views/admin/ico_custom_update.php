@@ -49,6 +49,11 @@
                         </div>
 
                         <div class="form-group">
+                            <label>URL</label>
+                            <input type="url" name="url" placeholder="http://www.xyz.com" required class="form-control" value="<?php echo @$update_data->url; ?>">
+                        </div>
+
+                        <div class="form-group">
                             <label>Logo</label>
                             <?php
                             if(@$update_data->image != '')
