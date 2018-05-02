@@ -80,7 +80,7 @@
 
         //my_var_dump('Updating prices of ETH and BTC');
 
-        /*$api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
+        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
         //my_var_dump($api_end_point);
         $response = file_get_contents($api_end_point);
         if($response)
@@ -130,7 +130,7 @@
         }
         else{
             //my_var_dump($response);
-        }*/
+        }
 
         $query = $this->db->get('currencies');
         foreach ($query->result() as $currency)
