@@ -5,6 +5,16 @@
 			background-color:fefefe;
 		}
 
+		@font-face {
+			font-family: 'callunaregular';
+			src: url('calluna-regular-webfont.woff2') format('woff2'),
+			url('calluna-regular-webfont.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
 		.container {
 			max-width: 1170px;
 			margin: 0 auto;
@@ -1107,6 +1117,17 @@
 			padding-left: 8%;
 			padding-right:8%; 
 		}
+		.persection h1 {
+			font-family: 'callunaregular';
+			font-size: 28px;
+			font-weight: 400;
+		}
+		.persection p {
+			font-family: 'callunaregular';
+			font-size: 16px;
+			font-weight: 400;
+		}
+
 		#vipsignals{
 			background: #fff;
 			margin: 0 10%;
@@ -1121,7 +1142,7 @@
 		}
 		#icoanalysisbg{
 			padding-top: 250px;
-			padding-bottom:2	50px;
+			padding-bottom:250px;
 			background-image: url(../../images/privatemember2.jpeg);
 			background-attachment: fixed;
 			background-size: 100%;
@@ -1147,6 +1168,9 @@
 			background: #fff;
 			margin: 0 10%;
 		}
+
+
+
 
 
 		

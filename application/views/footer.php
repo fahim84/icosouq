@@ -50,7 +50,6 @@
           style: 'translateselect',
           size: 4
         });
-
     });
 </script>
 
