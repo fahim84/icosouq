@@ -49,10 +49,11 @@
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle"  data-toggle="dropdown">PRIVATE MEMBERS</a>
                             <ul class="dropdown-menu">
-                                <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignals" data-target="vipsignals">VIP Signals & Alerts</a></li>
+
+                                <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignalsbg" data-target="vipsignalsbg">VIP Signals & Alerts</a></li>
                                 <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#icoanalysis" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
                                 <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#cryptocrash" data-target="cryptocrash">Crypto Crash Course</a></li>
-                                <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipevents" data-target="vipevents">VIP Events Calendar</a></li>
+                                <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipeventsbg" data-target="vipeventsbg">VIP Events Calendar</a></li>
                             </ul>
 
                         </li>
@@ -163,10 +164,10 @@
                             <li class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle"  data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignals" data-target="vipsignals">VIP Signals & Alerts</a></li>
+                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignalsbg" data-target="vipsignalsbg">VIP Signals & Alerts</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#icoanalysis" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#cryptocrash" data-target="cryptocrash">Crypto Crash Course</a></li>
-                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipevents" data-target="vipevents">VIP Events Calendar</a></li>
+                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipeventsbg" data-target="vipeventsbg">VIP Events Calendar</a></li>
                                 </ul>
 
                             </li>
