@@ -1164,10 +1164,12 @@
 			background-size: 100%;
 			background-repeat: no-repeat;
 		}
+
 		#vipevents{
 			background: #fff;
 			margin: 0 10%;
 		}
+		.mainmenu ul>li .dropdown-toggle{ cursor: pointer; margin-left: 5px;}
 
 
 

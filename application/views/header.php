@@ -61,7 +61,7 @@
                             <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
                             <!--<li><a href="#">LOCAL GUIDES</a></li>-->
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
+                                <a href="<?php echo base_url(); ?>private_member/">PRIVATE MEMBERS</a><span class="fa fa-caret-down dropdown-toggle" data-toggle="dropdown"></span>
                                 <ul class="dropdown-menu">
                                     <li><a class="privatemenu" href="#" data-target="vipsignals">VIP Signals & Alerts</a></li>
                                     <li><a class="privatemenu" href="#" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
@@ -168,11 +168,12 @@
                 <div class="sitenavbar">
 
                     <div class="collapse navbar-collapse mainnavbar">
+
                         <ul>
                             <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
                             <!--<li><a href="#">LOCAL GUIDES</a></li>-->
                             <li class="dropdown">
-                                <a href="<?php echo base_url(); ?>private_member/" class="dropdown-toggle" data-toggle="dropdown">PRIVATE MEMBERS</a>
+                                <a href="<?php echo base_url(); ?>private_member/">PRIVATE MEMBERS</a><span class="fa fa-caret-down dropdown-toggle" data-toggle="dropdown"></span>
                                 <ul class="dropdown-menu">
                                     <li><a class="privatemenu" href="#" data-target="vipsignals">VIP Signals & Alerts</a></li>
                                     <li><a class="privatemenu" href="#" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
