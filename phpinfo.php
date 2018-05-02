@@ -1,6 +1,7 @@
 <?php
 phpinfo();
 
+
 function my_var_dump($string)
 {
     $http_host = isset($_SERVER['HTTP_HOST']) ? true : false;
