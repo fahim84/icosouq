@@ -61,7 +61,7 @@
                             <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
                             <!--<li><a href="#">LOCAL GUIDES</a></li>-->
                             <li class="dropdown">
-                                <a href="<?php echo base_url(); ?>private_member/">PRIVATE MEMBERS</a><span class="fa fa-caret-down dropdown-toggle" data-toggle="dropdown"></span>
+                                <a href="javascript:void(0);" class="dropdown-toggle"  data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignals" data-target="vipsignals">VIP Signals & Alerts</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#icoanalysis" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
@@ -80,7 +80,7 @@
 
         //my_var_dump('Updating prices of ETH and BTC');
 
-        /*$api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
+        $api_end_point = "https://api.coinbase.com/v2/exchange-rates?currency=BTC";
         //my_var_dump($api_end_point);
         $response = file_get_contents($api_end_point);
         if($response)
@@ -130,7 +130,7 @@
         }
         else{
             //my_var_dump($response);
-        }*/
+        }
 
         $query = $this->db->get('currencies');
         foreach ($query->result() as $currency)
@@ -173,7 +173,7 @@
                             <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
                             <!--<li><a href="#">LOCAL GUIDES</a></li>-->
                             <li class="dropdown">
-                                <a href="<?php echo base_url(); ?>private_member/">PRIVATE MEMBERS</a><span class="fa fa-caret-down dropdown-toggle" data-toggle="dropdown"></span>
+                                <a href="javascript:void(0);" class="dropdown-toggle"  data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignals" data-target="vipsignals">VIP Signals & Alerts</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#icoanalysis" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
