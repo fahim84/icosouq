@@ -24,7 +24,7 @@ $show_member[$show] = 1;
                 </p>
                 <p>
                     Our VIP Signals is paid for service, with limited number of places available each month.
-                    To express your interest in joining, contact us.
+                    To express your interest in joining, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
                 </p>
             </div>
         </div>
@@ -42,7 +42,7 @@ $show_member[$show] = 1;
             <p>
                 This includes quantified assessment of ICO supply, price, team experience, phase of implementation, security, and bonus and other key drivers.            </p>
             <p>
-                To express your interest in joining, contact us.
+                To express your interest in joining, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
             </p>
         </div>
 
@@ -55,7 +55,7 @@ $show_member[$show] = 1;
                 Based in Dubai, ICOSouq provides a tailored 1:1 in person consierge service to assit in setting up high networth individual accounts. This includes everything you need to know from how to buy cryptocurrencies and bitcoin to investing in the most thought after ICOs and managing your portfolio securely.
             </p>
             <p>
-                To express your interest in enrolling, contact us.
+                To express your interest in enrolling, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
             </p>
             <p>
 
@@ -69,7 +69,7 @@ $show_member[$show] = 1;
                     Every quarter, ICOSouq hosts a private event for our members to meet and network at disclosed locations with speacial guest speakers and crypto-made millionairs.
                 </p>
                 <p>
-                    To express your interest in joining our next event, contact us.
+                    To express your interest in joining our next event, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
                 </p>
                 <p>
 

@@ -40,7 +40,7 @@
 
     <div class="row mainheader">
 
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 sitelogo">
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 sitelogo">
 
             <a href='<?php echo base_url(); ?>'><img src='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg' ></a>
         </div>
@@ -139,7 +139,7 @@
         }
         ?>
 
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 currencyholder">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 currencyholder">
             <ul>
                 <li>
                     <span>BTC</span>
