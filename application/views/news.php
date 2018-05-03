@@ -8,33 +8,11 @@
 
 
         <div class="col-sm-12">
-            <!--<table width="100%">-->
             <?php foreach($rows->result() as $row)
             {
             $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' : base_url().'uploads/articles/'.$row->image;
-            //$image = base_url()."thumb.php?src=".$image_url."&w=200&h=200";
 
             ?>
-
-                <!--<tr>
-                    <td valign="top" width="200">
-                        <a href="<?php /*echo base_url(); */?>welcome/newsdetail?id=<?php /*echo $row->article_id; */?>" >
-                            <img src="<?php /*echo $image_url; */?>" alt="<?php /*echo $row->article; */?>" width="200">
-                        </a>
-                    </td>
-                    <td>&nbsp;&nbsp;&nbsp;</td>
-                    <td valign="top">
-                        <h2 class="header">
-                            <a href="<?php /*echo base_url(); */?>welcome/newsdetail?id=<?php /*echo $row->article_id; */?>"> <?php /*echo $row->article; */?> </a>
-                        </h2>
-                        <div class="info">
-                            <span class="date"> <?php /*echo date("j M Y",strtotime($row->post_date)); */?> </span>
-                        </div>
-                        <p class="text">
-                            <?php /*echo character_limiter($row->description,400); */?>
-                        </p>
-                    </td>
-                </tr>-->
             <div class="row result">
                 <figure class="col-sm-3">
                     <div class="">
@@ -51,13 +29,12 @@
                         <span class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </span>
                     </div>
                     <p class="text">
-                        <?php echo $row->description; ?>
+                        <?php echo word_limiter($row->description,80); ?>
                     </p>
                 </figure>
             </div>
                 <div class="row">&nbsp;</div>
             <?php } ?>
-            <!--</table>-->
             <?php echo $pagination_links; ?>
         </div>
     </div>
