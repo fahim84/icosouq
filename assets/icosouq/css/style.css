@@ -318,7 +318,7 @@
 		}
 		
 		@media (max-width: 605px) {
-			.table-tabs{display:none;}
+			/*.table-tabs{display:none;}*/
 			.table-dropdown-div{display:inline;}
 			.filter-dropdown-div{float:none;}
 		}
