@@ -26,7 +26,11 @@ $show_member[$show] = 1;
                     Our VIP Signals is paid for service, with limited number of places available each month.
                     To express your interest in joining, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
                 </p>
+                <div class="backbutton">
+                    <a href="<?php echo base_url(); ?>" class="btn">BACK</a>
+                </div>
             </div>
+
         </div>
 
         
@@ -44,6 +48,9 @@ $show_member[$show] = 1;
             <p>
                 To express your interest in joining, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
             </p>
+            <div class="backbutton">
+                <a href="<?php echo base_url(); ?>" class="btn">BACK</a>
+            </div>
         </div>
 
         <div id="cryptocrashbg">
@@ -57,9 +64,9 @@ $show_member[$show] = 1;
             <p>
                 To express your interest in enrolling, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
             </p>
-            <p>
-
-            </p>
+            <div class="backbutton">
+                <a href="<?php echo base_url(); ?>" class="btn">BACK</a>
+            </div>
         </div>
 
         <div id="vipeventsbg">
@@ -71,9 +78,9 @@ $show_member[$show] = 1;
                 <p>
                     To express your interest in joining our next event, <a href="<?php echo base_url(); ?>welcome/contact_us">contact us</a>.
                 </p>
-                <p>
-
-                </p>
+                <div class="backbutton">
+                    <a href="<?php echo base_url(); ?>" class="btn">BACK</a>
+                </div>
             </div>
         </div>
 
