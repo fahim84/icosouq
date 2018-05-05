@@ -137,7 +137,7 @@ class Ico extends CI_Controller {
                 }
             }
 
-			if($get_post['ico'] != '' and $this->ico_model->ico_already_exists($get_post['ico'], $id))
+			if(@$get_post['ico'] != '' and $this->ico_model->ico_already_exists($get_post['ico'], $id))
 			{
 				$_SESSION['msg_error'][] = 'ICO already exist...';
 			}

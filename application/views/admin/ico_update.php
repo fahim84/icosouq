@@ -45,7 +45,7 @@
 
                 <div class="form-group">
                     <label>Hype Rate</label>
-                    <select class="form-control" name="hype_rate" required>
+                    <select class="form-control" name="hype_rate" >
                         <option value="">NONE</option>
                         <option value="LOW" <?php echo @$update_data->hype_rate == 'LOW' ? 'selected="selected"' : ''; ?> >LOW</option>
                         <option value="MEDIUM" <?php echo @$update_data->hype_rate == 'MEDIUM' ? 'selected="selected"' : ''; ?> >MEDIUM</option>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="form-group">
                     <label>Risk Rate</label>
-                    <select class="form-control" name="risk_rate" required>
+                    <select class="form-control" name="risk_rate" >
                         <option value="">NONE</option>
                         <option value="LOW" <?php echo @$update_data->risk_rate == 'LOW' ? 'selected="selected"' : ''; ?> >LOW</option>
                         <option value="MEDIUM" <?php echo @$update_data->risk_rate == 'MEDIUM' ? 'selected="selected"' : ''; ?> >MEDIUM</option>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="form-group">
                     <label>ROI Rate</label>
-                    <select class="form-control" name="roi_rate" required>
+                    <select class="form-control" name="roi_rate" >
                         <option value="">NONE</option>
                         <option value="LOW" <?php echo @$update_data->roi_rate == 'LOW' ? 'selected="selected"' : ''; ?> >LOW</option>
                         <option value="MEDIUM" <?php echo @$update_data->roi_rate == 'MEDIUM' ? 'selected="selected"' : ''; ?> >MEDIUM</option>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="form-group">
                     <label>ICO SOUQ Rate</label>
-                    <select class="form-control" name="ico_souq_rate" required>
+                    <select class="form-control" name="ico_souq_rate" >
                         <option value="">NONE</option>
                         <option value="LOW" <?php echo @$update_data->ico_souq_rate == 'LOW' ? 'selected="selected"' : ''; ?> >LOW</option>
                         <option value="MEDIUM" <?php echo @$update_data->ico_souq_rate == 'MEDIUM' ? 'selected="selected"' : ''; ?> >MEDIUM</option>

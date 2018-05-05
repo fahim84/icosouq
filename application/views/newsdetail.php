@@ -6,7 +6,7 @@ $image = base_url()."thumb.php?src=".$image_url."&w=740&h=500";
 ?>
 
     <div class="row innerpage"  id="post">
-        
+        <br><br><br>
         <div class="col-xs-12 col-sm-8 post-area"> 
             <div class="post-header"> 
                 <div class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </div>
@@ -21,9 +21,9 @@ $image = base_url()."thumb.php?src=".$image_url."&w=740&h=500";
                 </div>
             </div> -->
             <h1 class="header"><?php echo $row->article; ?></h1>
-            <p class="post-description"><?php echo character_limiter($row->description,200); ?></p>
+            <!--<p class="post-description"><?php /*echo character_limiter($row->description,200); */?></p>-->
         </div> 
-        <div class="referral_widget"> 
+        <!--<div class="referral_widget">
             <div class="referral_stats total-views"> 
                 <span class="total-qty"> 6823 </span> 
                 <span class="views"> Total views </span>
@@ -32,7 +32,7 @@ $image = base_url()."thumb.php?src=".$image_url."&w=740&h=500";
                 <span class="total-qty">195</span> 
                 <span class="views">Total shares</span>
             </div> 
-        </div> 
+        </div> -->
         <div class="post-content"> 
             <div class="image"> 
                 <img src="<?php echo $image; ?>" alt="<?php echo $row->article; ?>" title="<?php echo $row->article; ?>">
