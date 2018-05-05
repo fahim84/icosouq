@@ -1121,6 +1121,7 @@
 			font-family: 'callunaregular';
 			font-size: 28px;
 			font-weight: 400;
+			margin-top: 0;
 		}
 		.persection p {
 			font-family: 'callunaregular';
@@ -1135,7 +1136,7 @@
 		#vipsignalsbg{
 			padding-top: 250px;
 			padding-bottom:250px;
-			background-image: url(../../images/privatemember1.jpeg);
+			background-image: url(../../images/vipsignals.jpg);
 			background-attachment: fixed;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -1143,7 +1144,7 @@
 		#icoanalysisbg{
 			padding-top: 250px;
 			padding-bottom:250px;
-			background-image: url(../../images/privatemember2.jpeg);
+			background-image: url(../../images/icoanalysis.jpg);
 			background-attachment: fixed;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -1151,7 +1152,7 @@
 		#cryptocrashbg{
 			padding-top: 250px;
 			padding-bottom: 250px;
-			background-image: url(../../images/privatemember3.jpeg);
+			background-image: url(../../images/crash_course.jpg);
 			background-attachment: fixed;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -1159,7 +1160,7 @@
 		#vipeventsbg{
 			padding-top: 250px;
 			padding-bottom:250px;
-			background-image: url(../../images/privatemember4.jpeg);
+			background-image: url(../../images/vipevents.jpg);
 			background-attachment: fixed;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -1204,6 +1205,10 @@
 				padding-top: 100px;
 				padding-bottom:100px;
 				background-size:auto 100%;
+			}
+			.persection{
+				padding-top:45px;
+				padding-bottom:45px;
 			}
 		}
 
