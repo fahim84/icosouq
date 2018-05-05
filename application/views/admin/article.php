@@ -77,7 +77,7 @@
                         <td>
                             <h3><?php echo $row->article; ?></h3>
                             <img src="<?php echo $image; ?>" class="img-rounded" alt="image"/>
-                            <p><?php echo $row->description; ?></p>
+                            <p><?php echo nl2br($row->description); ?></p>
                         </td>
 
                         <td>

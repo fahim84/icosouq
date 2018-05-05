@@ -39,7 +39,7 @@ $image = base_url()."thumb.php?src=".$image_url."&w=740&h=500";
                 <p class="sponsored badge badge-default" style="display: block;">News</p> 
             </div> 
             <div class="post-full-text contents" itemprop="articleBody">
-                <p><?php echo $row->description; ?></p>
+                <p><?php echo nl2br($row->description); ?></p>
             </div> 
 
 
