@@ -79,8 +79,8 @@ if(ENVIRONMENT == 'production')
     $db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'icosouq.com',
-        'username' => 'root',
-        'password' => 'abc',
+        'username' => 'icosouq',
+        'password' => 'icosouq123',
         'database' => 'icosouq',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
