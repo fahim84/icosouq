@@ -4,7 +4,8 @@
     <div class="col-xs-12">
 
         <div >
-            <h2>Terms and Conditions</h2>
+            <br>
+            <h1>Terms and Conditions</h1>
             <p>
                 Please read the Terms and Conditions (“Terms”, “Terms and Conditions”) before using the ICOSouq.com website (the “Service”, “us”, “we”, or “our”).
             </p>

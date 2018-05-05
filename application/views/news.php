@@ -3,7 +3,7 @@
 
     <div class="row innerpage" >
         <div class="col-xs-12">
-            <h1 class="title">Bitcoin News</h1>
+            <h1 class="title">Crypto News</h1>
         </div>
 
 

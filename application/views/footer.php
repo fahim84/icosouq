@@ -1,7 +1,7 @@
 
 <div class='row footer-logo footer-center'>
     <a href='https://www.instagram.com/ICO.Souq/' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/instagram.jpg' style='margin:10px;' border='0'></a>
-    <a href='https://t.me/icosouq' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/telegram.jpg' style='margin:10px;' border='0'></a>
+    <img src='<?php echo base_url(); ?>assets/icosouq/images/telegram.jpg' style='margin:10px;' border='0'>
 </div>
 
 <div class='row footer-div'>
@@ -27,7 +27,7 @@
 
             <div class='col-xs-6 col-sm-4 col-md-3 footercol'>
                 <h4 class='footer-title'>Social</h4>
-                <p class='footer-menu-link'><a href='https://t.me/icosouq'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>
+                <!--<p class='footer-menu-link'><a href='https://t.me/icosouq'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>-->
                 <p class='footer-menu-link'><a href='https://www.instagram.com/ICO.Souq/'  target='_blank'><span class='footer-menu-link'>Instagram</a></p>
             </div>
         </div>

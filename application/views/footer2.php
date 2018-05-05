@@ -24,7 +24,7 @@
 
                 <div class='col-xs-6 col-sm-4 col-md-3 footercol'>
                     <h4 class='footer-title'>Social</h4>
-                    <p class='footer-menu-link'><a href='https://t.me/icosouq'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>
+                    <!--<p class='footer-menu-link'><a href='https://t.me/icosouq'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>-->
                     <p class='footer-menu-link'><a href='https://www.instagram.com/ICO.Souq/'  target='_blank'><span class='footer-menu-link'>Instagram</a></p>
                 </div>
 

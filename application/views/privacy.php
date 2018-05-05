@@ -4,7 +4,8 @@
     <div class="col-xs-12">
 
         <div >
-            <h2>Privacy policy</h2>
+            <br>
+            <h1>Privacy policy</h1>
             <p>
                 Your privacy is critically important to us. At ICOSouq, we have a few fundamental principles:
                 - We don’t share your personal information with anyone except to comply with the law, develop our products, or protect our rights.
