@@ -14,6 +14,7 @@ $show_member[$show] = 1;
     <div class="col-xs-12">
 
         <div id="vipsignalsbg">
+            <img src="<?php echo base_url(); ?>assets/images/vipsignals.jpg">
             <div class="persection" id="vipsignals">
                 <h1>VIP Signals & Alerts</h1>
                 <p>
@@ -36,6 +37,7 @@ $show_member[$show] = 1;
         
 
         <div id="icoanalysisbg">
+            <img src="<?php echo base_url(); ?>assets/images/icoanalysis.jpg">
         </div>
 
         <div class="persection" id="icoanalysis">
@@ -54,6 +56,7 @@ $show_member[$show] = 1;
         </div>
 
         <div id="cryptocrashbg">
+            <img src="<?php echo base_url(); ?>assets/images/crash_course.jpg">
         </div>
 
         <div class="persection" id="cryptocrash">
@@ -70,6 +73,7 @@ $show_member[$show] = 1;
         </div>
 
         <div id="vipeventsbg">
+            <img src="<?php echo base_url(); ?>assets/images/vipevents.jpg">
             <div class="persection" id="vipevents">
                 <h1>VIP Events Calendar</h1>
                 <p>

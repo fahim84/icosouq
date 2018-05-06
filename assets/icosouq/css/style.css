@@ -1165,6 +1165,9 @@
 			background-size: 100%;
 			background-repeat: no-repeat;
 		}
+		#vipsignalsbg img , #icoanalysisbg img , #cryptocrashbg img , #vipeventsbg img {
+			display: none;
+		} 
 
 		#vipevents{
 			background: #fff;
@@ -1210,6 +1213,15 @@
 				padding-top:45px;
 				padding-bottom:45px;
 			}
+			#vipsignalsbg img , #icoanalysisbg img , #cryptocrashbg img , #vipeventsbg img {
+				display:block;
+				width: 100%;
+			} 
+			#vipsignalsbg , #icoanalysisbg , #cryptocrashbg  , #vipeventsbg { 
+				padding-top: 0; 
+				padding-bottom: 0;
+				background:none;
+			} 
 		}
 
 
