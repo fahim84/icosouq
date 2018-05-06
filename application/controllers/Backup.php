@@ -31,7 +31,7 @@ class Backup extends CI_Controller {
 
 		$backup_file = 'database.sql';
 		
-		$command = "sudo mysqldump -u $dbuser -p$dbpass $dbname > $backup_file";
+		$command = "mysqldump -u $dbuser -p$dbpass $dbname > $backup_file";
 
         my_var_dump('running command: '.$command);
         system($command);
