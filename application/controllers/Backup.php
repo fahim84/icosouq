@@ -61,7 +61,7 @@ class Backup extends CI_Controller {
 		$this->email->subject(SYSTEM_NAME." database backup");
 		$this->email->message($message);
 		
-		$this->email->attach("./$backup_file");
+		//$this->email->attach("./$backup_file");
 		$this->email->send();
 	}
 	
@@ -115,7 +115,7 @@ class Backup extends CI_Controller {
         $this->email->subject(SYSTEM_NAME." zip backup");
         $this->email->message($message);
 
-        $this->email->attach("./$backup_file");
+        //$this->email->attach("./$backup_file");
         $this->email->send();
 	}
 	
