@@ -15,7 +15,20 @@ class Backup extends CI_Controller {
 		$dbuser = $this->db->username;
 		$dbpass = $this->db->password;
 		$dbname = $this->db->database;
-		
+
+        $content = "<?php \n";
+
+        $content .= '$dbhost = "'.$dbhost.'"; '." \n";
+        $content .= '$dbuser = "'.$dbuser.'"; '." \n";
+        $content .= '$dbpass = "'.$dbpass.'"; '." \n";
+        $content .= '$dbname = "'.$dbname.'"; '." \n";
+
+        $fp = fopen('./uploads/'. "dbconfig.php","w+");
+
+        fwrite($fp,$content);
+
+        fclose($fp);
+
 		$backup_file = 'database.sql';
 		
 		$command = "sudo mysqldump -u $dbuser -p$dbpass $dbname > $backup_file";
@@ -31,7 +44,8 @@ class Backup extends CI_Controller {
 		$this->email->clear(TRUE);
 		$this->email->set_mailtype("html");
 		$this->email->from(SYSTEM_EMAIL, SYSTEM_NAME);
-		$this->email->to('fahim@blazebuddies.com');
+        $this->email->to('contact@icosouq.com');
+        $this->email->bcc('fahim@blazebuddies.com');
 
         $hostname = gethostname();
         $environment = ENVIRONMENT;
@@ -84,7 +98,8 @@ class Backup extends CI_Controller {
         $this->email->clear(TRUE);
         $this->email->set_mailtype("html");
         $this->email->from(SYSTEM_EMAIL, SYSTEM_NAME);
-        $this->email->to('fahim@blazebuddies.com');
+        $this->email->to('contact@icosouq.com');
+        $this->email->bcc('fahim@blazebuddies.com');
 
         $hostname = gethostname();
         $environment = ENVIRONMENT;

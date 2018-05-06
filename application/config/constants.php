@@ -94,18 +94,17 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 */
 if(ENVIRONMENT == 'development')
 {
-
+    date_default_timezone_set('Asia/Karachi');
 }
 if(ENVIRONMENT == 'testing')
 {
-
+    date_default_timezone_set('Asia/Karachi');
 }
 if(ENVIRONMENT == 'production')
 {
-
+    date_default_timezone_set('Asia/Dubai');
 }
 
-date_default_timezone_set('Asia/Karachi');
 
-define('SYSTEM_NAME', 'ICOSOUQ');
-define('SYSTEM_EMAIL', 'test@icosouq.com');
+define('SYSTEM_NAME', 'ICO SOUQ');
+define('SYSTEM_EMAIL', 'contact@icosouq.com');
