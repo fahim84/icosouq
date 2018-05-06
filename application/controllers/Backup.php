@@ -86,7 +86,7 @@ class Backup extends CI_Controller {
         my_var_dump($backup_files_and_directories);
 		
 
-		$command = "sudo zip -r $backup_file ".implode(' ',$backup_files_and_directories);
+		$command = "zip -r $backup_file ".implode(' ',$backup_files_and_directories);
         my_var_dump($command);
 		system($command);
 
