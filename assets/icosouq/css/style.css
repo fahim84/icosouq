@@ -1210,6 +1210,7 @@
 				background-size:auto 100%;
 			}
 			.persection{
+
 				padding-top:45px;
 				padding-bottom:45px;
 			}
@@ -1222,9 +1223,11 @@
 				padding-bottom: 0;
 				background:none;
 			}
-			#vipevents{
-				margin: 0;
+			#vipevents , #vipsignals{
+				margin: 0 0;
 			} 
+
+
 		}
 
 
