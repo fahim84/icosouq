@@ -45,7 +45,6 @@ class Backup extends CI_Controller {
 		$this->email->set_mailtype("html");
 		$this->email->from(SYSTEM_EMAIL, SYSTEM_NAME);
         $this->email->to('contact@icosouq.com');
-        $this->email->bcc('fahim@blazebuddies.com');
 
         $hostname = gethostname();
         $environment = ENVIRONMENT;
@@ -99,7 +98,6 @@ class Backup extends CI_Controller {
         $this->email->set_mailtype("html");
         $this->email->from(SYSTEM_EMAIL, SYSTEM_NAME);
         $this->email->to('contact@icosouq.com');
-        $this->email->bcc('fahim@blazebuddies.com');
 
         $hostname = gethostname();
         $environment = ENVIRONMENT;
