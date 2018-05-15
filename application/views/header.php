@@ -152,19 +152,20 @@
             </ul>
             
         </div>
-        <div class="hidden-lg hidden-md col-sm-3 col-xs-12 languageholder">
-            <div id="google_translate_element2" align="right" class="hideimpd"></div>
-                <script type="text/javascript">
-                    if($(window).width() < 992){
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element2');
-                    }
-                    }
-                </script>
-        </div>
 
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-            <div class="mainmenu">
+
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div id="google_translate_element" align="right" class="googletranslate"></div>
+
+            <script type="text/javascript">
+
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+
+
+            </script>
+            <div class="mainmenu hidden-sm hidden-xs">
                 <div class="sitenavbar">
 
                     <div class="collapse navbar-collapse mainnavbar">
@@ -182,21 +183,12 @@
                                 </ul>
 
                             </li>
-                            <li><div id="google_translate_element" align="right" class="hideimp"></div></li>
-                            
                         </ul>
-                        
-                                <script type="text/javascript">
-                                    if($(window).width() > 992){
-                                    function googleTranslateElementInit() {
-                                        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                                        }
-                                    }
 
-                                </script>
                     </div><!-- /.navbar-collapse// .mainnavbar -->
                 </div><!-- sitenavbar //ends-->
             </div><!--//mainmenu//-->
+
         </div><!--//col//-->
 
     </div>

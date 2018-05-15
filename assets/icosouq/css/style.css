@@ -1059,10 +1059,10 @@
 			    right: 0;
 			    top: 48px;
 			    z-index: 1000;
-            }
+                          }
 			.mainnavbar ul{
 				padding:10px;
-            }
+                  }
 			.mainnavbar ul li {
 				display: block;
 				text-align: center;
@@ -1075,7 +1075,7 @@
 				left: 0;
 				right: 0;
 			}
-			.skiptranslate.goog-te-gadget{ text-align: center;}
+			.skiptranslate.goog-te-gadget{ text-align: left;}
 			.hideimp{ display:none !important;}
 			.hideimpd{ display: inline-block !important; text-align: left; margin-top:10px;}
 			.languageholder{ margin-top: 10px;}
@@ -1185,6 +1185,9 @@
 			color: rgb(241, 194, 50);
 		}
 		.mainmenu ul>li .dropdown-toggle{ cursor: pointer; margin-left: 5px;}
+                .mainmenu{float: right;}
+		.googletranslate{ float: right; margin-top:30px;}
+
 		@media only screen and (max-width :767px) {
 			.currencyholder{
 				margin-top: 0;
@@ -1226,10 +1229,12 @@
 			#vipevents , #vipsignals{
 				margin: 0 0;
 			} 
+                       .googletranslate{ float: right; margin-top: 10px; float:left;}
 
 
 		}
 
+                
 
 
 		
