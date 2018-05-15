@@ -28,7 +28,7 @@
                 <h4 class='footer-title'>Social</h4>
                 <!--<p class='footer-menu-link'><a href='https://t.me/icosouq'  target='_blank'><span class='footer-menu-link'>Telegram</a></p>-->
                 <p class='footer-menu-link'><a href='https://www.instagram.com/ICO.Souq/'  target='_blank'><span class='footer-menu-link'>Instagram</a></p>
-<p class='footer-menu-link'><a href='<?php echo base_url(); ?>private_member/'  target='_blank'><span class='footer-menu-link'>Private Members</span></a></p>
+<p class='footer-menu-link'><a href='<?php echo base_url(); ?>private_member/' ><span class='footer-menu-link'>Private Members</span></a></p>
 
             </div>
         </div>
