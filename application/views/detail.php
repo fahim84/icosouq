@@ -134,7 +134,7 @@
                     </div>
                     <?php } ?>
                     <div class="divider"></div>
-                    <a onclick="ga('send', 'event', 'ICOprofile', 'More on ICO', 'Friendz');" rel="nofollow" href="<?php echo $api_response->links->www; ?>?utm_source=icobench" target="_blank" class="button_big">More on ICO</a>
+                    <a rel="nofollow" href="<?php echo $api_response->links->www; ?>" target="_blank" class="button_big">Official Website</a>
                 </div>
 
             </div>

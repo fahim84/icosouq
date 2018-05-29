@@ -245,8 +245,10 @@ class Welcome extends CI_Controller {
             $this->email->set_mailtype("html");
             $this->email->from(SYSTEM_EMAIL, SYSTEM_NAME);
             $this->email->reply_to($get_post['email'], $get_post['fullname']);
-            $this->email->to("ahmad.hello@gmail.com");
-            $this->email->to("ward0044@outlook.com");
+            //$this->email->to("ahmad.hello@gmail.com");
+            //$this->email->to("ward0044@outlook.com");
+            $this->email->to("ahmad@icosouq.com");
+            $this->email->to("adam@icosouq.com");
             $this->email->subject("{$get_post['fullname']} wants to contact you!");
             $this->email->message($get_post['message']);
             if($uploaded_file)
