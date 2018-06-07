@@ -2,7 +2,7 @@
 <html>
 <head>
     <title><?php echo SYSTEM_NAME; ?></title>
-    <meta name="description" content="Follow all the best ICOs (Initial Coin Offering) & new token crowdsales. The ultimate ICO list for crypto investors!">
+    <meta name="description" content="ICO Souq is the Middle East’s leading destination for crypto insights with analysis and ratings on Initial Coin Offerings. Our portfolio is updated daily and available in English or Arabic.">
     <base href="<?php echo base_url(); ?>">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
@@ -19,10 +19,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/icosouq/images/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>assets/icosouq/images/favicon-32x32.png">
 
-    <meta property="og:title" content="ICO Watch List - Best ICO & Token Crowdsales List For Investors"/>
-    <meta property='og:image' content='<?php echo base_url(); ?>assets/icosouq/images/social_logo.jpg'/>
-    <meta property="og:site_name" content="ICO Watch List"/>
-    <meta property="og:description" content="Follow all the best ICOs (Initial Coin Offering) & new token crowdsales. The ultimate ICO list for crypto investors!"/>
+    <meta property="og:title" content="<?php echo SYSTEM_NAME; ?>"/>
+    <meta property='og:image' content='<?php echo base_url(); ?>assets/images/icosouc_logo.jpg'/>
+    <meta property="og:site_name" content="<?php echo SYSTEM_NAME; ?>"/>
+    <meta property="og:description" content="ICO Souq is the Middle East’s leading destination for crypto insights with analysis and ratings on Initial Coin Offerings. Our portfolio is updated daily and available in English or Arabic."/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel='canonical' href='<?php echo base_url(); ?>'>
 
