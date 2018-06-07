@@ -70,6 +70,7 @@
                     <th width="100">Image</th>
                     <th width="400">Name / Description</th>
                     <th>Date / Time</th>
+                    <th>Featured</th>
                     <th>Options</th>
                 </tr>
                 </thead>
@@ -103,7 +104,13 @@
 
                         <td>
                             <div class="checkbox">
-                                <input id="<?php echo $row->id; ?>" value="<?php echo $row->id; ?>" type="checkbox" class="js-switch" <?php echo $row->status ? 'checked' : ''; ?> />
+                                <input id="<?php echo $row->id; ?>" value="<?php echo $row->id; ?>" type="checkbox" class="js-switch change_featured" <?php echo $row->featured ? 'checked' : ''; ?> />
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="checkbox">
+                                <input id="<?php echo $row->id; ?>" value="<?php echo $row->id; ?>" type="checkbox" class="js-switch change_status" <?php echo $row->status ? 'checked' : ''; ?> />
                             </div>
                             <a href="<?php echo base_url(); ?>admin/ico/update/?id=<?php echo $row->id; ?>" class="btn btn-transparent btn-xs"><i class="fa fa-pencil"></i> Edit</a>
                             <a href="#_" id="<?php echo $row->id; ?>" class="btn btn-transparent btn-xs tooltips delete_button" data-toggle="modal" data-target="#DeleteModal" ><i class="fa fa-times fa fa-white"></i> Delete</a>
@@ -167,7 +174,7 @@ function apply_sort(order_by,direction)
 	$('#search_form').submit();
 }
 
-$(document).on('change','.js-switch',function (e) {
+$(document).on('change','.change_status',function (e) {
 
     var id = this.id;
     var status = this.checked ? 1 : 0;
@@ -175,6 +182,18 @@ $(document).on('change','.js-switch',function (e) {
         type: "POST",
         url: '<?php echo base_url(); ?>admin/ico/change_status',
         data: {'id':id,'status':status},
+        dataType: 'html'
+    });
+});
+
+$(document).on('change','.change_featured',function (e) {
+
+    var id = this.id;
+    var featured = this.checked ? 1 : 0;
+    $.ajax({
+        type: "POST",
+        url: '<?php echo base_url(); ?>admin/ico/change_featured',
+        data: {'id':id,'featured':featured},
         dataType: 'html'
     });
 });

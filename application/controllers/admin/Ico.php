@@ -17,7 +17,7 @@ class Ico extends CI_Controller {
 	
 	public function index()
 	{
-		$order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'rating';
+		$order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'featured,rating';
 		$direction = $this->input->get_post('direction') ? $this->input->get_post('direction') : 'DESC';
 		$listing = $this->input->get_post('listing') ? $this->input->get_post('listing') : '';
 
@@ -42,7 +42,7 @@ class Ico extends CI_Controller {
 
 		$total_rows = $this->ico_model->get($query_params,true);
 		$rows = $this->ico_model->get($query_params);
-		
+        //my_var_dump($this->db->last_query());
 		# array for pagination query string
 		$qstr['order_by'] = $order_by;
 		$qstr['direction'] = $direction;
@@ -200,6 +200,16 @@ class Ico extends CI_Controller {
         $status = $this->input->get_post('status');
 
         $this->ico_model->update($id,['status'=>$status]);
+
+        my_var_dump($this->db->last_query());
+    }
+
+    public function change_featured()
+    {
+        $id = $this->input->get_post('id');
+        $featured = $this->input->get_post('featured');
+
+        $this->ico_model->update($id,['featured'=>$featured]);
 
         my_var_dump($this->db->last_query());
     }

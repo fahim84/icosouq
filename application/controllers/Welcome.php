@@ -12,7 +12,7 @@ class Welcome extends CI_Controller {
     {
         $listing = $this->input->get_post('listing') ? $this->input->get_post('listing') : 'ongoing';
 
-        $order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'rating';
+        $order_by = $this->input->get_post('order_by') ? $this->input->get_post('order_by') : 'featured,rating';
         $direction = $this->input->get_post('direction') ? $this->input->get_post('direction') : 'DESC';
 
         $keyword = $this->input->get_post('keyword');
