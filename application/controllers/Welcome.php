@@ -37,7 +37,7 @@ class Welcome extends CI_Controller {
 
         $total_rows = $this->ico_model->get($query_params,true);
         $rows = $this->ico_model->get($query_params);
-
+        //my_var_dump($this->db->last_query());
         # array for pagination query string
         $qstr['order_by'] = $order_by;
         $qstr['direction'] = $direction;
