@@ -65,7 +65,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignalsbg" data-target="vipsignalsbg">VIP Signals & Alerts</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#icoanalysis" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
-                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#cryptocrash" data-target="cryptocrash">Crypto Crash Course</a></li>
+                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#cryptocrash" data-target="cryptocrash">ICO Souq Consierge</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipeventsbg" data-target="vipeventsbg">VIP Events Calendar</a></li>
                                 </ul>
 
@@ -178,7 +178,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipsignalsbg" data-target="vipsignalsbg">VIP Signals & Alerts</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#icoanalysis" data-target="icoanalysis">ICO Analysis + Ratings</a></li>
-                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#cryptocrash" data-target="cryptocrash">Crypto Crash Course</a></li>
+                                    <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#cryptocrash" data-target="cryptocrash">ICO Souq Consierge</a></li>
                                     <li><a class="privatemenu" href="<?php echo base_url(); ?>private_member/index#vipeventsbg" data-target="vipeventsbg">VIP Events Calendar</a></li>
                                 </ul>
 

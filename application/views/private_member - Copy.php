@@ -41,7 +41,7 @@ $show_member[$show] = 1;
 
 
         <div class="<?php echo $show_member[3] ? '' : 'hide'; ?>">
-            <h1>Crypto Crash Course</h1>
+            <h1>ICO Souq Consierge</h1>
             <p>
                 Based in Dubai, ICOSouq provides a tailored 1:1 in person consierge service to assit in setting up high networth individual accounts. This includes everything you need to know from how to buy cryptocurrencies and bitcoin to investing in the most thought after ICOs and managing your portfolio securely.
             </p>

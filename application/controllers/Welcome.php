@@ -81,6 +81,21 @@ class Welcome extends CI_Controller {
         $this->load->view('detail',$this->data);
     }
 
+    public function detail2()
+    {
+        $id = $this->input->get_post('id');
+        /*$api = new ICObenchAPI();
+        $api->getICO($id);
+        $api_response = json_decode($api->result);*/
+        $ico = $this->ico_custom_model->get_ico_by_id($id);
+        $api_response = json_decode($ico->detail);
+
+        $this->data['id'] = $id;
+        $this->data['ico'] = $ico;
+        $this->data['api_response'] = $api_response;
+        $this->load->view('detail2',$this->data);
+    }
+
     public function test()
     {
         // PHP Example - Show all ICOs list

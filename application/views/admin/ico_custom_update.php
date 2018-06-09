@@ -54,6 +54,11 @@
                         </div>
 
                         <div class="form-group">
+                            <label>Youtube Video URL</label>
+                            <input type="url" name="youtube_url" placeholder="https://www.youtube.com/watch?v=VcEi2HO9whM" required class="form-control" value="<?php echo @$update_data->youtube_url; ?>">
+                        </div>
+
+                        <div class="form-group">
                             <label>Logo</label>
                             <?php
                             if(@$update_data->image != '')

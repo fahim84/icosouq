@@ -90,7 +90,8 @@
 
                         <div class='db button-div col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
                             <div style='text-align: center;'>
-                                <a target="_blank" href='<?php echo $row->url; ?>' title='<?php echo $row->name; ?> Details'><div class='progress-ico'>ICO Details</div></a>
+                                <!--<a target="_blank" href='<?php /*echo $row->url; */?>' title='<?php /*echo $row->name; */?> Details'><div class='progress-ico'>ICO Details</div></a>-->
+                                <a href='<?php echo base_url(); ?>welcome/detail2?id=<?php echo $row->id; ?>' title='<?php echo $row->name; ?> Details'><div class='progress-ico'>ICO Details</div></a>
                             </div>
                         </div>
 
