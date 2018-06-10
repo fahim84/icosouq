@@ -102,9 +102,9 @@ class Icocustom extends CI_Controller {
             # File uploading configuration
             $upload_path = './uploads/icos/';
             $config['upload_path'] = $upload_path;
-            $config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg|mp4';
             $config['encrypt_name'] = true;
-            $config['max_size'] = 51200; //KB
+            $config['max_size'] = 512000; //KB
 
             $this->load->library('upload', $config);
 
@@ -147,9 +147,53 @@ class Icocustom extends CI_Controller {
                 }
             }
 
+            ////////////////////////////////////////////////////////////////////////
+
+            $delete_old_file = $this->input->get_post('delete_old_file2');
+            $uploaded_file_array = (isset($_FILES['video']) and $_FILES['video']['size'] > 0 and $_FILES['video']['error'] == 0) ? $_FILES['video'] : '';
+            # Show uploading error only when the file uploading attempt exist.
+            if( is_array($uploaded_file_array) )
+            {
+                $delete_old_file = true;
+            }
+
+            $oldfile = $this->input->get_post('oldfile2');
+            if($delete_old_file)
+            {
+                # Delete old file if there was any
+                if(delete_file($upload_path.$oldfile))
+                {
+                    $_SESSION['msg_success'][] = " $oldfile file deleted.";
+                    $this->ico_custom_model->update($id,['video'=>'']);
+                }
+            }
+
+            # Try to upload file now
+            if ($this->upload->do_upload('video'))
+            {
+                # Get uploading detail here
+                $upload_detail = $this->upload->data();
+
+                $get_post['video'] = $upload_detail['file_name'];
+            }
+            else
+            {
+                $uploaded_file_array = (isset($_FILES['video']) and $_FILES['video']['name']!='') ? $_FILES['video'] : '';
+
+                # Show uploading error only when the file uploading attempt exist.
+                if( is_array($uploaded_file_array) )
+                {
+                    $uploading_error = $this->upload->display_errors();
+                    $_SESSION['msg_error'][] = $uploading_error;
+                }
+            }
+
+
             unset($get_post['id']);
             unset($get_post['oldfile']);
             unset($get_post['delete_old_file']);
+            unset($get_post['oldfile2']);
+            unset($get_post['delete_old_file2']);
 
             if($id > 0) // update
             {

@@ -71,6 +71,12 @@ class Ico_custom_model extends CI_Model
             delete_file($upload_path.$entity->image);
             $_SESSION['msg_error'][] = $entity->image.' file deleted!';
         }
+        if($entity->video != '')
+        {
+            $upload_path = './uploads/icos/';
+            delete_file($upload_path.$entity->video);
+            $_SESSION['msg_error'][] = $entity->video.' file deleted!';
+        }
 		return $this->db->delete('icos_custom', ['id' => $id]);
 	}
 

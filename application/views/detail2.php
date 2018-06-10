@@ -19,7 +19,17 @@
                 <p><?php echo $ico->desc; ?></p>
 
 
+                <?php if($ico->youtube_url){ ?>
                 <iframe class="youtubevid" src="<?php echo str_replace('watch?v=','embed/',$ico->youtube_url); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <?php } ?>
+
+                <?php if($ico->video){ ?>
+                <video width="100%" controls>
+                    <source src="<?php echo base_url(); ?>uploads/icos/<?php echo $ico->video; ?>" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <?php } ?>
 
             </div>
             <div class="fixed_data">

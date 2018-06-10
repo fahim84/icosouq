@@ -49,16 +49,6 @@
                         </div>
 
                         <div class="form-group">
-                            <label>URL</label>
-                            <input type="url" name="url" placeholder="http://www.xyz.com" required class="form-control" value="<?php echo @$update_data->url; ?>">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Youtube Video URL</label>
-                            <input type="url" name="youtube_url" placeholder="https://www.youtube.com/watch?v=VcEi2HO9whM" required class="form-control" value="<?php echo @$update_data->youtube_url; ?>">
-                        </div>
-
-                        <div class="form-group">
                             <label>Logo</label>
                             <?php
                             if(@$update_data->image != '')
@@ -75,6 +65,40 @@
                             ?>
                             <div>
                                 <input name="image" type="file" id="image" accept="image/*" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>URL</label>
+                            <input type="url" name="url" placeholder="http://www.xyz.com" required class="form-control" value="<?php echo @$update_data->url; ?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Youtube Video URL</label>
+                            <input type="url" name="youtube_url" placeholder="https://www.youtube.com/watch?v=VcEi2HO9whM" class="form-control" value="<?php echo @$update_data->youtube_url; ?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Video upload (mp4 only)</label>
+                            <?php
+                            if(@$update_data->video != '')
+                            {
+                                $video = base_url().'uploads/icos/'.$update_data->video;
+
+                                $old_file_html = "<label title=\"Delete $update_data->video\"><input name=\"delete_old_file2\" type=\"checkbox\" value=\"1\" /> Delete</label><input name=\"oldfile2\" type=\"hidden\" value=\"$update_data->video\" /><br>";
+                                ?>
+                                <br>
+                                <video width="100%" controls>
+                                    <source src="<?php echo $video; ?>" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <?php echo $old_file_html; ?>
+                                <?php
+                            }
+                            ?>
+                            <div>
+                                <input name="video" type="file" id="video" accept="video/mp4" >
                             </div>
                         </div>
 
