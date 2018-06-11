@@ -96,6 +96,11 @@ class Welcome extends CI_Controller {
         $this->load->view('detail2',$this->data);
     }
 
+    public function localguide()
+    {
+        $this->load->view('localguide',$this->data);
+    }
+
     public function test()
     {
         // PHP Example - Show all ICOs list

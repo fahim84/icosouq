@@ -59,7 +59,7 @@
                     <div class="collapse navbar-collapse mainnavbar" id="mainsitenav">
                         <ul>
                             <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
-                            <!--<li><a href="#">LOCAL GUIDES</a></li>-->
+                            <li><a href="<?php echo base_url(); ?>welcome/localguide">LOCAL GUIDES</a></li>
                             <li class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle"  data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
@@ -172,7 +172,7 @@
 
                         <ul>
                             <li><a href="<?php echo base_url(); ?>welcome/news">NEWS</a></li>
-                            <!--<li><a href="#">LOCAL GUIDES</a></li>-->
+                            <li><a href="<?php echo base_url(); ?>welcome/localguide">LOCAL GUIDES</a></li>
                             <li class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle"  data-toggle="dropdown">PRIVATE MEMBERS</a>
                                 <ul class="dropdown-menu">
