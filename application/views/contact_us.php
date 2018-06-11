@@ -5,7 +5,7 @@
 
         <div align="center" >
             <h1>Contact Us</h1>
-            <p>Reach is via <a href="mailto:contact@icosouq.com">contact@icosouq.com</a>, or alternatively use the contact us form below</p>
+            <p>Reach us via <a href="mailto:contact@icosouq.com">contact@icosouq.com</a>, or alternatively use the contact us form below</p>
             <p>
 
                 <?php if (validation_errors()): ?>
