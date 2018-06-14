@@ -42,8 +42,13 @@
     <ol>
         <li><h4>Debit/Credit Card</h4></li>
         <!--<p>View image on Twitter</p>-->
-
-        <img src="<?php echo base_url(); ?>assets/localguide/unnamed2.jpg">
+<style>
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+        <img src="<?php echo base_url(); ?>assets/localguide/unnamed2.jpg" >
         <p>You can now instantly buy bitcoin using credit cards in UAE <a target="_blank" href="https://goo.gl/eEMf8Z">https://goo.gl/eEMf8Z</a></p>
         <p> BitOasis charges 6% of the amount of Bitcoins you wish to purchase,<br>
             for example, if you want to buy Bitcoins for 5000AED then you pay 300AED processing fee.</p>
