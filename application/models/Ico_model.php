@@ -35,8 +35,10 @@ class Ico_model extends CI_Model
 		}
 		
 		if(isset($params['limit'])) { $this->db->limit($params['limit'], $params['offset']); }
-		if(isset($params['order_by'])){ $this->db->order_by($params['order_by'],$params['direction']); }
-		
+        if(isset($params['order_by']))
+        {
+            isset($params['direction']) ? $this->db->order_by($params['order_by'],$params['direction']) : $this->db->order_by($params['order_by']);
+        }
 		$query = $this->db->get('icos');
 		//my_var_dump($this->db->last_query());
 		return $query;

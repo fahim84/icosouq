@@ -26,8 +26,8 @@
         <?php
         $query_params['limit'] = 50;
         $query_params['offset'] = 0;
-        $query_params['order_by'] = 'rating';
-        $query_params['direction'] = 'DESC';
+        $query_params['order_by'] = 'rating DESC,icoEnd ASC';
+        //$query_params['direction'] = 'DESC';
         $query_params['status'] = 1;
         $query_params['listing'] = $listing;
 
