@@ -2,7 +2,6 @@
     <p>
     <h1 class='h1-title'>Welcome to ICO Souq!</h1>
     ICO Souq is the Middle East’s leading destination for crypto insights with analysis and ratings on Initial Coin Offerings. Our portfolio is updated daily and available in English or Arabic.
-    <br>
     Register as a <a href="<?php echo base_url(); ?>private_member/index">Private Member</a> to get notified and have access to high profile ICO pre-sales with exclusive token bonuses.
     </p>
 </div>
