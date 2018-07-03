@@ -8,7 +8,7 @@
     </div>
 
     <div class="col-sm-12">
-        <div class="row result">
+        <div class="result">
 
 
 <h3>How to Buy Bitcoin & Cryptocurrencies in the UAE, Saudia Arabia and GCC</h3>
