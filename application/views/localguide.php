@@ -146,6 +146,5 @@
 
 </div>
 
-
 <?php $this->load->view('footer',$this->data); ?>
 
