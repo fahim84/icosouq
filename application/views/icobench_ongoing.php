@@ -48,7 +48,7 @@
                 <td>
                     <div class="row" style='position:relative;'>
 
-                        <a href='<?php echo $row->url; ?>' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/gold-ico-light.png' class='sponsored-label' style='position:absolute;top:0px;right:15px;z-index:1000000;'></a>
+                        <a href='<?php echo $row->url; ?>' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/gold-ico-light.png' class='sponsored-label' style='position:absolute;top:0px;right:15px;'></a>
                         <div class='db logo-div col-xs-12 col-sm-3 col-md-1 col-xl-2'>
                             <div style='margin:5px 15px;'>
                                 <a target="_blank" title="<?php echo $row->name; ?>" href='<?php echo $row->url; ?>' style='text-decoration: none;'>
@@ -122,7 +122,7 @@
                         <div class="row" style='position:relative;'>
 
                             <?php if($row->featured){ ?>
-                            <a href='<?php echo base_url(); ?>welcome/detail?id=<?php echo $row->id; ?>'><img src='<?php echo base_url(); ?>assets/icosouq/images/gold-ico-light.png' class='sponsored-label' style='position:absolute;top:0px;right:15px;z-index:1000000;'></a>
+                            <a href='<?php echo base_url(); ?>welcome/detail?id=<?php echo $row->id; ?>'><img src='<?php echo base_url(); ?>assets/icosouq/images/gold-ico-light.png' class='sponsored-label' style='position:absolute;top:0px;right:15px;'></a>
                             <?php } ?>
                             <div class='db logo-div col-xs-12 col-sm-3 col-md-1 col-xl-2'>
                                 <div style='margin:5px 15px;'>
