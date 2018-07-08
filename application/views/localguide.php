@@ -3,6 +3,13 @@
 
 <div class="row innerpage" >
 
+    <div class="col-xs-12">
+        <h1 class="title">Local Guides</h1>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="result">
+
 
 <h3>How to Buy Bitcoin & Cryptocurrencies in the UAE, Saudia Arabia and GCC</h3>
 <img src="<?php echo base_url(); ?>assets/localguide/unnamed.png">
@@ -137,6 +144,7 @@
 </div>
 </div>
 
+</div>
 
 <?php $this->load->view('footer',$this->data); ?>
 
