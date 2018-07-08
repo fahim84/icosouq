@@ -535,7 +535,7 @@ h4.footer-title{
 #page #trending .col_4 .image .color2{background:#ee7c17;}
 #page #trending .col_4 .image .color3{background:#eeaa17;}
 #page #trending .col_4 .image .color4{background:#a3bf43;}
-#page #trending .col_4 .image .color5{background:#68b541;}
+#page #trending .col_4 .image .color5{background:#0195d5;}
 #page #trending .col_4 .image .trading{font-weight:700;font-size:12px;color:#fff;border-radius:2px;margin-left:8px;height:22px;display:table;float:right;background:#4954ac;text-transform:uppercase;padding:5px 6px 4px 6px;}
 #page #trending .col_4 .image .ended{font-weight:700;font-size:12px;color:#fff;border-radius:2px;margin-left:8px;height:22px;display:table;float:right;background:#8a8686;text-transform:uppercase;padding:5px 6px 4px 6px;}
 #page #trending .col_4 .content{border-top:1px solid #dbdbdb;background:#fcfcfc;padding:20px;border-radius:0 0 4px 4px;font-size:14px;}
@@ -545,7 +545,7 @@ h4.footer-title{
 #page #trending .col_4 .content p{font-weight:400;text-align:left;margin:0;padding:0;font-size:13px;line-height:1.3;height:70px;}
 #page #trending .col_4 .content .progress_empty{width:75%;height:5px;border-radius:10px;background:#e1e1e1;margin:20px 0 20px 0;}
 #page #trending .col_4 .content .progress{width:75%;height:5px;border-radius:10px;background:#e1e1e1;margin:20px 0 20px 0;}
-#page #trending .col_4 .content .progress .green{height:5px;border-radius:10px 0 0 10px;background:#68b541;}
+#page #trending .col_4 .content .progress .green{height:5px;border-radius:10px 0 0 10px;background:#0195d5;}
 #page #trending .col_4 .content .bottom{overflow:hidden;}
 #page #trending .col_4 .content .bottom .percent{width:40%;float:left;font-weight:700;font-size:13px;text-align:left;}
 #page #trending .col_4 .content .bottom .time{width:100%;float:none;font-weight:700;font-size:13px;text-align:left;padding-bottom:3px;}
@@ -580,7 +580,7 @@ h4.footer-title{
 #page #browse .row .ico_list .col_3 a.image .color2{background:#ee7c17;}
 #page #browse .row .ico_list .col_3 a.image .color3{background:#eeaa17;}
 #page #browse .row .ico_list .col_3 a.image .color4{background:#a3bf43;}
-#page #browse .row .ico_list .col_3 a.image .color5{background:#68b541;}
+#page #browse .row .ico_list .col_3 a.image .color5{background:#0195d5;}
 #page #browse .row .ico_list .col_3 a.image .trading{font-weight:700;font-size:12px;color:#fff;border-radius:2px;margin-left:8px;height:22px;display:table;float:right;background:#4954ac;text-transform:uppercase;padding:5px 6px 4px 6px;}
 #page #browse .row .ico_list .col_3 a.image .ended{font-weight:700;font-size:12px;color:#fff;border-radius:2px;margin-left:8px;height:22px;display:table;float:right;background:#8a8686;text-transform:uppercase;padding:5px 6px 4px 6px;}
 #page #browse .row .ico_list .col_3 .content{padding:20px 0 0 0;font-size:14px;}
@@ -590,7 +590,7 @@ h4.footer-title{
 #page #browse .row .ico_list .col_3 .content p{font-weight:400;text-align:left;margin:0 0 10px 0;padding:0;font-size:12px;line-height:1.3;height:46px;}
 #page #browse .row .ico_list .col_3 .content .progress_empty{width:50%;height:3px;border-radius:10px;background:#e1e1e1;margin:0;}
 #page #browse .row .ico_list .col_3 .content .progress{width:50%;height:3px;border-radius:10px;background:#e1e1e1;margin:0;}
-#page #browse .row .ico_list .col_3 .content .progress .green{height:3px;border-radius:10px 0 0 10px;background:#68b541;}
+#page #browse .row .ico_list .col_3 .content .progress .green{height:3px;border-radius:10px 0 0 10px;background:#0195d5;}
 #page #browse .row .ico_list .col_3 .content .bottom{overflow:hidden;margin-top:10px;}
 #page #browse .row .ico_list .col_3 .content .bottom .percent{width:50%;float:left;font-weight:700;font-size:12px;text-align:left;}
 #page #browse .row .ico_list .col_3 .content .bottom .raised{width:50%;float:left;font-weight:700;font-size:12px;text-align:left;}
@@ -754,7 +754,7 @@ h4.footer-title{
 #page #profile_header .fixed_data .rating .rate.color2{color:#ee7c17;}
 #page #profile_header .fixed_data .rating .rate.color3{color:#eeaa17;}
 #page #profile_header .fixed_data .rating .rate.color4{color:#a3bf43;}
-#page #profile_header .fixed_data .rating .rate.color5{color:#68b541;}
+#page #profile_header .fixed_data .rating .rate.color5{color:#0195d5;}
 #page #profile_header .fixed_data .rating small{text-align:center;font-size:14px;color:#a4a4a4;display:block;margin:6px 0 0 0;font-weight:400;}
 #page #profile_header .fixed_data .rating .help{width:15px;height:15px;background:url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-49px -95px;display:inline-block;margin-bottom:20px;}
 #page #profile_header .fixed_data .rating .help:hover{opacity:0.5;}
@@ -764,13 +764,13 @@ h4.footer-title{
 #page #profile_header .fixed_data .rating .distribution .col_4 label{font-size:10px;color:#a4a4a4;text-transform:uppercase;display:block;margin:2px 0 0 0;font-weight:400;}
 #page #profile_header .fixed_data .rating .view_rating{color:#5a67b9;text-align:right;font-size:12px;text-decoration:underline;margin:0 auto 0 0;}
 #page #profile_header .fixed_data .rating .view_rating:hover{opacity:0.6;}
-#page #profile_header .fixed_data .rating .button_big{background:#68b541;border-radius:2px;padding:15px 20px;text-align:center;color:#fff;font-size:16px;font-weight:600;text-transform:uppercase;font-family:'Montserrat',sans-serif;cursor:pointer;text-decoration:none;display:block;}
+#page #profile_header .fixed_data .rating .button_big{background:#0195d5;border-radius:2px;padding:15px 20px;text-align:center;color:#fff;font-size:16px;font-weight:600;text-transform:uppercase;font-family:'Montserrat',sans-serif;cursor:pointer;text-decoration:none;display:block;}
 #page #profile_header .fixed_data .rating .button_big.color0{background:#ea5420;}
 #page #profile_header .fixed_data .rating .button_big.color1{background:#ea5420;}
 #page #profile_header .fixed_data .rating .button_big.color2{background:#ee7c17;}
 #page #profile_header .fixed_data .rating .button_big.color3{background:#eeaa17;}
 #page #profile_header .fixed_data .rating .button_big.color4{background:#a3bf43;}
-#page #profile_header .fixed_data .rating .button_big.color5{background:#68b541;}
+#page #profile_header .fixed_data .rating .button_big.color5{background:#0195d5;}
 #page #profile_header .fixed_data .rating .button_big:hover{background:#5864b0;}
 #page #profile_header .fixed_data .financial_data{border:1px solid #e1e1e1;background:#fff;border-radius:4px;margin:0 0 20px 0;padding:20px;text-align:left;line-height:1.15;}
 #page #profile_header .fixed_data .financial_data h3{font-size:24px;color:#222;font-family:'Montserrat',sans-serif;font-weight:600;margin:0 0 10px 0;padding:0;}
@@ -784,7 +784,7 @@ h4.footer-title{
 #page #profile_header .fixed_data .financial_data .row .col_2 small{font-size:10px;color:#a4a4a4;text-transform:uppercase;display:block;margin:6px 0 0 0;font-weight:400;}
 #page #profile_header .fixed_data .financial_data .row .col_2 .number{font-size:20px;font-weight:bold;color:#222;line-height:1.3;}
 #page #profile_header .fixed_data .financial_data .row .col_2 .progress{width:75%;height:5px;border-radius:10px;background:#e1e1e1;margin:10px 0 10px 0;}
-#page #profile_header .fixed_data .financial_data .row .col_2 .progress .green{height:5px;border-radius:10px 0 0 10px;background:#68b541;}
+#page #profile_header .fixed_data .financial_data .row .col_2 .progress .green{height:5px;border-radius:10px 0 0 10px;background:#0195d5;}
 
 #page #profile_header .fixed_data .financial_data .row.row_trading{margin-bottom:20px;}
 #page #profile_header .fixed_data .financial_data .row.row_trading .col_2:nth-child(2){text-align:right;}
@@ -808,7 +808,7 @@ h4.footer-title{
 #page #profile_header .fixed_data .financial_data .data_row.bonus .col_2 table{border-collapse:collapse;margin:10px 0 0 0;width:100%;}
 #page #profile_header .fixed_data .financial_data .data_row.bonus .col_2 table tr td{width:50%;padding-bottom:10px;}
 #page #profile_header .fixed_data .financial_data .data_row.bonus .col_2 table tr:last-child td{padding-bottom:0;}
-#page #profile_header .fixed_data .financial_data .button_big{background:#68b541;border-radius:2px;padding:15px 20px;text-align:center;color:#fff;font-size:16px;font-weight:600;text-transform:uppercase;font-family:'Montserrat',sans-serif;cursor:pointer;margin:0;text-decoration:none;display:block;}
+#page #profile_header .fixed_data .financial_data .button_big{background:#0195d5;border-radius:2px;padding:15px 20px;text-align:center;color:#fff;font-size:16px;font-weight:600;text-transform:uppercase;font-family:'Montserrat',sans-serif;cursor:pointer;margin:0;text-decoration:none;display:block;}
 #page #profile_header .fixed_data .financial_data .button_big.changelly{background:#10d078;}
 #page #profile_header .fixed_data .financial_data .button_big:hover{background:#5864b0;}
 
@@ -1074,7 +1074,7 @@ h4.footer-title{
 #page .similar .col_4 .image .color2{background:#ee7c17;}
 #page .similar .col_4 .image .color3{background:#eeaa17;}
 #page .similar .col_4 .image .color4{background:#a3bf43;}
-#page .similar .col_4 .image .color5{background:#68b541;}
+#page .similar .col_4 .image .color5{background:#0195d5;}
 #page .similar .col_4 .content{border-top:1px solid #dbdbdb;background:#fcfcfc;padding:20px;border-radius:0 0 4px 4px;font-size:14px;}
 #page .similar .col_4 .content a{text-decoration:none;display:table;}
 #page .similar .col_4 .content a h3{font-weight:700;text-align:left;margin:0 0 5px 0;padding:0;font-size:18px;text-decoration:none;color:#3b3b3b;display:table;}
@@ -1082,7 +1082,7 @@ h4.footer-title{
 #page .similar .col_4 .content p{font-weight:400;text-align:left;margin:0;padding:0;font-size:13px;line-height:1.3;height:50px;}
 #page .similar .col_4 .content .progress_empty{width:75%;height:5px;border-radius:10px;background:#e1e1e1;margin:20px 0 20px 0;}
 #page .similar .col_4 .content .progress{width:75%;height:5px;border-radius:10px;background:#e1e1e1;margin:20px 0 20px 0;}
-#page .similar .col_4 .content .progress .green{height:5px;border-radius:10px 0 0 10px;background:#68b541;}
+#page .similar .col_4 .content .progress .green{height:5px;border-radius:10px 0 0 10px;background:#0195d5;}
 #page .similar .col_4 .content .bottom{overflow:hidden;}
 #page .similar .col_4 .content .bottom .percent{width:40%;float:left;font-weight:700;font-size:13px;text-align:left;}
 #page .similar .col_4 .content .bottom .time{width:100%;float:none;font-weight:700;font-size:13px;text-align:left;padding-bottom:0;margin-top:10px;min-height:18px;}
@@ -1339,7 +1339,7 @@ h4.footer-title{
 #page #category .row .ico_list table tr td p b{color:#3b3b3b;}
 #page #category .row .ico_list table tr td p .line{color:#c1c1c1;}
 #page #category .row .ico_list table tr td .progress{float:left;width:80px;height:5px;border-radius:10px;background:#e1e1e1;margin:5px 0 0 0}
-#page #category .row .ico_list table tr td .progress .green{height:5px;border-radius:10px 0 0 10px;background:#68b541;}
+#page #category .row .ico_list table tr td .progress .green{height:5px;border-radius:10px 0 0 10px;background:#0195d5;}
 #page #category .row .ico_list table tr td .percent{width:35px;float:left;font-size:13px;text-align:left;margin:0 0 0 10px}
 #page #category .row .ico_list table tr td .rate{font-weight:700;font-size:12px;background:#222;color:#fff;border-radius:2px;padding:4px 6px;display:inline-block;}
 #page #category .row .ico_list table tr td .color0{background:#ea5420;}
@@ -1347,7 +1347,7 @@ h4.footer-title{
 #page #category .row .ico_list table tr td .color2{background:#ee7c17;}
 #page #category .row .ico_list table tr td .color3{background:#eeaa17;}
 #page #category .row .ico_list table tr td .color4{background:#a3bf43;}
-#page #category .row .ico_list table tr td .color5{background:#68b541;}
+#page #category .row .ico_list table tr td .color5{background:#0195d5;}
 #page #category .row .ico_list table tr td .trading{background:#4954ac;text-transform:uppercase;padding:5px 4px 4px 6px;}
 #page #category .row .ico_list table tr td .ended{background:#8a8686;text-transform:uppercase;padding:5px 4px 4px 6px;}
 #page #category .row .ico_list table tr td .iss_score{background:#7dcc5e;text-transform:uppercase;padding:5px 6px 4px 6px;}
@@ -1370,7 +1370,7 @@ h4.footer-title{
 #page #category .row .ico_list table tr .roi_yellow{font-weight:700;color:#eeaa17;font-size:14px;display:inline;}
 #page #category .row .ico_list table tr .roi_gray{font-weight:700;color:#bbb;font-size:14px;display:inline;}
 #page #category .row .ico_list table tr .roi_red{font-weight:700;color:#ea5420;font-size:14px;display:inline;}
-#page #category .row .ico_list table tr .roi_green{font-weight:700;color:#68b541;font-size:14px;display:inline;}
+#page #category .row .ico_list table tr .roi_green{font-weight:700;color:#0195d5;font-size:14px;display:inline;}
 
 #page #category .pages{text-align:right;margin:20px 0 20px auto;overflow:hidden;}
 #page #category .pages .num{display:inline-block;padding:6px 8px;font-size:12px;cursor:pointer;color:#524e4e;text-decoration:none;margin:0 2px;}
@@ -1461,7 +1461,7 @@ h4.footer-title{
 #page #contact h1,#page #experts h1,#page #agencies h1,#page #ratings h1,#page #tos h1,#page #privacy h1,#page #publish h1,#page #join h1,#page #join_expert h1, #page #login h1, #page #widget h1, #page #media h1, #page #premium h1, #page #stats h1, #page #services h1, #page #roi_calculator h1, #page #register h1, #page #developer h1{text-align:center;display:table;margin:0 auto 30px auto;color:#222;font-family:'Montserrat', sans-serif;font-size:36px;font-weight:200;}
 #page #contact p,#page #experts p,#page #agencies p,#page #ratings p,#page #tos p,#page #privacy p,#page #publish p,#page #join p,#page #join_expert p, #page #login p, #page #widget p, #page #media p, #page #premium p, #page #stats p, #page #services p, #page #roi_calculator p, #page #register p, #page #developer p{font-weight:400;text-align:center;margin:0;padding:0;font-size:14px;line-height:1.3;}
 #page .notify{background:#999;border-radius:2px;padding:20px;text-align:center;font-weight:400;color:#fff;min-width:340px;width:auto;margin:20px auto 20px auto;display:none;line-height:1.5;}
-#page .green{background:#68b541;}
+#page .green{background:#0195d5;}
 #page .red{background:#df3c3c;}
 #page .notify a:link, #page .notify a:visited, #page .notify a:active{text-decoration:underline;color:#fff;font-weight:bold;}
 #page .notify a:hover, #page .notify a:visited:hover{opacity:0.7;}
@@ -1642,7 +1642,7 @@ h4.footer-title{
 #page #experts .row .rate_stats .graphs .color2{height:3px;border-radius:5px;margin-bottom:3px;background:#ee7c17;min-width:2px;}
 #page #experts .row .rate_stats .graphs .color3{height:3px;border-radius:5px;margin-bottom:3px;background:#eeaa17;min-width:2px;}
 #page #experts .row .rate_stats .graphs .color4{height:3px;border-radius:5px;margin-bottom:3px;background:#a3bf43;min-width:2px;}
-#page #experts .row .rate_stats .graphs .color5{height:3px;border-radius:5px;margin-bottom:3px;background:#68b541;min-width:2px;}
+#page #experts .row .rate_stats .graphs .color5{height:3px;border-radius:5px;margin-bottom:3px;background:#0195d5;min-width:2px;}
 #page #experts .row .socials{display:block;float:left;width:90px;margin:20px 0 0 20px;text-align:left;}
 #page #experts .row .socials .twitter{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-173px -18px;text-decoration:none;margin:0 5px 0 0;}
 #page #experts .row .socials .linkedin{width:25px;height:25px;border-radius:25px;display:block;float:left;background:#5864b0 url("/assets/icosouq/icobench_files/sprite.svg") no-repeat;background-size:400px 400px;background-position:-194px -18px;text-decoration:none;margin:0 5px 0 0;}
@@ -1766,7 +1766,7 @@ h4.footer-title{
 #page #pricing .submission_form .box .row .input input{border:0;width:100%;padding:0;color:#5b5a5a;font-family:'Open Sans', sans-serif;font-size:14px;font-weight:400;}
 #page #pricing .submission_form .box .row .input select{border:0;width:100%;padding:0;color:#5b5a5a;font-family:'Open Sans', sans-serif;font-size:14px;font-weight:400;}
 #page #pricing .submission_form .box .row .input textarea{border:0;width:100%;padding:0;color:#5b5a5a;font-family:'Open Sans', sans-serif;font-size:14px;font-weight:400;resize:vertical;height:200px;}
-#page #pricing .submission_form .box .row .button{background:#68b541;padding:12px 30px;width:auto;margin:0 auto;border-radius:50px;font-size:16px;font-weight:bold;color:#fff;font-family:'Open Sans',sans-serif;cursor:pointer;border:0;}
+#page #pricing .submission_form .box .row .button{background:#0195d5;padding:12px 30px;width:auto;margin:0 auto;border-radius:50px;font-size:16px;font-weight:bold;color:#fff;font-family:'Open Sans',sans-serif;cursor:pointer;border:0;}
 #page #pricing .submission_form .box .row .button:hover{background:#eab63d;}
 #page #pricing .submission_form .box .row .left{width:calc(100% - 77px);float:left;}
 #page #pricing .submission_form .box .row .right{width:57px;float:right;}
@@ -1854,7 +1854,7 @@ h4.footer-title{
 #page #stats_content .ratings_data .col_2 .stats_body .row{padding-bottom:12px;overflow:hidden;}
 #page #stats_content .ratings_data .col_2 .stats_body .row:last-child{padding-bottom:0;}
 #page #stats_content .ratings_data .col_2 .stats_body .row .rating{width:calc(100% - 60px);float:left;display:block;overflow:hidden;}
-#page #stats_content .ratings_data .col_2 .stats_body .row .rating .color5{border-radius:5px;background:#68b541;height:7px;display:block;margin:4px 0 0 0;}
+#page #stats_content .ratings_data .col_2 .stats_body .row .rating .color5{border-radius:5px;background:#0195d5;height:7px;display:block;margin:4px 0 0 0;}
 #page #stats_content .ratings_data .col_2 .stats_body .row .rating .color4{border-radius:5px;background:#a3bf43;height:7px;display:block;margin:4px 0 0 0;}
 #page #stats_content .ratings_data .col_2 .stats_body .row .rating .color3{border-radius:5px;background:#eeaa17;height:7px;display:block;margin:4px 0 0 0;}
 #page #stats_content .ratings_data .col_2 .stats_body .row .rating .color2{border-radius:5px;background:#ee7c17;height:7px;display:block;margin:4px 0 0 0;}
@@ -1897,7 +1897,7 @@ h4.footer-title{
 
 #page #services_contact{background:#f8f8f8;border-top:1px solid #dbdbdb;padding:40px 40px 80px 40px;}
 #page #services_contact .notify{background:#999;border-radius:2px;padding:15px;text-align:center;font-weight:bold;color:#fff;min-width:340px;width:100%;max-width:880px;margin:30px auto 10px auto;display:none;line-height:1.5;}
-#page #services_contact .green{background:#68b541;}
+#page #services_contact .green{background:#0195d5;}
 #page #services_contact .red{background:#df3c3c;}
 #page #services_contact form{border:1px solid #e1e1e1;background:#fff;border-radius:5px;padding:20px;width:100%;max-width:880px;margin:30px auto 0 auto;box-shadow:3px 3px 0 rgba(0,0,0,0.02);}
 #page #services_contact form .row{width:100%;}
@@ -1919,7 +1919,7 @@ h4.footer-title{
 #page #services_contact form .row .border .checkbox_group .checkbox input{float:left;width:auto;margin:3px 10px 0 0;}
 #page #services_contact form .row .border .checkbox_group .checkbox label{float:left;text-align:left;font-weight:400;font-size:14px;color:#222;letter-spacing:0;text-transform:none;margin:0;display:table;line-height:1.3;}
 #page #services_contact form .notice{font-size:12px;width:100%;text-align:center;color:#999;margin:0 auto 20px auto;}
-#page #services_contact form input[type="submit"]{border:0;background:#68b541;padding:12px 25px;border-radius:30px;color:#fff;font-weight:700;font-family:'Open Sans',sans-serif;font-size:16px;cursor:pointer;}
+#page #services_contact form input[type="submit"]{border:0;background:#0195d5;padding:12px 25px;border-radius:30px;color:#fff;font-weight:700;font-family:'Open Sans',sans-serif;font-size:16px;cursor:pointer;}
 #page #services_contact form input[type="submit"]:hover{background:#4954ac;}
 #page #services_contact form .queue{font-size:14px;line-height:1.3;margin:0 0 20px 0;text-align:left;}
 
@@ -1937,8 +1937,8 @@ h4.footer-title{
 #page #roi_calculator .results .row:last-child{margin-bottom:0;border-top:1px solid #dbdbdb;padding-top:20px;}
 #page #roi_calculator .results .row .unit{width:40%;float:left;text-align:left;}
 #page #roi_calculator .results .row .value{width:60%;float:left;text-align:right;font-weight:bold;}
-#page #roi_calculator .results .row .value.green{background:transparent;color:#68b541;}
-#page #roi_calculator .results .row .value .green_roi{background:#68b541;color:#fff;display:inline-table;padding:7px 5px 6px 5px;line-height:0.6;border-radius:2px;margin-right:10px;font-size:12px;}
+#page #roi_calculator .results .row .value.green{background:transparent;color:#0195d5;}
+#page #roi_calculator .results .row .value .green_roi{background:#0195d5;color:#fff;display:inline-table;padding:7px 5px 6px 5px;line-height:0.6;border-radius:2px;margin-right:10px;font-size:12px;}
 #page #roi_calculator .results .row .value .red_roi{background:#df3c3c;color:#fff;display:inline-table;padding:7px 5px 6px 5px;line-height:0.6;border-radius:2px;margin-right:10px;font-size:12px;}
 
 #page #roi_calculator small{color:#aaa;font-size:12px;margin:0 auto 0 auto;padding:10px 0 0 0;display:block;}
@@ -2342,7 +2342,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #latest-icos .ico_list table tr th:last-child, #latest-icos .ico_list table tr td:last-child{padding-right:0;text-align:right;}
 
 #latest-icos .ico_list table tr td .button{display:inline-block;padding:8px 10px;border-radius:3px;color:#fff;font-weight:bold;font-size:14px;margin:10px 0 10px 10px;cursor:pointer;text-decoration:none;}
-#latest-icos .ico_list table tr td .button.green{background:#68b541;}
+#latest-icos .ico_list table tr td .button.green{background:#0195d5;}
 #latest-icos .ico_list table tr td .button.red{background:#ea5420;}
 #latest-icos .ico_list table tr td .button:hover{opacity:0.8;}
 #latest-icos .ico_list table tr td .image_box{float:left;width:56px;height:56px;padding:2px;border:1px solid #e1e1e1;background:#fff;border-radius:5px;overflow:hidden;}
@@ -2352,7 +2352,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #latest-icos .ico_list table tr td a.name:link, #latest-icos .ico_list table tr td a.name:visited, #latest-icos .ico_list table tr td a.name:active{font-weight:700;text-align:left;margin:5px 0 0 0;padding:0;font-size:14px;text-decoration:none;color:#3b3b3b;display:table;}
 #latest-icos .ico_list table tr td p{font-size:13px;line-height:1.0;padding:0;margin:3px 0 0 0;text-align:left;}
 #latest-icos .ico_list table tr td .progress{float:left;width:80px;height:5px;border-radius:10px;background:#e1e1e1;margin:5px 0 0 0}
-#latest-icos .ico_list table tr td .progress .green{height:5px;border-radius:10px 0 0 10px;background:#68b541;}
+#latest-icos .ico_list table tr td .progress .green{height:5px;border-radius:10px 0 0 10px;background:#0195d5;}
 #latest-icos .ico_list table tr td .percent{width:35px;float:left;font-size:13px;text-align:left;margin:0 0 0 10px}
 #latest-icos .ico_list table tr td .rate{font-weight:700;font-size:12px;background:#222;color:#fff;border-radius:2px;padding:4px 6px;display:inline-block;}
 #latest-icos .ico_list table tr td .color0{background:#ea5420;}
@@ -2360,7 +2360,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #latest-icos .ico_list table tr td .color2{background:#ee7c17;}
 #latest-icos .ico_list table tr td .color3{background:#eeaa17;}
 #latest-icos .ico_list table tr td .color4{background:#a3bf43;}
-#latest-icos .ico_list table tr td .color5{background:#68b541;}
+#latest-icos .ico_list table tr td .color5{background:#0195d5;}
 #latest-icos .ico_list table tr td .trading{background:#4954ac;text-transform:uppercase;padding:5px 4px 4px 6px;}
 #latest-icos .ico_list table tr td .ended{background:#8a8686;text-transform:uppercase;padding:5px 4px 4px 6px;}
 #latest-icos .ico_list table tr td .shw{display:none;}
@@ -2371,7 +2371,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #latest-icos .ico_list table tr .roi_yellow{font-weight:700;color:#eeaa17;font-size:14px;display:inline;}
 #latest-icos .ico_list table tr .roi_gray{font-weight:700;color:#bbb;font-size:14px;display:inline;}
 #latest-icos .ico_list table tr .roi_red{font-weight:700;color:#ea5420;font-size:14px;display:inline;}
-#latest-icos .ico_list table tr .roi_green{font-weight:700;color:#68b541;font-size:14px;display:inline;}
+#latest-icos .ico_list table tr .roi_green{font-weight:700;color:#0195d5;font-size:14px;display:inline;}
 
 #latest-icos .pages{text-align:right;margin:20px 0 20px auto;overflow:hidden;}
 #latest-icos .pages .num{display:inline-block;padding:6px 8px;font-size:12px;cursor:pointer;color:#524e4e;text-decoration:none;margin:0 2px;}
@@ -2504,7 +2504,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #user_profile_content .right .distribution_box .col_3 .graphs .color2{height:3px;border-radius:5px;margin-bottom:3px;background:#ee7c17;min-width:2px;}
 #user_profile_content .right .distribution_box .col_3 .graphs .color3{height:3px;border-radius:5px;margin-bottom:3px;background:#eeaa17;min-width:2px;}
 #user_profile_content .right .distribution_box .col_3 .graphs .color4{height:3px;border-radius:5px;margin-bottom:3px;background:#a3bf43;min-width:2px;}
-#user_profile_content .right .distribution_box .col_3 .graphs .color5{height:3px;border-radius:5px;margin-bottom:3px;background:#68b541;min-width:2px;}
+#user_profile_content .right .distribution_box .col_3 .graphs .color5{height:3px;border-radius:5px;margin-bottom:3px;background:#0195d5;min-width:2px;}
 
 
 #user_profile_content .right .title{overflow:hidden;position:relative;}
@@ -2666,7 +2666,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #agency_profile_content .left .icos table tr td .color2{background:#ee7c17;}
 #agency_profile_content .left .icos table tr td .color3{background:#eeaa17;}
 #agency_profile_content .left .icos table tr td .color4{background:#a3bf43;}
-#agency_profile_content .left .icos table tr td .color5{background:#68b541;}
+#agency_profile_content .left .icos table tr td .color5{background:#0195d5;}
 #agency_profile_content .left .icos table tr td .trading{background:#4954ac;text-transform:uppercase;padding:5px 5px 4px 6px;}
 #agency_profile_content .left .icos table tr td .ended{background:#8a8686;text-transform:uppercase;padding:5px 5px 4px 6px;}
 #agency_profile_content .left .icos table tr td .ico{width:56px;height:56px;border:1px solid #dbdbdb;border-radius:2px;float:left;margin:0 10px 0 0;}
@@ -2784,7 +2784,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #exchange_profile_content table tr td .shw{display:none;}
 #exchange_profile_content table tr td .roi{font-weight:700;font-size:12px;background:#aaa;color:#fff;border-radius:2px;padding:4px 6px;display:inline-block;}
 #exchange_profile_content table tr td .roi.red{background:#ea5420;}
-#exchange_profile_content table tr td .roi.green{background:#68b541;}
+#exchange_profile_content table tr td .roi.green{background:#0195d5;}
 #exchange_profile_content table tr td .ico{width:46px;height:46px;border:1px solid #dbdbdb;border-radius:2px;float:left;margin:0 10px 0 0;}
 #exchange_profile_content table tr td .ico img{width:40px;height:40px;margin:2px;border-radius:0;}
 #exchange_profile_content table tr td .text{width:calc(100% - 68px);float:left;margin-top:14px;}
@@ -2875,7 +2875,7 @@ nav#bottom_menu .link:hover{border-bottom:3px solid #7e88d0;}
 #page #developers .right_content form .col_1_2 input[type="submit"]{margin-top:24px;}
 #page #developers .right_content form .row:last-child .col_1_2 .row .border{margin-bottom:0;}
 #page #developers .right_content .notification{padding:20px 25px;background:#999;color:#fff;font-weight:bold;border-radius:3px;margin:0 0 30px 0;}
-#page #developers .right_content .notification.green{background:#68b541;}
+#page #developers .right_content .notification.green{background:#0195d5;}
 #page #developers .right_content .notification.red{background:#df3c3c;}
 #page #developers .right_content .notification.blue{background:#52b5e7;margin-top:10px;}
 
