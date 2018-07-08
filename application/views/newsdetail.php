@@ -6,8 +6,7 @@ $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' :
 $image = $image_url;
 ?>
 
-    <div class="row innerpage"  id="post">
-        <br><br><br>
+    <div class="row innerpage">
         <div class="col-xs-12 col-sm-8 post-area"> 
             <div class="post-header"> 
                 <div class="date"> <?php echo date("j M Y",strtotime($row->post_date)); ?> </div>
@@ -37,7 +36,7 @@ $image = $image_url;
         <div class="post-content"> 
             <div class="image"> 
                 <img src="<?php echo $image; ?>" alt="<?php echo $row->article; ?>" title="<?php echo $row->article; ?>">
-                <p class="sponsored badge badge-default" style="display: block;">News</p> 
+                <!--<p class="sponsored badge badge-default" style="display: block;">News</p> -->
             </div> 
             <div class="post-full-text contents" itemprop="articleBody">
                 <p><?php echo nl2br($row->description); ?></p>
