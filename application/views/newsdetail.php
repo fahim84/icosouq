@@ -2,7 +2,8 @@
 
 <?php
 $image_url = $row->image == '' ? base_url().'uploads/articles/placeholder.png' : base_url().'uploads/articles/'.$row->image;
-$image = base_url()."thumb.php?src=".$image_url."&w=740&h=500";
+//$image = base_url()."thumb.php?src=".$image_url."&w=340&h=200";
+$image = $image_url;
 ?>
 
     <div class="row innerpage"  id="post">

@@ -158,7 +158,7 @@ class Welcome extends CI_Controller {
             $offset = 0;
         }
 
-        if ($this->uri->segment(3)) { $limit = $this->uri->segment(3); }else{ $limit = 5; }
+        if ($this->uri->segment(3)) { $limit = $this->uri->segment(3); }else{ $limit = 20; }
 
         if($keyword != '') $query_params['keyword'] = $keyword;
 

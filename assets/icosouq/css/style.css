@@ -900,7 +900,8 @@
 		    margin: 15px 0;
 		}
 		#post .post-content img {
-		    width: 100%!important;
+		    /*width: 100%!important;*/
+			max-width: 740px;
 		}
 		#post .post-content .image .sponsored {
 		    background: #0195d5;
