@@ -59,7 +59,7 @@
 
                 <div class="form-group">
                     <label>Date</label>
-                    <input name="post_date" type="text" class="form-control" id="post_date" placeholder="DD-MM-YYYY" style="cursor:pointer;" readonly value="<?php echo date('j M Y',strtotime(@$update_data->post_date)); ?>">
+                    <input name="post_date" type="text" class="form-control" id="post_date" placeholder="DD-MM-YYYY" style="cursor:pointer;" readonly value="<?php echo @$update_data->post_date ? date('j M Y',strtotime(@$update_data->post_date)): ''; ?>">
                 </div>
 
                 <div class="form-group">
