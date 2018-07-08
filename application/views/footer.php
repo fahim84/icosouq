@@ -1,6 +1,6 @@
 <div class='row footer-logo footer-center'>
     <a href='https://www.instagram.com/ICO.Souq/' target='_blank'><img src='<?php echo base_url(); ?>assets/icosouq/images/instagram.jpg' style='margin:10px;' border='0'></a>
-    <img src='<?php echo base_url(); ?>assets/icosouq/images/telegram.jpg' style='margin:10px;' border='0'>
+    <a href='<?php echo base_url(); ?>private_member/'><img src='<?php echo base_url(); ?>assets/icosouq/images/telegram.jpg' style='margin:10px;' border='0'></a>
 </div>
 
 <div class='row footer-div'>
