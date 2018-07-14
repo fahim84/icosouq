@@ -71,6 +71,7 @@ class Backup extends CI_Controller {
         $skip_files_and_directories[] = 'cgi-bin';
         $skip_files_and_directories[] = 'ci_sessions';
         $skip_files_and_directories[] = 'error.log';
+        $skip_files_and_directories[] = 'uploads';
         $skip_files_and_directories[] = $backup_file;
         if ($handle = opendir('.')) {
             while (false !== ($entry = readdir($handle))) {
