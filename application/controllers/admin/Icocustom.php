@@ -102,7 +102,7 @@ class Icocustom extends CI_Controller {
             # File uploading configuration
             $upload_path = './uploads/icos/';
             $config['upload_path'] = $upload_path;
-            $config['allowed_types'] = 'gif|jpg|png|jpeg|mp4';
+            $config['allowed_types'] = '*';
             $config['encrypt_name'] = true;
             $config['max_size'] = 512000; //KB
 
