@@ -81,6 +81,16 @@ class Ico extends CI_Controller {
 		{
             $get_post = $this->input->get_post(null,true);
 
+            $get_post['preIcoStart'] = date('Y-m-d H:i:s',strtotime($this->input->get_post('start_date').' '.$this->input->get_post('start_time')));
+            $get_post['preIcoEnd'] = date('Y-m-d H:i:s',strtotime($this->input->get_post('end_date').' '.$this->input->get_post('end_time')));
+            $get_post['icoStart'] = $get_post['preIcoStart'];
+            $get_post['icoEnd'] = $get_post['preIcoEnd'];
+
+            unset($get_post['start_date']);
+            unset($get_post['start_time']);
+            unset($get_post['end_date']);
+            unset($get_post['end_time']);
+
             $delete_old_file = $this->input->get_post('delete_old_file');
             $uploaded_file_array = (isset($_FILES['image']) and $_FILES['image']['size'] > 0 and $_FILES['image']['error'] == 0) ? $_FILES['image'] : '';
             # Show uploading error only when the file uploading attempt exist.

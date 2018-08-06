@@ -84,6 +84,15 @@
                     </select>
                 </div>
 
+                <div class="form-group">
+                    <label>End Date</label>
+                    <input name="end_date" required type="text" value="<?php echo isset($update_data->icoEnd) ? date('j M Y',strtotime($update_data->icoEnd)) : date('j M Y'); ?>"  class="form-control" id="end_date" placeholder="DD-MM-YYYY" style="cursor:pointer;" readonly >
+                </div>
+                <div class="form-group">
+                    <label>End Time</label>
+                    <input name="end_time" required type="text" value="<?php echo isset($update_data->icoEnd) ? date('h:i a',strtotime($update_data->icoEnd)) : date('h:i a'); ?>" class="form-control" id="end_time" style="cursor:pointer;" readonly>
+                </div>
+
 
             </fieldset>
             <div>
@@ -110,7 +119,7 @@
 $(document).ready(function(){
 
     $('#start_date').datepicker({
-        dateFormat: 'dd-mm-yy',
+        dateFormat: 'dd M yy',
         changeYear: true,
         changeMonth: true,
         onSelect: function(selected) {
@@ -118,7 +127,7 @@ $(document).ready(function(){
         }
     });
     $('#end_date').datepicker({
-        dateFormat: 'dd-mm-yy',
+        dateFormat: 'dd M yy',
         changeYear: true,
         changeMonth: true,
         onSelect: function(selected) {
