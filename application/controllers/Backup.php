@@ -124,7 +124,7 @@ class Backup extends CI_Controller {
 	
 	public function clean_database()
 	{
-		$tables = ['events_comments',
+		$tables = [
 					'events_users',
 					'invitations',
 					'main_events',
