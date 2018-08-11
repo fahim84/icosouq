@@ -79,26 +79,28 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Video upload (mp4 only)</label>
+                            <label>Upload video (mp4 only) and type file name here</label>
                             <?php
-                            if(@$update_data->video != '')
+                            /*if(@$update_data->video != '')
                             {
                                 $video = base_url().'uploads/icos/'.$update_data->video;
 
                                 $old_file_html = "<label title=\"Delete $update_data->video\"><input name=\"delete_old_file2\" type=\"checkbox\" value=\"1\" /> Delete</label><input name=\"oldfile2\" type=\"hidden\" value=\"$update_data->video\" /><br>";
-                                ?>
+                                */?><!--
                                 <br>
                                 <video width="100%" controls>
-                                    <source src="<?php echo $video; ?>" type="video/mp4">
+                                    <source src="<?php /*echo $video; */?>" type="video/mp4">
                                     <source src="movie.ogg" type="video/ogg">
                                     Your browser does not support the video tag.
                                 </video>
-                                <?php echo $old_file_html; ?>
-                                <?php
-                            }
+                                <?php /*echo $old_file_html; */?>
+                                --><?php
+/*                            }*/
                             ?>
                             <div>
-                                <input name="video" type="file" id="video" accept="video/mp4" >
+                                Example: abc.mp4
+                                <!--<input name="video" type="file" id="video" accept="video/mp4" >-->
+                                <input name="video" class="form-control" value="<?php echo @$update_data->video; ?>">
                             </div>
                         </div>
 
