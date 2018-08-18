@@ -223,6 +223,12 @@ class Welcome extends CI_Controller {
 
     public function contact_us()
     {
+        $remote_ip = $_SERVER['REMOTE_ADDR'];
+        $g_recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+        $g_recaptcha_site_key = '6Lf3omoUAAAAAI9FdSmYPAuAAJG1bkEuUKMAknuK';
+        $g_recaptcha_secret = '6Lf3omoUAAAAADEVL-qxWLvl8IOF4b0k_hcJrkpC';
+        $g_recaptcha_response = $this->input->get_post('g-recaptcha-response');
+
         // Set the validation rules
         $this->form_validation->set_rules('fullname', 'Name', 'required|trim');
         $this->form_validation->set_rules('email', 'Email', 'required|trim');

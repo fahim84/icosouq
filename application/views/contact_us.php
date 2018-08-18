@@ -51,7 +51,9 @@
                 </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td><br>
+                        <td>
+                            <div class="g-recaptcha" data-sitekey="6Lf3omoUAAAAAI9FdSmYPAuAAJG1bkEuUKMAknuK"></div>
+                            <br>
                             <button type="submit" class="btn btn-primary">
                                 Send
                             </button></td>
@@ -64,6 +66,7 @@
     </div>
 </div>
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <?php $this->load->view('footer',$this->data); ?>
 
